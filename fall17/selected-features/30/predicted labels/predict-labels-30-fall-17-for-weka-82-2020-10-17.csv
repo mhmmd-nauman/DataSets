@@ -15,7 +15,7 @@ Application Fee Received,872,1,1,51,714,821,145,170,147,136,Yes
 Application Fee Received,845,1,1,55,868,790,159,148,129,123,Yes
 Application Fee Received,834,1,1,52,607,782,130,44,148,150,Yes
 Application Fee Received,752,1,1,43,847,689,123,111,152,98,No
-Application Fee Received,735,1,1,42,651,693,0,0,0,0,Yes
+Application Fee Received,735,1,1,42,651,693,0,0,0,0,No
 Application Fee Received,641,1,1,44,504,597,121,35,106,78,No
 Application Fee Received,709,1,1,49,842,660,148,115,92,82,No
 Application Fee Received,1025,1,1,74,787,931,154,170,169,46,Yes
@@ -27,7 +27,7 @@ Admission Fee Challan Received,781,1,1,52,649,729,142,143,115,139,Yes
 Admission Fee Challan Received,882,1,1,62,919,820,120,151,160,154,Yes
 Admission Fee Challan Received,728,1,1,43,839,685,141,107,125,118,Yes
 Admission Fee Challan Received,822,1,1,44,813,783,136,150,126,122,Yes
-Admission Fee Challan Received,726,1,1,45,644,681,0,0,0,0,No
+Admission Fee Challan Received,726,1,1,45,644,681,0,0,0,0,Yes
 Admission Fee Challan Printed,878,1,1,48,840,830,157,165,41,41,Yes
 Admission Fee Challan Received,826,1,1,52,768,774,153,137,153,114,Yes
 Admission Fee Challan Received,939,1,1,64,638,875,155,140,131,176,Yes
@@ -36,8 +36,8 @@ Admission Fee Challan Received,783,1,1,63,721,720,157,68,127,136,Yes
 Admission Fee Challan Received,813,1,1,52,830,761,151,152,107,44,Yes
 Admission Fee Challan Received,865,1,1,57,834,808,130,164,141,141,Yes
 Admission Fee Challan Received,794,1,1,52,802,742,157,88,142,46,Yes
-Admission Fee Challan Received,724,1,1,47,523,677,135,140,114,109,No
-Admission Fee Challan Received,768,1,1,58,721,715,128,152,115,0,No
+Admission Fee Challan Received,724,1,1,47,523,677,135,140,114,109,Yes
+Admission Fee Challan Received,768,1,1,58,721,715,128,152,115,0,Yes
 Admission Fee Challan Received,868,1,1,56,794,812,141,155,149,43,Yes
 Admission Fee Challan Received,814,1,1,74,875,740,137,144,125,108,Yes
 Admission Fee Challan Received,955,1,1,56,903,899,165,168,136,182,Yes
@@ -87,7 +87,7 @@ Application Fee Received,999,1,1,51,955,948,179,185,43,183,Yes
 Application Fee Received,795,1,1,47,807,748,0,0,0,0,Yes
 Application Fee Received,620,1,1,43,570,577,86,125,109,82,No
 Application Fee Received,852,1,1,36,837,816,0,0,0,0,Yes
-Application Fee Received,925.577,1,0,15,914,890,0,0,0,0,No
+Application Fee Received,925.577,1,0,15,914,890,0,0,0,0,Yes
 Application Fee Received,678,1,1,51,892,627,132,113,78,0,No
 Application Fee Received,1025,1,1,58,994,967,154,181,182,46,Yes
 Application Fee Received,718,1,1,44,651,654,0,0,0,0,No
@@ -132,7 +132,7 @@ Application Fee Received,793,1,1,47,848,746,160,114,120,0,Yes
 Application Fee Received,729,0,1,0,802,729,141,102,133,155,No
 Application Fee Received,651,0,1,0,641,651,128,41,108,123,No
 Application Fee Received,774,0,1,0,920,774,130,141,145,122,No
-Application Fee Received,920,0,1,0,868,920,164,161,178,160,No
+Application Fee Received,920,0,1,0,868,920,164,161,178,160,Yes
 Application Fee Received,714,1,1,53,718,666,94,140,119,30,No
 Application Fee Received,789,1,1,41,839,748,152,119,123,120,Yes
 Application Fee Received,720,1,1,46,649,674,148,142,123,90,No
@@ -162,7 +162,7 @@ Application Fee Received,713,1,1,42,717,671,110,126,110,123,No
 Application Fee Received,866,1,1,70,887,796,157,148,127,90,Yes
 Application Fee Received,713,1,1,44,649,679,144,108,136,75,No
 Application Fee Received,682,1,1,55,667,627,93,113,107,0,No
-Application Fee Received,967,0,1,0,981,967,180,175,162,180,No
+Application Fee Received,967,0,1,0,981,967,180,175,162,180,Yes
 Application Fee Received,703,1,1,51,735,657,144,119,99,40,No
 Application Fee Received,617,1,1,46,673,571,120,89,79,107,No
 Application Fee Received,815.364,1,1,36,777,779,0,0,0,0,Yes
@@ -181,14 +181,14 @@ Application Fee Received,828,1,1,50,806,778,143,117,123,145,Yes
 Application Fee Received,493,1,0,57,517,441,0,0,0,0,No
 Application Fee Received,790,1,1,48,789,747,128,164,104,45,Yes
 Application Fee Received,724,1,1,54,777,670,136,45,129,90,No
-Application Fee Received,729,1,1,41,824,688,119,143,128,43,Yes
+Application Fee Received,729,1,1,41,824,688,119,143,128,43,No
 Application Fee Received,731,1,1,45,734,686,122,147,87,157,No
 Application Fee Received,953,1,1,55,866,898,148,46,162,174,Yes
-Application Fee Received,727.667,1,1,49,706,663,86,102,153,40,Yes
+Application Fee Received,727.667,1,1,49,706,663,86,102,153,40,No
 Application Fee Received,926,1,1,59,912,867,152,146,169,156,Yes
 Application Fee Received,712,1,1,52,806,660,122,135,133,85,No
 Application Fee Received,643,1,1,42,547,601,90,107,128,96,No
-Application Fee Received,947.313,1,0,41,954,910,71,0,0,0,No
+Application Fee Received,947.313,1,0,41,954,910,71,0,0,0,Yes
 Application Fee Received,900,1,1,50,787,850,130,170,157,164,Yes
 Application Fee Received,858,1,1,46,899,817,125,49,160,137,Yes
 Application Fee Received,670,0,1,0,622,670,122,0,0,0,No
@@ -205,7 +205,7 @@ Admission Fee Challan Received,868,1,1,46,652,822,162,0,0,161,Yes
 Admission Fee Challan Received,818,1,1,60,645,758,0,0,0,0,Yes
 Admission Fee Challan Received,878,1,1,45,843,833,146,159,143,157,Yes
 Admission Fee Challan Received,833,1,1,63,893,775,148,134,144,137,Yes
-Admission Fee Challan Received,724,1,1,55,717,669,121,128,127,96,No
+Admission Fee Challan Received,724,1,1,55,717,669,121,128,127,96,Yes
 Admission Fee Challan Received,772,1,1,57,702,695,103,138,124,117,Yes
 Admission Fee Challan Received,883,1,1,56,877,827,160,163,0,0,Yes
 Admission Fee Challan Received,888,1,1,50,704,818,140,159,129,92,Yes
@@ -223,15 +223,15 @@ Admission Fee Challan Received,880,1,1,46,756,834,151,145,168,126,Yes
 Admission Fee Challan Received,835,1,1,53,840,782,141,133,160,128,Yes
 Admission Fee Challan Received,864,1,1,45,841,819,148,124,149,142,Yes
 Admission Fee Challan Received,818,1,1,56,890,767,126,89,40,156,Yes
-Admission Fee Challan Printed,0,1,0,70,892,898,140,179,164,160,No
+Admission Fee Challan Printed,0,,,70,892,898,140,179,164,160,Yes
 Admission Fee Challan Printed,916,1,1,61,942,860,169,135,172,139,Yes
 Admission Fee Challan Received,764,1,1,50,646,714,0,0,0,0,Yes
 Admission Fee Challan Received,994,1,1,61,932,933,166,172,184,0,Yes
-Admission Fee Challan Received,877,1,1,56,900,821,163,146,46,147,Yes
+Admission Fee Challan Received,877,1,1,56,900,821,163,146,46,147,No
 Admission Fee Challan Received,0,1,1,50,677,663,109,101,134,125,Yes
 Admission Fee Challan Received,773,1,1,59,915,714,139,154,119,108,Yes
 Admission Fee Challan Received,734,1,1,57,696,677,125,83,136,135,Yes
-Admission Fee Challan Received,836,1,1,42,841,794,125,160,159,124,Yes
+Admission Fee Challan Received,836,1,1,42,841,794,125,83,159,124,Yes
 Admission Fee Challan Received,795,1,1,52,891,743,128,141,138,126,Yes
 Admission Fee Challan Received,961,1,1,58,856,903,135,160,168,173,Yes
 Admission Fee Challan Received,783,1,1,51,686,732,131,104,127,155,Yes
