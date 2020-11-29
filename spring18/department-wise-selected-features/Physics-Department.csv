@@ -1,4 +1,4 @@
-Application Status,Domicile,Admission Test,ssc_obtained,Terminal Degree,hsc_opt_1_obtained,hsc_opt_3_obtained,Document Verified,Offered
+Application Status,Domicile,Admission Test,SSC,Terminal Degree,Optional Subject 1,Optional Subject 3,Document Verified,Offered
 NotComplete,OPEN,0,815,860,148,162,0,No
 NotComplete,OPEN,0,933,930,171,175,0,No
 Complete,OPEN,0,847,848,146,0,1,No
