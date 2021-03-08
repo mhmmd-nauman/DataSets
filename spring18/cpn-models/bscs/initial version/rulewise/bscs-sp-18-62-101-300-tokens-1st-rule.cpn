@@ -1,0 +1,1521 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE workspaceElements PUBLIC "-//CPN//DTD CPNXML 1.0//EN" "http://cpntools.org/DTD/6/cpn.dtd">
+
+<workspaceElements>
+  <generator tool="CPN Tools"
+             version="4.0.1"
+             format="6"/>
+  <cpnet>
+    <globbox>
+      <block id="ID1412310166">
+        <id>Standard priorities</id>
+        <ml id="ID1412310255">val P_HIGH = 100;
+          <layout>val P_HIGH = 100;</layout>
+        </ml>
+        <ml id="ID1412310292">val P_NORMAL = 1000;
+          <layout>val P_NORMAL = 1000;</layout>
+        </ml>
+        <ml id="ID1412310322">val P_LOW = 10000;
+          <layout>val P_LOW = 10000;</layout>
+        </ml>
+      </block>
+      <block id="ID1">
+        <id>Standard declarations</id>
+        <color id="ID85042">
+          <id>UNIT</id>
+          <unit/>
+          <layout>colset UNIT = unit;</layout>
+        </color>
+        <color id="ID4">
+          <id>BOOL</id>
+          <bool/>
+        </color>
+        <color id="ID3">
+          <id>INT</id>
+          <int/>
+        </color>
+        <color id="ID1412312409">
+          <id>INTINF</id>
+          <intinf/>
+          <layout>colset INTINF = intinf;</layout>
+        </color>
+        <color id="ID1412312425">
+          <id>TIME</id>
+          <time/>
+          <layout>colset TIME = time;</layout>
+        </color>
+        <color id="ID1412322990">
+          <id>REAL</id>
+          <real/>
+          <layout>colset REAL = real;</layout>
+        </color>
+        <color id="ID5">
+          <id>STRING</id>
+          <string/>
+        </color>
+        <color id="ID1412415325">
+          <id>NO</id>
+          <alias>
+            <id>INT</id>
+          </alias>
+          <layout>colset NO = INT;</layout>
+        </color>
+        <color id="ID1412799376">
+          <id>DV</id>
+          <alias>
+            <id>INT</id>
+          </alias>
+          <layout>colset DV = INT;</layout>
+        </color>
+        <color id="ID1412415362">
+          <id>TD</id>
+          <alias>
+            <id>INT</id>
+          </alias>
+          <layout>colset TD = INT;</layout>
+        </color>
+        <color id="ID1412415365">
+          <id>AT</id>
+          <alias>
+            <id>INT</id>
+          </alias>
+          <layout>colset AT = INT;</layout>
+        </color>
+        <color id="ID1412415368">
+          <id>DOMICILE</id>
+          <string/>
+          <layout>colset DOMICILE = string;</layout>
+        </color>
+        <color id="ID1412800524">
+          <id>L</id>
+          <string/>
+          <layout>colset L = string;</layout>
+        </color>
+        <color id="ID1412664624">
+          <id>CANDIDATE</id>
+          <product>
+            <id>NO</id>
+            <id>TD</id>
+            <id>AT</id>
+            <id>DV</id>
+            <id>L</id>
+          </product>
+          <layout>colset CANDIDATE = product NO*TD *AT*DV*L;</layout>
+        </color>
+        <var id="ID1412416313">
+          <type>
+            <id>NO</id>
+          </type>
+          <id>sr</id>
+          <layout>var sr : NO;</layout>
+        </var>
+        <var id="ID1412437406">
+          <type>
+            <id>TD</id>
+          </type>
+          <id>terminaldegree</id>
+          <layout>var terminaldegree : TD ;</layout>
+        </var>
+        <var id="ID1412438155">
+          <type>
+            <id>AT</id>
+          </type>
+          <id>admissiontest</id>
+          <layout>var admissiontest : AT;</layout>
+        </var>
+        <var id="ID1412799627">
+          <type>
+            <id>DV</id>
+          </type>
+          <id>dv</id>
+          <layout>var dv : DV;</layout>
+        </var>
+        <var id="ID1412444526">
+          <type>
+            <id>DOMICILE</id>
+          </type>
+          <id>dom</id>
+          <layout>var dom : DOMICILE;</layout>
+        </var>
+        <var id="ID1412658933">
+          <type>
+            <id>L</id>
+          </type>
+          <id>label</id>
+          <layout>var label : L;</layout>
+        </var>
+      </block>
+    </globbox>
+    <page id="ID6">
+      <pageattr name="BSCS SPRING 18"/>
+      <place id="ID1412415160">
+        <posattr x="-336.000000"
+                 y="-13.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>P1</text>
+        <ellipse w="78.000000"
+                 h="74.000000"/>
+        <token x="-10.000000"
+               y="0.000000"/>
+        <marking x="-121.000000"
+                 y="1.000000"
+                 hidden="false">
+          <snap snap_id="0"
+                anchor.horizontal="2"
+                anchor.vertical="2"/>
+        </marking>
+        <type id="ID1412415161">
+          <posattr x="-336.000000"
+                   y="-61.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1">CANDIDATE</text>
+        </type>
+        <initmark id="ID1414576607">
+          <posattr x="-502.000000"
+                   y="4825.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1">1`(1,667,0,0,&quot;No&quot;)++
+1`(2,1100,59,1,&quot;Yes&quot;)++
+1`(3,825,60,0,&quot;No&quot;)++
+1`(4,783,59,0,&quot;No&quot;)++
+1`(5,1050,44,0,&quot;No&quot;)++
+1`(6,614,42,0,&quot;No&quot;)++
+1`(7,689,0,1,&quot;No&quot;)++
+1`(8,771,60,0,&quot;No&quot;)++
+1`(9,726,54,0,&quot;No&quot;)++
+1`(10,841,49,1,&quot;No&quot;)++
+1`(11,638,47,0,&quot;No&quot;)++
+1`(12,727,50,0,&quot;No&quot;)++
+1`(13,583,48,0,&quot;No&quot;)++
+1`(14,801,46,0,&quot;No&quot;)++
+1`(15,654,56,0,&quot;No&quot;)++
+1`(16,750,60,0,&quot;No&quot;)++
+1`(17,579,32,0,&quot;No&quot;)++
+1`(18,828,59,0,&quot;No&quot;)++
+1`(19,645,41,0,&quot;No&quot;)++
+1`(20,850,55,1,&quot;Yes&quot;)++
+1`(21,595,58,0,&quot;No&quot;)++
+1`(22,601,51,0,&quot;No&quot;)++
+1`(23,601,47,0,&quot;No&quot;)++
+1`(24,893,54,1,&quot;Yes&quot;)++
+1`(25,773,46,1,&quot;No&quot;)++
+1`(26,743,36,0,&quot;No&quot;)++
+1`(27,628,50,0,&quot;No&quot;)++
+1`(28,601,47,0,&quot;No&quot;)++
+1`(29,911,50,0,&quot;No&quot;)++
+1`(30,732,47,0,&quot;No&quot;)++
+1`(31,796,44,0,&quot;No&quot;)++
+1`(32,700,50,0,&quot;No&quot;)++
+1`(33,662,51,0,&quot;No&quot;)++
+1`(34,757,38,0,&quot;No&quot;)++
+1`(35,735,50,0,&quot;No&quot;)++
+1`(36,808,63,0,&quot;No&quot;)++
+1`(37,767,48,0,&quot;No&quot;)++
+1`(38,888,60,0,&quot;No&quot;)++
+1`(39,0,0,0,&quot;No&quot;)++
+1`(40,766,58,0,&quot;No&quot;)++
+1`(41,491,49,0,&quot;No&quot;)++
+1`(42,541,48,0,&quot;No&quot;)++
+1`(43,691,50,0,&quot;No&quot;)++
+1`(44,796,52,0,&quot;No&quot;)++
+1`(45,691,57,0,&quot;No&quot;)++
+1`(46,784,46,0,&quot;No&quot;)++
+1`(47,829,56,1,&quot;No&quot;)++
+1`(48,630,44,0,&quot;No&quot;)++
+1`(49,562,1,0,&quot;No&quot;)++
+1`(50,729,58,0,&quot;No&quot;)++
+1`(51,754,48,0,&quot;No&quot;)++
+1`(52,813,54,1,&quot;No&quot;)++
+1`(53,809,58,0,&quot;No&quot;)++
+1`(54,622,52,0,&quot;No&quot;)++
+1`(55,615,43,0,&quot;No&quot;)++
+1`(56,802,51,1,&quot;No&quot;)++
+1`(57,550,50,0,&quot;No&quot;)++
+1`(58,595,45,0,&quot;No&quot;)++
+1`(59,747,41,0,&quot;No&quot;)++
+1`(60,794,50,0,&quot;No&quot;)++
+1`(61,662,49,0,&quot;No&quot;)++
+1`(62,599,43,0,&quot;No&quot;)++
+1`(63,478,52,0,&quot;No&quot;)++
+1`(64,606,49,1,&quot;No&quot;)++
+1`(65,815,60,1,&quot;Yes&quot;)++
+1`(66,555,56,0,&quot;No&quot;)++
+1`(67,727,52,0,&quot;No&quot;)++
+1`(68,692,65,0,&quot;No&quot;)++
+1`(69,916,52,0,&quot;No&quot;)++
+1`(70,723,44,0,&quot;No&quot;)++
+1`(71,737,52,0,&quot;No&quot;)++
+1`(72,780,64,0,&quot;No&quot;)++
+1`(73,798,31,0,&quot;No&quot;)++
+1`(74,640,0,0,&quot;No&quot;)++
+1`(75,699,60,0,&quot;No&quot;)++
+1`(76,651,0,0,&quot;No&quot;)++
+1`(77,711,51,0,&quot;No&quot;)++
+1`(78,814,63,1,&quot;Yes&quot;)++
+1`(79,734,59,0,&quot;No&quot;)++
+1`(80,727,53,0,&quot;No&quot;)++
+1`(81,733,50,0,&quot;No&quot;)++
+1`(82,693,43,0,&quot;No&quot;)++
+1`(83,788,33,0,&quot;No&quot;)++
+1`(84,804,60,1,&quot;No&quot;)++
+1`(85,747,7,0,&quot;No&quot;)++
+1`(86,723,53,0,&quot;No&quot;)++
+1`(87,686,52,0,&quot;No&quot;)++
+1`(88,581,44,0,&quot;No&quot;)++
+1`(89,707,54,0,&quot;No&quot;)++
+1`(90,631,54,0,&quot;No&quot;)++
+1`(91,707,50,0,&quot;No&quot;)++
+1`(92,703,56,0,&quot;No&quot;)++
+1`(93,623,50,0,&quot;No&quot;)++
+1`(94,804,56,0,&quot;No&quot;)++
+1`(95,727,60,0,&quot;No&quot;)++
+1`(96,620,50,0,&quot;No&quot;)++
+1`(97,722,59,0,&quot;No&quot;)++
+1`(98,643,52,0,&quot;No&quot;)++
+1`(99,903,66,0,&quot;No&quot;)++
+1`(100,566,36,0,&quot;No&quot;)++
+1`(101,533,45,0,&quot;No&quot;)++
+1`(102,771,42,0,&quot;No&quot;)++
+1`(103,807,48,0,&quot;No&quot;)++
+1`(104,533,41,0,&quot;No&quot;)++
+1`(105,677,54,0,&quot;No&quot;)++
+1`(106,634,54,0,&quot;No&quot;)++
+1`(107,732,55,0,&quot;No&quot;)++
+1`(108,635,54,0,&quot;No&quot;)++
+1`(109,758,56,0,&quot;No&quot;)++
+1`(110,707,40,0,&quot;No&quot;)++
+1`(111,820,48,1,&quot;No&quot;)++
+1`(112,614,50,0,&quot;No&quot;)++
+1`(113,682,52,0,&quot;No&quot;)++
+1`(114,690,47,0,&quot;No&quot;)++
+1`(115,855,53,0,&quot;No&quot;)++
+1`(116,605,58,0,&quot;No&quot;)++
+1`(117,662,48,0,&quot;No&quot;)++
+1`(118,765,53,0,&quot;No&quot;)++
+1`(119,588,53,0,&quot;No&quot;)++
+1`(120,882,51,1,&quot;Yes&quot;)++
+1`(121,836,48,0,&quot;No&quot;)++
+1`(122,761,47,0,&quot;No&quot;)++
+1`(123,624,61,1,&quot;No&quot;)++
+1`(124,525,0,0,&quot;No&quot;)++
+1`(125,802,55,1,&quot;Yes&quot;)++
+1`(126,836,52,1,&quot;No&quot;)++
+1`(127,867,47,0,&quot;No&quot;)++
+1`(128,545,32,0,&quot;No&quot;)++
+1`(129,698,54,0,&quot;No&quot;)++
+1`(130,843,54,1,&quot;Yes&quot;)++
+1`(131,841,47,1,&quot;No&quot;)++
+1`(132,595,52,0,&quot;No&quot;)++
+1`(133,825,44,0,&quot;No&quot;)++
+1`(134,875,59,0,&quot;No&quot;)++
+1`(135,850,53,1,&quot;Yes&quot;)++
+1`(136,795,59,1,&quot;No&quot;)++
+1`(137,792,48,0,&quot;No&quot;)++
+1`(138,954,67,1,&quot;Yes&quot;)++
+1`(139,752,48,0,&quot;No&quot;)++
+1`(140,713,55,0,&quot;No&quot;)++
+1`(141,521,51,0,&quot;No&quot;)++
+1`(142,708,63,0,&quot;No&quot;)++
+1`(143,690,55,0,&quot;No&quot;)++
+1`(144,609,67,0,&quot;No&quot;)++
+1`(145,746,67,0,&quot;No&quot;)++
+1`(146,688,59,0,&quot;No&quot;)++
+1`(147,705,40,0,&quot;No&quot;)++
+1`(148,678,52,0,&quot;No&quot;)++
+1`(149,825,56,0,&quot;No&quot;)++
+1`(150,560,47,0,&quot;No&quot;)++
+1`(151,482,54,0,&quot;No&quot;)++
+1`(152,827,39,0,&quot;No&quot;)++
+1`(153,664,51,0,&quot;No&quot;)++
+1`(154,834,53,0,&quot;No&quot;)++
+1`(155,772,64,0,&quot;No&quot;)++
+1`(156,825,56,1,&quot;Yes&quot;)++
+1`(157,775,50,0,&quot;No&quot;)++
+1`(158,791,57,0,&quot;No&quot;)++
+1`(159,762,55,0,&quot;No&quot;)++
+1`(160,805,50,1,&quot;No&quot;)++
+1`(161,448,44,0,&quot;No&quot;)++
+1`(162,574,40,0,&quot;No&quot;)++
+1`(163,834,50,1,&quot;Yes&quot;)++
+1`(164,744,62,0,&quot;No&quot;)++
+1`(165,913,54,1,&quot;Yes&quot;)++
+1`(166,496,43,0,&quot;No&quot;)++
+1`(167,865,58,1,&quot;Yes&quot;)++
+1`(168,539,44,0,&quot;No&quot;)++
+1`(169,739,52,0,&quot;No&quot;)++
+1`(170,791,62,1,&quot;No&quot;)++
+1`(171,802,64,1,&quot;Yes&quot;)++
+1`(172,830,42,0,&quot;No&quot;)++
+1`(173,671,48,1,&quot;No&quot;)++
+1`(174,726,58,0,&quot;No&quot;)++
+1`(175,623,57,0,&quot;No&quot;)++
+1`(176,609,48,0,&quot;No&quot;)++
+1`(177,849,46,1,&quot;Yes&quot;)++
+1`(178,508,49,0,&quot;No&quot;)++
+1`(179,791,52,0,&quot;No&quot;)++
+1`(180,730,41,0,&quot;No&quot;)++
+1`(181,667,54,0,&quot;No&quot;)++
+1`(182,672,50,0,&quot;No&quot;)++
+1`(183,608,47,0,&quot;No&quot;)++
+1`(184,535,44,0,&quot;No&quot;)++
+1`(185,648,35,0,&quot;No&quot;)++
+1`(186,721,54,0,&quot;No&quot;)++
+1`(187,842,58,0,&quot;No&quot;)++
+1`(188,652,54,0,&quot;No&quot;)++
+1`(189,772,45,0,&quot;No&quot;)++
+1`(190,710,52,0,&quot;No&quot;)++
+1`(191,702,50,0,&quot;No&quot;)++
+1`(192,902,47,1,&quot;Yes&quot;)++
+1`(193,568,56,0,&quot;No&quot;)++
+1`(194,569,53,0,&quot;No&quot;)++
+1`(195,694,60,0,&quot;No&quot;)++
+1`(196,851,57,0,&quot;No&quot;)++
+1`(197,691,66,0,&quot;No&quot;)++
+1`(198,680,49,0,&quot;No&quot;)++
+1`(199,822,58,1,&quot;Yes&quot;)++
+1`(200,826,46,0,&quot;No&quot;)++
+1`(201,750,62,0,&quot;No&quot;)++
+1`(202,853,53,1,&quot;Yes&quot;)++
+1`(203,791,48,0,&quot;No&quot;)++
+1`(204,626,50,0,&quot;No&quot;)++
+1`(205,507,50,0,&quot;No&quot;)++
+1`(206,924,68,1,&quot;Yes&quot;)++
+1`(207,753,62,0,&quot;No&quot;)++
+1`(208,583,50,0,&quot;No&quot;)++
+1`(209,692,40,1,&quot;No&quot;)++
+1`(210,750,54,0,&quot;No&quot;)++
+1`(211,644,44,0,&quot;No&quot;)++
+1`(212,670,60,0,&quot;No&quot;)++
+1`(213,808,60,1,&quot;Yes&quot;)++
+1`(214,817,56,1,&quot;No&quot;)++
+1`(215,800,62,0,&quot;No&quot;)++
+1`(216,800,53,1,&quot;No&quot;)++
+1`(217,485,49,0,&quot;No&quot;)++
+1`(218,710,51,0,&quot;No&quot;)++
+1`(219,532,57,0,&quot;No&quot;)++
+1`(220,721,46,1,&quot;No&quot;)++
+1`(221,633,19,0,&quot;No&quot;)++
+1`(222,786,40,0,&quot;No&quot;)++
+1`(223,557,52,0,&quot;No&quot;)++
+1`(224,587,49,0,&quot;No&quot;)++
+1`(225,619,45,0,&quot;No&quot;)++
+1`(226,533,20,0,&quot;No&quot;)++
+1`(227,793,49,0,&quot;No&quot;)++
+1`(228,782,59,0,&quot;No&quot;)++
+1`(229,889,52,0,&quot;No&quot;)++
+1`(230,598,42,1,&quot;No&quot;)++
+1`(231,604,40,1,&quot;No&quot;)++
+1`(232,812,52,1,&quot;No&quot;)++
+1`(233,747,64,0,&quot;No&quot;)++
+1`(234,635,70,0,&quot;No&quot;)++
+1`(235,583,68,0,&quot;No&quot;)++
+1`(236,744,71,1,&quot;No&quot;)++
+1`(237,695,57,0,&quot;No&quot;)++
+1`(239,685,47,0,&quot;No&quot;)++
+1`(240,612,55,0,&quot;No&quot;)++
+1`(241,648,64,0,&quot;No&quot;)++
+1`(242,597,43,0,&quot;No&quot;)++
+1`(243,770,46,0,&quot;No&quot;)++
+1`(244,683,44,0,&quot;No&quot;)++
+1`(245,460,42,0,&quot;No&quot;)++
+1`(246,750,60,0,&quot;No&quot;)++
+1`(247,671,47,0,&quot;No&quot;)++
+1`(248,598,49,0,&quot;No&quot;)++
+1`(249,511,31,1,&quot;No&quot;)++
+1`(250,838,62,1,&quot;Yes&quot;)++
+1`(251,662,58,1,&quot;No&quot;)++
+1`(252,670,48,0,&quot;No&quot;)++
+1`(253,682,63,1,&quot;No&quot;)++
+1`(254,621,72,0,&quot;No&quot;)++
+1`(255,683,38,0,&quot;No&quot;)++
+1`(256,791,43,0,&quot;No&quot;)++
+1`(257,913,66,1,&quot;Yes&quot;)++
+1`(258,773,41,0,&quot;No&quot;)++
+1`(259,667,55,0,&quot;No&quot;)++
+1`(260,822,53,1,&quot;No&quot;)++
+1`(261,628,41,0,&quot;No&quot;)++
+1`(262,764,56,0,&quot;No&quot;)++
+1`(263,590,51,0,&quot;No&quot;)++
+1`(264,807,48,1,&quot;No&quot;)++
+1`(265,707,62,1,&quot;No&quot;)++
+1`(266,542,40,0,&quot;No&quot;)++
+1`(267,489,0,0,&quot;No&quot;)++
+1`(268,723,38,0,&quot;No&quot;)++
+1`(269,830,56,1,&quot;Yes&quot;)++
+1`(270,827,46,0,&quot;No&quot;)++
+1`(271,583,41,0,&quot;No&quot;)++
+1`(272,638,46,0,&quot;No&quot;)++
+1`(273,566,47,0,&quot;No&quot;)++
+1`(274,570,40,0,&quot;No&quot;)++
+1`(275,622,50,0,&quot;No&quot;)++
+1`(276,791,53,1,&quot;No&quot;)++
+1`(277,938,67,1,&quot;Yes&quot;)++
+1`(278,579,54,0,&quot;No&quot;)++
+1`(279,698,45,1,&quot;No&quot;)++
+1`(280,784,61,1,&quot;No&quot;)++
+1`(281,811,52,1,&quot;No&quot;)++
+1`(282,776,63,1,&quot;No&quot;)++
+1`(283,622,48,0,&quot;No&quot;)++
+1`(284,764,50,1,&quot;No&quot;)++
+1`(285,668,49,0,&quot;No&quot;)++
+1`(286,452,58,0,&quot;No&quot;)++
+1`(287,643,56,1,&quot;No&quot;)++
+1`(288,0,27,0,&quot;No&quot;)++
+1`(289,738,62,0,&quot;No&quot;)++
+1`(290,552,50,0,&quot;No&quot;)++
+1`(291,728,46,0,&quot;No&quot;)++
+1`(292,552,57,0,&quot;No&quot;)++
+1`(293,741,47,0,&quot;No&quot;)++
+1`(294,492,50,1,&quot;No&quot;)++
+1`(295,750,56,0,&quot;No&quot;)++
+1`(296,850,47,1,&quot;Yes&quot;)++
+1`(297,824,57,1,&quot;Yes&quot;)++
+1`(298,740,47,0,&quot;No&quot;)++
+1`(299,589,52,1,&quot;No&quot;)++
+1`(300,876,63,0,&quot;No&quot;)++
+1`(301,799,44,0,&quot;No&quot;)++
+1`(302,787,49,0,&quot;No&quot;)++
+1`(303,857,47,1,&quot;Yes&quot;)++
+1`(304,612,50,0,&quot;No&quot;)++
+1`(305,642,59,0,&quot;No&quot;)++
+1`(306,781,63,1,&quot;No&quot;)++
+1`(307,574,47,0,&quot;No&quot;)++
+1`(308,596,44,0,&quot;No&quot;)++
+1`(309,736,52,0,&quot;No&quot;)++
+1`(310,781,57,0,&quot;No&quot;)++
+1`(311,782,45,0,&quot;No&quot;)++
+1`(312,790,66,0,&quot;No&quot;)++
+1`(313,704,51,0,&quot;No&quot;)++
+1`(314,652,50,0,&quot;No&quot;)++
+1`(315,645,45,0,&quot;No&quot;)++
+1`(316,657,52,0,&quot;No&quot;)++
+1`(317,674,44,0,&quot;No&quot;)++
+1`(318,639,50,0,&quot;No&quot;)++
+1`(319,622,55,0,&quot;No&quot;)++
+1`(320,789,43,0,&quot;No&quot;)++
+1`(321,734,55,0,&quot;No&quot;)++
+1`(322,541,38,0,&quot;No&quot;)++
+1`(323,780,50,0,&quot;No&quot;)++
+1`(324,770,54,0,&quot;No&quot;)++
+1`(325,745,52,0,&quot;No&quot;)++
+1`(326,972,82,1,&quot;Yes&quot;)++
+1`(327,803,52,1,&quot;No&quot;)++
+1`(328,691,49,0,&quot;No&quot;)++
+1`(329,634,71,0,&quot;No&quot;)++
+1`(330,755,50,0,&quot;No&quot;)++
+1`(331,724,42,1,&quot;No&quot;)++
+1`(332,832,40,0,&quot;No&quot;)++
+1`(333,771,55,0,&quot;No&quot;)++
+1`(334,598,57,0,&quot;No&quot;)++
+1`(335,828,50,0,&quot;No&quot;)++
+1`(336,652,50,0,&quot;No&quot;)++
+1`(337,742,51,0,&quot;No&quot;)++
+1`(338,620,43,0,&quot;No&quot;)++
+1`(339,810,53,1,&quot;No&quot;)++
+1`(340,705,58,0,&quot;No&quot;)++
+1`(341,523,40,1,&quot;No&quot;)++
+1`(342,743,40,0,&quot;No&quot;)++
+1`(343,654,50,0,&quot;No&quot;)++
+1`(344,684,56,0,&quot;No&quot;)++
+1`(345,769,49,0,&quot;No&quot;)++
+1`(346,811,55,1,&quot;No&quot;)++
+1`(347,724,50,0,&quot;No&quot;)++
+1`(348,661,53,0,&quot;No&quot;)++
+1`(349,517,46,0,&quot;No&quot;)++
+1`(350,845,51,1,&quot;Yes&quot;)++
+1`(351,564,46,0,&quot;No&quot;)++
+1`(352,735,52,0,&quot;No&quot;)++
+1`(353,560,47,0,&quot;No&quot;)++
+1`(354,864,55,1,&quot;Yes&quot;)++
+1`(355,704,56,0,&quot;No&quot;)++
+1`(356,711,57,0,&quot;No&quot;)++
+1`(357,754,50,0,&quot;No&quot;)++
+1`(358,518,46,0,&quot;No&quot;)++
+1`(359,615,53,0,&quot;No&quot;)++
+1`(360,645,57,1,&quot;No&quot;)++
+1`(361,570,30,0,&quot;No&quot;)++
+1`(362,742,55,0,&quot;No&quot;)++
+1`(363,920,61,1,&quot;Yes&quot;)++
+1`(364,695,58,0,&quot;No&quot;)++
+1`(365,735,61,0,&quot;No&quot;)++
+1`(366,623,52,0,&quot;No&quot;)++
+1`(367,763,57,0,&quot;No&quot;)++
+1`(368,907,61,1,&quot;Yes&quot;)++
+1`(369,753,48,0,&quot;No&quot;)++
+1`(370,619,41,0,&quot;No&quot;)++
+1`(371,814,57,0,&quot;No&quot;)++
+1`(372,802,53,0,&quot;No&quot;)++
+1`(373,754,52,0,&quot;No&quot;)++
+1`(374,868,85,1,&quot;Yes&quot;)++
+1`(375,644,50,0,&quot;No&quot;)++
+1`(376,703,63,1,&quot;No&quot;)++
+1`(377,761,50,0,&quot;No&quot;)++
+1`(378,604,63,0,&quot;No&quot;)++
+1`(379,758,28,0,&quot;No&quot;)++
+1`(380,624,46,0,&quot;No&quot;)++
+1`(381,727,53,0,&quot;No&quot;)++
+1`(382,662,52,0,&quot;No&quot;)++
+1`(383,773,51,1,&quot;No&quot;)++
+1`(384,562,63,0,&quot;No&quot;)++
+1`(385,646,50,0,&quot;No&quot;)++
+1`(386,783,54,0,&quot;No&quot;)++
+1`(387,846,54,1,&quot;Yes&quot;)++
+1`(388,531,47,0,&quot;No&quot;)++
+1`(389,737,54,0,&quot;No&quot;)++
+1`(390,802,46,0,&quot;No&quot;)++
+1`(391,828,56,0,&quot;No&quot;)++
+1`(392,693,54,0,&quot;No&quot;)++
+1`(393,894,43,0,&quot;No&quot;)++
+1`(394,614,43,0,&quot;No&quot;)++
+1`(395,637,56,0,&quot;No&quot;)++
+1`(396,618,40,0,&quot;No&quot;)++
+1`(397,874,62,1,&quot;Yes&quot;)++
+1`(398,782,56,0,&quot;No&quot;)++
+1`(399,867,50,1,&quot;Yes&quot;)++
+1`(400,705,55,0,&quot;No&quot;)++
+1`(401,652,48,0,&quot;No&quot;)++
+1`(402,854,59,1,&quot;Yes&quot;)++
+1`(403,662,54,0,&quot;No&quot;)++
+1`(404,745,47,0,&quot;No&quot;)++
+1`(405,720,34,0,&quot;No&quot;)++
+1`(406,760,50,0,&quot;No&quot;)++
+1`(407,813,54,1,&quot;No&quot;)++
+1`(408,529,45,0,&quot;No&quot;)++
+1`(409,792,52,0,&quot;No&quot;)++
+1`(410,657,41,0,&quot;No&quot;)++
+1`(411,686,50,0,&quot;No&quot;)++
+1`(412,814,65,1,&quot;Yes&quot;)++
+1`(413,575,52,0,&quot;No&quot;)++
+1`(414,731,51,0,&quot;No&quot;)++
+1`(415,595,42,0,&quot;No&quot;)++
+1`(416,812,47,0,&quot;No&quot;)++
+1`(417,552,60,0,&quot;No&quot;)++
+1`(418,685,61,0,&quot;No&quot;)++
+1`(419,724,45,0,&quot;No&quot;)++
+1`(420,571,42,0,&quot;No&quot;)++
+1`(421,642,40,0,&quot;No&quot;)++
+1`(422,777,40,0,&quot;No&quot;)++
+1`(423,752,50,0,&quot;No&quot;)++
+1`(424,726,47,0,&quot;No&quot;)++
+1`(425,666,48,0,&quot;No&quot;)++
+1`(426,618,65,0,&quot;No&quot;)++
+1`(427,756,59,0,&quot;No&quot;)++
+1`(428,626,43,0,&quot;No&quot;)++
+1`(429,855,50,1,&quot;No&quot;)++
+1`(430,801,53,0,&quot;No&quot;)++
+1`(431,880,41,0,&quot;No&quot;)++
+1`(432,697,52,0,&quot;No&quot;)++
+1`(433,643,50,0,&quot;No&quot;)++
+1`(434,859,53,1,&quot;Yes&quot;)++
+1`(435,897,52,1,&quot;Yes&quot;)++
+1`(436,649,50,0,&quot;No&quot;)++
+1`(437,664,51,0,&quot;No&quot;)++
+1`(438,588,41,0,&quot;No&quot;)++
+1`(439,751,51,0,&quot;No&quot;)++
+1`(440,552,53,0,&quot;No&quot;)++
+1`(441,824,28,0,&quot;No&quot;)++
+1`(442,749,55,0,&quot;No&quot;)++
+1`(443,767,53,0,&quot;No&quot;)++
+1`(444,589,48,0,&quot;No&quot;)++
+1`(445,583,40,1,&quot;No&quot;)++
+1`(446,731,53,0,&quot;No&quot;)++
+1`(447,782,58,1,&quot;No&quot;)++
+1`(448,873,59,1,&quot;Yes&quot;)++
+1`(449,765,54,0,&quot;No&quot;)++
+1`(450,600,52,0,&quot;No&quot;)++
+1`(451,513,50,0,&quot;No&quot;)++
+1`(452,633,57,0,&quot;No&quot;)++
+1`(453,662,53,0,&quot;No&quot;)++
+1`(454,859,40,1,&quot;No&quot;)++
+1`(455,865,53,0,&quot;No&quot;)++
+1`(456,800,53,0,&quot;No&quot;)++
+1`(457,627,51,0,&quot;No&quot;)++
+1`(458,709,50,0,&quot;No&quot;)++
+1`(459,678,44,0,&quot;No&quot;)++
+1`(460,770,49,0,&quot;No&quot;)++
+1`(461,635,52,0,&quot;No&quot;)++
+1`(462,754,43,0,&quot;No&quot;)++
+1`(463,616,53,0,&quot;No&quot;)++
+1`(464,604,45,0,&quot;No&quot;)++
+1`(465,754,47,0,&quot;No&quot;)++
+1`(466,894,59,0,&quot;No&quot;)++
+1`(467,807,49,0,&quot;No&quot;)++
+1`(468,666,55,0,&quot;No&quot;)++
+1`(469,531,50,0,&quot;No&quot;)++
+1`(470,840,41,1,&quot;No&quot;)++
+1`(471,484,0,0,&quot;No&quot;)++
+1`(472,581,54,0,&quot;No&quot;)++
+1`(473,794,51,0,&quot;No&quot;)++
+1`(474,859,24,0,&quot;No&quot;)++
+1`(475,626,50,0,&quot;No&quot;)++
+1`(476,608,43,0,&quot;No&quot;)++
+1`(477,589,46,0,&quot;No&quot;)++
+1`(478,775,68,0,&quot;No&quot;)++
+1`(479,756,0,0,&quot;No&quot;)++
+1`(480,829,56,0,&quot;No&quot;)++
+1`(481,715,40,1,&quot;No&quot;)++
+1`(482,654,34,0,&quot;No&quot;)++
+1`(483,804,56,0,&quot;No&quot;)++
+1`(484,703,50,0,&quot;No&quot;)++
+1`(485,741,47,0,&quot;No&quot;)++
+1`(486,686,57,0,&quot;No&quot;)++
+1`(487,675,50,0,&quot;No&quot;)++
+1`(488,634,50,0,&quot;No&quot;)++
+1`(489,742,50,0,&quot;No&quot;)++
+1`(490,861,48,0,&quot;No&quot;)++
+1`(491,702,37,0,&quot;No&quot;)++
+1`(492,755,40,0,&quot;No&quot;)++
+1`(493,871,54,0,&quot;No&quot;)++
+1`(494,688,26,0,&quot;No&quot;)++
+1`(495,841,0,0,&quot;No&quot;)++
+1`(496,780,0,0,&quot;No&quot;)++
+1`(497,815,53,1,&quot;No&quot;)++
+1`(498,856,52,1,&quot;Yes&quot;)++
+1`(499,817,42,0,&quot;No&quot;)++
+1`(500,842,53,0,&quot;No&quot;)++
+1`(501,704,48,0,&quot;No&quot;)++
+1`(502,856,0,0,&quot;No&quot;)++
+1`(503,804,0,0,&quot;No&quot;)++
+1`(504,814,66,0,&quot;No&quot;)++
+1`(505,723,49,0,&quot;No&quot;)++
+1`(506,834,73,0,&quot;No&quot;)++
+1`(507,893,59,0,&quot;No&quot;)++
+1`(508,780,48,0,&quot;No&quot;)++
+1`(509,839,38,0,&quot;No&quot;)++
+1`(510,803,59,0,&quot;No&quot;)++
+1`(511,841,62,1,&quot;Yes&quot;)++
+1`(512,693,48,0,&quot;No&quot;)++
+1`(513,842,49,0,&quot;No&quot;)++
+1`(514,830,55,0,&quot;No&quot;)++
+1`(515,501,0,0,&quot;No&quot;)++
+1`(516,806,47,0,&quot;No&quot;)++
+1`(517,849,53,1,&quot;Yes&quot;)++
+1`(518,629,0,0,&quot;No&quot;)++
+1`(519,681,50,0,&quot;No&quot;)++
+1`(520,725,50,0,&quot;No&quot;)++
+1`(521,826,64,0,&quot;No&quot;)++
+1`(522,782,44,0,&quot;No&quot;)++
+1`(523,871,44,0,&quot;No&quot;)++
+1`(524,728,56,0,&quot;No&quot;)++
+1`(525,905,59,1,&quot;Yes&quot;)++
+1`(526,690,46,0,&quot;No&quot;)++
+1`(527,600,53,0,&quot;No&quot;)++
+1`(528,741,41,0,&quot;No&quot;)++
+1`(529,691,0,0,&quot;No&quot;)++
+1`(530,698,45,0,&quot;No&quot;)++
+1`(531,557,26,0,&quot;No&quot;)++
+1`(532,618,50,0,&quot;No&quot;)++
+1`(533,856,47,0,&quot;No&quot;)++
+1`(534,766,0,0,&quot;No&quot;)++
+1`(535,848,54,0,&quot;No&quot;)++
+1`(536,529,47,0,&quot;No&quot;)++
+1`(537,608,44,0,&quot;No&quot;)++
+1`(538,747,46,0,&quot;No&quot;)++
+1`(539,888,59,0,&quot;No&quot;)++
+1`(540,501,0,0,&quot;No&quot;)++
+1`(541,817,50,0,&quot;No&quot;)++
+1`(542,852,44,1,&quot;Yes&quot;)++
+1`(543,674,49,0,&quot;No&quot;)++
+1`(544,920,60,0,&quot;No&quot;)++
+1`(545,843,0,0,&quot;No&quot;)++
+1`(546,827,58,0,&quot;No&quot;)++
+1`(547,690,0,0,&quot;No&quot;)++
+1`(548,833,83,0,&quot;No&quot;)++
+1`(549,713,0,0,&quot;No&quot;)++
+1`(550,664,50,0,&quot;No&quot;)++
+1`(551,707,49,0,&quot;No&quot;)++
+1`(552,658,41,0,&quot;No&quot;)++
+1`(553,764,54,0,&quot;No&quot;)++
+1`(554,801,52,0,&quot;No&quot;)++
+1`(555,627,55,0,&quot;No&quot;)++
+1`(556,879,49,0,&quot;No&quot;)++
+1`(557,862,46,0,&quot;No&quot;)++
+1`(558,892,52,0,&quot;No&quot;)++
+1`(559,661,41,0,&quot;No&quot;)++
+1`(560,811,22,0,&quot;No&quot;)++
+1`(561,701,40,0,&quot;No&quot;)++
+1`(562,706,54,0,&quot;No&quot;)++
+1`(563,882,43,0,&quot;No&quot;)++
+1`(564,726,50,0,&quot;No&quot;)++
+1`(565,875,51,0,&quot;No&quot;)++
+1`(566,704,43,0,&quot;No&quot;)++
+1`(567,816,63,0,&quot;No&quot;)++
+1`(568,642,52,0,&quot;No&quot;)++
+1`(569,765,60,1,&quot;No&quot;)++
+1`(570,689,46,0,&quot;No&quot;)++
+1`(571,647,33,0,&quot;No&quot;)++
+1`(572,825,51,1,&quot;No&quot;)++
+1`(573,860,57,0,&quot;No&quot;)++
+1`(574,754,51,0,&quot;No&quot;)++
+1`(575,748,60,0,&quot;No&quot;)++
+1`(576,818,55,0,&quot;No&quot;)++
+1`(577,546,50,0,&quot;No&quot;)++
+1`(578,780,57,0,&quot;No&quot;)++
+1`(579,683,60,0,&quot;No&quot;)++
+1`(580,682,60,0,&quot;No&quot;)++
+1`(581,659,52,0,&quot;No&quot;)++
+1`(582,694,55,0,&quot;No&quot;)++
+1`(583,717,54,0,&quot;No&quot;)++
+1`(584,816,50,0,&quot;No&quot;)++
+1`(585,723,43,0,&quot;No&quot;)++
+1`(586,814,50,0,&quot;No&quot;)++
+1`(587,788,32,0,&quot;No&quot;)++
+1`(588,794,0,0,&quot;No&quot;)++
+1`(589,763,41,0,&quot;No&quot;)++
+1`(590,757,48,0,&quot;No&quot;)++
+1`(591,854,43,0,&quot;No&quot;)++
+1`(592,913,62,1,&quot;Yes&quot;)++
+1`(593,800,49,0,&quot;No&quot;)++
+1`(594,650,31,0,&quot;No&quot;)++
+1`(595,787,50,0,&quot;No&quot;)++
+1`(596,746,51,0,&quot;No&quot;)++
+1`(597,627,59,0,&quot;No&quot;)++
+1`(598,744,50,0,&quot;No&quot;)++
+1`(599,604,42,0,&quot;No&quot;)++
+1`(600,818,41,0,&quot;No&quot;)++
+1`(601,794,46,0,&quot;No&quot;)++
+1`(602,590,47,0,&quot;No&quot;)++
+1`(603,775,53,0,&quot;No&quot;)++
+1`(604,879,49,0,&quot;No&quot;)++
+1`(605,613,50,0,&quot;No&quot;)++
+1`(606,812,53,0,&quot;No&quot;)++
+1`(607,745,50,0,&quot;No&quot;)++
+1`(608,622,50,0,&quot;No&quot;)++
+1`(609,840,50,0,&quot;No&quot;)++
+1`(610,791,59,1,&quot;No&quot;)++
+1`(611,611,34,0,&quot;No&quot;)++
+1`(612,815,60,0,&quot;No&quot;)++
+1`(613,815,49,0,&quot;No&quot;)++
+1`(614,679,55,0,&quot;No&quot;)++
+1`(615,794,50,0,&quot;No&quot;)++
+1`(616,772,40,1,&quot;No&quot;)++
+1`(617,800,43,0,&quot;No&quot;)++
+1`(618,801,50,0,&quot;No&quot;)++
+1`(619,592,72,0,&quot;No&quot;)++
+1`(620,729,34,0,&quot;No&quot;)++
+1`(621,601,45,0,&quot;No&quot;)++
+1`(622,756,43,0,&quot;No&quot;)++
+1`(623,787,50,0,&quot;No&quot;)++
+1`(624,847,44,0,&quot;No&quot;)++
+1`(625,682,52,0,&quot;No&quot;)++
+1`(626,920,57,1,&quot;Yes&quot;)++
+1`(627,730,55,0,&quot;No&quot;)++
+1`(628,670,43,0,&quot;No&quot;)++
+1`(629,565,47,0,&quot;No&quot;)++
+1`(630,915,60,0,&quot;No&quot;)++
+1`(631,731,60,0,&quot;No&quot;)++
+1`(632,583,48,0,&quot;No&quot;)++
+1`(633,810,57,0,&quot;No&quot;)++
+1`(634,951,55,1,&quot;Yes&quot;)++
+1`(635,604,43,0,&quot;No&quot;)++
+1`(636,672,52,0,&quot;No&quot;)++
+1`(637,643,50,0,&quot;No&quot;)++
+1`(638,888,66,1,&quot;Yes&quot;)++
+1`(639,623,60,0,&quot;No&quot;)++
+1`(640,819,58,0,&quot;No&quot;)++
+1`(641,693,45,0,&quot;No&quot;)++
+1`(642,842,44,0,&quot;No&quot;)++
+1`(643,739,53,0,&quot;No&quot;)++
+1`(644,643,48,0,&quot;No&quot;)++
+1`(645,708,52,0,&quot;No&quot;)++
+1`(646,838,61,1,&quot;Yes&quot;)++
+1`(647,734,43,0,&quot;No&quot;)++
+1`(648,678,45,0,&quot;No&quot;)++
+1`(649,679,50,0,&quot;No&quot;)++
+1`(650,812,69,0,&quot;No&quot;)++
+1`(651,974,81,0,&quot;No&quot;)++
+1`(652,863,64,0,&quot;No&quot;)++
+1`(653,702,43,0,&quot;No&quot;)++
+1`(654,638,58,0,&quot;No&quot;)++
+1`(655,816,57,0,&quot;No&quot;)++
+1`(656,841,46,0,&quot;No&quot;)++
+1`(657,647,0,0,&quot;No&quot;)++
+1`(658,860,61,1,&quot;Yes&quot;)++
+1`(659,922,72,0,&quot;No&quot;)++
+1`(660,925,67,1,&quot;Yes&quot;)++
+1`(661,811,63,0,&quot;No&quot;)++
+1`(662,751,48,0,&quot;No&quot;)++
+1`(663,916,66,0,&quot;No&quot;)++
+1`(664,773,65,1,&quot;No&quot;)++
+1`(665,589,49,0,&quot;No&quot;)++
+1`(666,792,49,0,&quot;No&quot;)++
+1`(667,744,58,0,&quot;No&quot;)++
+1`(668,725,47,0,&quot;No&quot;)++
+1`(669,799,41,0,&quot;No&quot;)++
+1`(670,801,44,0,&quot;No&quot;)++
+1`(671,840,54,0,&quot;No&quot;)++
+1`(672,777,54,0,&quot;No&quot;)++
+1`(673,683,43,0,&quot;No&quot;)++
+1`(674,839,52,0,&quot;No&quot;)++
+1`(675,816,51,0,&quot;No&quot;)++
+1`(676,736,50,0,&quot;No&quot;)++
+1`(677,720,57,0,&quot;No&quot;)++
+1`(678,647,57,0,&quot;No&quot;)++
+1`(679,454,53,0,&quot;No&quot;)++
+1`(680,484,0,0,&quot;No&quot;)++
+1`(681,603,34,0,&quot;No&quot;)++
+1`(682,722,39,0,&quot;No&quot;)++
+1`(683,879,58,0,&quot;No&quot;)++
+1`(684,806,61,0,&quot;No&quot;)++
+1`(685,892,0,0,&quot;No&quot;)++
+1`(686,656,46,0,&quot;No&quot;)++
+1`(687,842,52,0,&quot;No&quot;)++
+1`(688,730,54,0,&quot;No&quot;)++
+1`(689,731,58,0,&quot;No&quot;)++
+1`(690,674,61,0,&quot;No&quot;)++
+1`(691,602,44,0,&quot;No&quot;)++
+1`(692,772,44,0,&quot;No&quot;)++
+1`(693,722,62,0,&quot;No&quot;)++
+1`(694,729,50,0,&quot;No&quot;)++
+1`(695,823,45,0,&quot;No&quot;)++
+1`(696,860,48,0,&quot;No&quot;)++
+1`(697,857,63,0,&quot;No&quot;)++
+1`(698,690,38,0,&quot;No&quot;)++
+1`(699,759,48,0,&quot;No&quot;)++
+1`(700,820,53,0,&quot;No&quot;)++
+1`(701,609,54,0,&quot;No&quot;)++
+1`(702,732,42,0,&quot;No&quot;)++
+1`(703,951,73,0,&quot;No&quot;)++
+1`(704,857,57,1,&quot;Yes&quot;)++
+1`(705,763,57,0,&quot;No&quot;)++
+1`(706,780,63,0,&quot;No&quot;)++
+1`(707,494,0,0,&quot;No&quot;)++
+1`(708,568,57,0,&quot;No&quot;)++
+1`(709,839,49,0,&quot;No&quot;)++
+1`(710,865,69,1,&quot;Yes&quot;)++
+1`(711,679,47,0,&quot;No&quot;)++
+1`(712,803,37,0,&quot;No&quot;)++
+1`(713,490,57,0,&quot;No&quot;)++
+1`(714,522,46,0,&quot;No&quot;)++
+1`(715,705,0,0,&quot;No&quot;)++
+1`(716,570,56,0,&quot;No&quot;)++
+1`(717,778,50,0,&quot;No&quot;)++
+1`(718,1018,49,1,&quot;Yes&quot;)++
+1`(719,712,32,0,&quot;No&quot;)++
+1`(720,835,62,1,&quot;Yes&quot;)++
+1`(721,853,57,1,&quot;No&quot;)++
+1`(722,772,57,1,&quot;No&quot;)++
+1`(723,731,64,0,&quot;No&quot;)++
+1`(724,741,56,0,&quot;No&quot;)++
+1`(725,718,50,0,&quot;No&quot;)++
+1`(726,809,68,1,&quot;Yes&quot;)++
+1`(727,817,59,0,&quot;No&quot;)++
+1`(728,671,30,0,&quot;No&quot;)++
+1`(729,557,0,0,&quot;No&quot;)++
+1`(730,782,50,0,&quot;No&quot;)++
+1`(731,517,0,0,&quot;No&quot;)++
+1`(732,678,48,0,&quot;No&quot;)</text>
+        </initmark>
+      </place>
+      <place id="ID1412440080">
+        <posattr x="378.000000"
+                 y="-22.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>Yes</text>
+        <ellipse w="76.000000"
+                 h="76.000000"/>
+        <token x="-10.000000"
+               y="0.000000"/>
+        <marking x="61.500000"
+                 y="58.000000"
+                 hidden="false">
+          <snap snap_id="0"
+                anchor.horizontal="1"
+                anchor.vertical="2"/>
+        </marking>
+        <type id="ID1412440081">
+          <posattr x="443.000000"
+                   y="-58.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1">CANDIDATE</text>
+        </type>
+        <initmark id="ID1412440082">
+          <posattr x="439.000000"
+                   y="14.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1"/>
+        </initmark>
+      </place>
+      <trans id="ID1412790752"
+             explicit="false">
+        <posattr x="12.000000"
+                 y="168.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>Rule1</text>
+        <box w="122.000000"
+             h="42.000000"/>
+        <binding x="7.200000"
+                 y="-3.000000"/>
+        <cond id="ID1412790753">
+          <posattr x="12.000000"
+                   y="200.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1">[dv&gt;0,terminaldegree &gt;=813,admissiontest&gt;57]</text>
+        </cond>
+        <time id="ID1412790754">
+          <posattr x="87.500000"
+                   y="200.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1"/>
+        </time>
+        <code id="ID1412790755">
+          <posattr x="107.500000"
+                   y="115.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1"/>
+        </code>
+        <priority id="ID1412790757">
+          <posattr x="-87.000000"
+                   y="136.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1"/>
+        </priority>
+      </trans>
+      <arc id="ID1412790888"
+           orientation="PtoT"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="ID1412790752"/>
+        <placeend idref="ID1412415160"/>
+        <bendpoint id="ID1412791010"
+                   serial="1">
+          <posattr x="-336.000000"
+                   y="168.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+        </bendpoint>
+        <annot id="ID1412790889">
+          <posattr x="-194.000000"
+                   y="179.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1">(sr,terminaldegree,admissiontest,dv,label)</text>
+        </annot>
+      </arc>
+      <arc id="ID1412791398"
+           orientation="TtoP"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="ID1412790752"/>
+        <placeend idref="ID1412440080"/>
+        <bendpoint id="ID1412791534"
+                   serial="1">
+          <posattr x="378.000000"
+                   y="168.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+        </bendpoint>
+        <annot id="ID1412791399">
+          <posattr x="215.000000"
+                   y="179.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1">(sr,terminaldegree,admissiontest,dv,label)</text>
+        </annot>
+      </arc>
+      <constraints/>
+    </page>
+    <instances>
+      <instance id="ID2149"
+                page="ID6"/>
+    </instances>
+    <options>
+      <option name="realtimestamp">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="fair_be">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="global_fairness">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="outputdirectory">
+        <value>
+          <text>&lt;same as model&gt;</text>
+        </value>
+      </option>
+      <option name="extensions.10006.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10002.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10003.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10005.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10001.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="repavg">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="repciavg">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="repcount">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="repfirstval">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="replastval">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="repmax">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="repmin">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="repssquare">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="repssqdev">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="repstddev">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="repsum">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="repvariance">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="avg">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="ciavg">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="count">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="firstval">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="lastval">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="max">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="min">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="ssquare">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="ssqdev">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="stddev">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="sum">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="variance">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="firstupdate">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="interval">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="lastupdate">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="untimedavg">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="untimedciavg">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="untimedcount">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="untimedfirstval">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="untimedlastval">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="untimedmax">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="untimedmin">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="untimedssquare">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="untimedssqdev">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="untimedstddev">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="untimedsum">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="untimedvariance">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+    </options>
+    <binders>
+      <cpnbinder id="ID1412671820"
+                 x="450"
+                 y="121"
+                 width="1016"
+                 height="601">
+        <sheets>
+          <cpnsheet id="ID2215"
+                    panx="-47.000000"
+                    pany="124.000000"
+                    zoom="1.000000"
+                    instance="ID2149">
+            <zorder>
+              <position value="0"/>
+            </zorder>
+          </cpnsheet>
+        </sheets>
+        <zorder>
+          <position value="0"/>
+        </zorder>
+      </cpnbinder>
+    </binders>
+    <monitorblock name="Monitors"/>
+    <IndexNode expanded="true">
+      <IndexNode expanded="false"/>
+      <IndexNode expanded="false"/>
+      <IndexNode expanded="false">
+        <IndexNode expanded="false"/>
+        <IndexNode expanded="false"/>
+        <IndexNode expanded="false"/>
+        <IndexNode expanded="false"/>
+        <IndexNode expanded="false">
+          <IndexNode expanded="false">
+            <IndexNode expanded="false">
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+            </IndexNode>
+            <IndexNode expanded="false">
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+            </IndexNode>
+          </IndexNode>
+          <IndexNode expanded="false">
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+          </IndexNode>
+        </IndexNode>
+        <IndexNode expanded="false">
+          <IndexNode expanded="false"/>
+          <IndexNode expanded="false"/>
+          <IndexNode expanded="false"/>
+          <IndexNode expanded="false"/>
+          <IndexNode expanded="false"/>
+        </IndexNode>
+      </IndexNode>
+      <IndexNode expanded="false">
+        <IndexNode expanded="false"/>
+      </IndexNode>
+      <IndexNode expanded="true">
+        <IndexNode expanded="false">
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+        </IndexNode>
+        <IndexNode expanded="true">
+          <IndexNode expanded="false"/>
+          <IndexNode expanded="false"/>
+          <IndexNode expanded="false"/>
+          <IndexNode expanded="false"/>
+          <IndexNode expanded="false"/>
+          <IndexNode expanded="false"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+        </IndexNode>
+      </IndexNode>
+      <IndexNode expanded="false"/>
+      <IndexNode expanded="true"/>
+    </IndexNode>
+  </cpnet>
+</workspaceElements>
