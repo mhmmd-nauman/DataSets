@@ -154,18 +154,18 @@
         <fillattr colour="White"
                   pattern=""
                   filled="false"/>
-        <lineattr colour="Black"
+        <lineattr colour="Blue"
                   thick="1"
                   type="Solid"/>
-        <textattr colour="Black"
+        <textattr colour="Blue"
                   bold="false"/>
-        <text>P1</text>
+        <text>Start</text>
         <ellipse w="78.000000"
                  h="74.000000"/>
         <token x="-10.000000"
                y="0.000000"/>
-        <marking x="-320.000000"
-                 y="89.000000"
+        <marking x="-164.500000"
+                 y="-1.000000"
                  hidden="false">
           <snap snap_id="0"
                 anchor.horizontal="2"
@@ -177,17 +177,17 @@
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
-          <lineattr colour="Black"
+          <lineattr colour="Blue"
                     thick="0"
                     type="Solid"/>
-          <textattr colour="Black"
+          <textattr colour="Blue"
                     bold="false"/>
           <text tool="CPN Tools"
                 version="4.0.1">CANDIDATE</text>
         </type>
-        <initmark id="ID1414576596">
-          <posattr x="-474.000000"
-                   y="4795.000000"/>
+        <initmark id="ID1414576538">
+          <posattr x="-497.000000"
+                   y="4769.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -936,18 +936,18 @@
         <fillattr colour="White"
                   pattern=""
                   filled="false"/>
-        <lineattr colour="Black"
+        <lineattr colour="Green"
                   thick="1"
                   type="Solid"/>
-        <textattr colour="Black"
+        <textattr colour="Green"
                   bold="false"/>
         <text>Yes</text>
         <ellipse w="76.000000"
                  h="76.000000"/>
         <token x="-10.000000"
                y="0.000000"/>
-        <marking x="61.500000"
-                 y="58.000000"
+        <marking x="24.000000"
+                 y="-9.000000"
                  hidden="false">
           <snap snap_id="0"
                 anchor.horizontal="1"
@@ -959,10 +959,10 @@
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
-          <lineattr colour="Black"
+          <lineattr colour="Green"
                     thick="0"
                     type="Solid"/>
-          <textattr colour="Black"
+          <textattr colour="Green"
                     bold="false"/>
           <text tool="CPN Tools"
                 version="4.0.1">CANDIDATE</text>
@@ -973,10 +973,10 @@
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
-          <lineattr colour="Black"
+          <lineattr colour="Green"
                     thick="0"
                     type="Solid"/>
-          <textattr colour="Black"
+          <textattr colour="Green"
                     bold="false"/>
           <text tool="CPN Tools"
                 version="4.0.1"/>
@@ -1011,7 +1011,7 @@
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">[dv&gt;0,terminaldegree &lt;=842,admissiontest&lt;=57]</text>
+                version="4.0.1">[dv&gt;0,terminaldegree &gt;=830,admissiontest&gt;=50]</text>
         </cond>
         <time id="ID1412780258">
           <posattr x="92.500000"
@@ -1402,8 +1402,8 @@
                  height="601">
         <sheets>
           <cpnsheet id="ID2215"
-                    panx="-333.000000"
-                    pany="63.000000"
+                    panx="-329.000000"
+                    pany="-5.000000"
                     zoom="1.000000"
                     instance="ID2149">
             <zorder>
@@ -1482,7 +1482,9 @@
           <IndexNode expanded="false"/>
         </IndexNode>
       </IndexNode>
-      <IndexNode expanded="false"/>
+      <IndexNode expanded="false">
+        <IndexNode expanded="false"/>
+      </IndexNode>
       <IndexNode expanded="true">
         <IndexNode expanded="false">
           <IndexNode expanded="true"/>

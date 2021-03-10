@@ -931,8 +931,8 @@
         </initmark>
       </place>
       <place id="ID1412472155">
-        <posattr x="378.000000"
-                 y="-106.000000"/>
+        <posattr x="420.000000"
+                 y="-84.000000"/>
         <fillattr colour="White"
                   pattern=""
                   filled="false"/>
@@ -954,8 +954,8 @@
                 anchor.vertical="3"/>
         </marking>
         <type id="ID1412472156">
-          <posattr x="378.000000"
-                   y="-155.000000"/>
+          <posattr x="420.000000"
+                   y="-133.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -968,8 +968,8 @@
                 version="4.0.1">CANDIDATE</text>
         </type>
         <initmark id="ID1412472157">
-          <posattr x="441.000000"
-                   y="-69.000000"/>
+          <posattr x="483.000000"
+                   y="-47.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -1402,8 +1402,8 @@
                  height="601">
         <sheets>
           <cpnsheet id="ID2215"
-                    panx="-152.000000"
-                    pany="-70.000000"
+                    panx="-264.000000"
+                    pany="-74.000000"
                     zoom="1.000000"
                     instance="ID2149">
             <zorder>
@@ -1482,9 +1482,7 @@
           <IndexNode expanded="false"/>
         </IndexNode>
       </IndexNode>
-      <IndexNode expanded="false">
-        <IndexNode expanded="false"/>
-      </IndexNode>
+      <IndexNode expanded="false"/>
       <IndexNode expanded="true">
         <IndexNode expanded="false">
           <IndexNode expanded="true"/>

@@ -982,58 +982,6 @@
                 version="4.0.1"/>
         </initmark>
       </place>
-      <place id="ID1412472155">
-        <posattr x="378.000000"
-                 y="-106.000000"/>
-        <fillattr colour="White"
-                  pattern=""
-                  filled="false"/>
-        <lineattr colour="Black"
-                  thick="1"
-                  type="Solid"/>
-        <textattr colour="Black"
-                  bold="false"/>
-        <text>No</text>
-        <ellipse w="80.000000"
-                 h="76.000000"/>
-        <token x="-10.000000"
-               y="0.000000"/>
-        <marking x="-11.000000"
-                 y="-48.000000"
-                 hidden="false">
-          <snap snap_id="0"
-                anchor.horizontal="1"
-                anchor.vertical="1"/>
-        </marking>
-        <type id="ID1412472156">
-          <posattr x="378.000000"
-                   y="-155.000000"/>
-          <fillattr colour="White"
-                    pattern="Solid"
-                    filled="false"/>
-          <lineattr colour="Black"
-                    thick="0"
-                    type="Solid"/>
-          <textattr colour="Black"
-                    bold="false"/>
-          <text tool="CPN Tools"
-                version="4.0.1">CANDIDATE</text>
-        </type>
-        <initmark id="ID1412472157">
-          <posattr x="441.000000"
-                   y="-69.000000"/>
-          <fillattr colour="White"
-                    pattern="Solid"
-                    filled="false"/>
-          <lineattr colour="Black"
-                    thick="0"
-                    type="Solid"/>
-          <textattr colour="Black"
-                    bold="false"/>
-          <text tool="CPN Tools"
-                version="4.0.1"/>
-        </initmark>
-      </place>
       <trans id="ID1412415174"
              explicit="false">
         <posattr x="14.000000"
@@ -1454,8 +1402,8 @@
                  height="601">
         <sheets>
           <cpnsheet id="ID2215"
-                    panx="-300.000000"
-                    pany="31.000000"
+                    panx="-267.000000"
+                    pany="61.000000"
                     zoom="1.000000"
                     instance="ID2149">
             <zorder>
@@ -1534,9 +1482,7 @@
           <IndexNode expanded="false"/>
         </IndexNode>
       </IndexNode>
-      <IndexNode expanded="false">
-        <IndexNode expanded="false"/>
-      </IndexNode>
+      <IndexNode expanded="false"/>
       <IndexNode expanded="true">
         <IndexNode expanded="false">
           <IndexNode expanded="true"/>
