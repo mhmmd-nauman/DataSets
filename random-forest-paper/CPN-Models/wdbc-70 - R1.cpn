@@ -67,6 +67,13 @@
           </alias>
           <layout>colset WA = REAL;</layout>
         </color>
+        <color id="ID1414578034">
+          <id>WP</id>
+          <alias>
+            <id>REAL</id>
+          </alias>
+          <layout>colset WP = REAL;</layout>
+        </color>
         <color id="ID1412415362">
           <id>WCP</id>
           <alias>
@@ -90,12 +97,11 @@
           <id>P</id>
           <product>
             <id>NO</id>
-            <id>WA</id>
+            <id>WP</id>
             <id>WCP</id>
-            <id>SEA</id>
             <id>L</id>
           </product>
-          <layout>colset P = product NO*WA *WCP*SEA*L;</layout>
+          <layout>colset P = product NO*WP *WCP*L;</layout>
         </color>
         <var id="ID1412416313">
           <type>
@@ -110,6 +116,13 @@
           </type>
           <id>wcp</id>
           <layout>var wcp : WCP ;</layout>
+        </var>
+        <var id="ID1414578097">
+          <type>
+            <id>WP</id>
+          </type>
+          <id>wp</id>
+          <layout>var wp: WP;</layout>
         </var>
         <var id="ID1412438155">
           <type>
@@ -135,7 +148,7 @@
       </block>
     </globbox>
     <page id="ID6">
-      <pageattr name="BSCS SPRING 18"/>
+      <pageattr name="WDBC"/>
       <place id="ID1412415160">
         <posattr x="-489.000000"
                  y="168.000000"/>
@@ -152,12 +165,12 @@
                  h="74.000000"/>
         <token x="-10.000000"
                y="0.000000"/>
-        <marking x="-1.000000"
-                 y="0.000000"
+        <marking x="-134.000000"
+                 y="30.000000"
                  hidden="false">
-          <snap snap_id="2"
-                anchor.horizontal="3"
-                anchor.vertical="2"/>
+          <snap snap_id="0"
+                anchor.horizontal="2"
+                anchor.vertical="3"/>
         </marking>
         <type id="ID1412415161">
           <posattr x="-547.000000"
@@ -173,9 +186,9 @@
           <text tool="CPN Tools"
                 version="4.0.1">P</text>
         </type>
-        <initmark id="ID1414576511">
-          <posattr x="-426.000000"
-                   y="203.000000"/>
+        <initmark id="ID1414582460">
+          <posattr x="-641.000000"
+                   y="1430.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -185,7 +198,233 @@
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1"/>
+                version="4.0.1">1`(20,99.7,0.1288,&quot;B&quot;)++
+1`(21,96.09,0.07283,&quot;B&quot;)++
+1`(22,65.13,0.06227,&quot;B&quot;)++
+1`(38,84.46,0.05013,&quot;B&quot;)++
+1`(47,57.26,0.02564,&quot;B&quot;)++
+1`(49,89.88,0.06548,&quot;B&quot;)++
+1`(50,99.0,0.1282,&quot;B&quot;)++
+1`(51,82.98,0.03715,&quot;B&quot;)++
+1`(52,96.08,0.08586,&quot;B&quot;)++
+1`(53,83.67,0.06296,&quot;B&quot;)++
+1`(56,81.81,0.06316,&quot;B&quot;)++
+1`(59,90.24,0.01111,&quot;B&quot;)++
+1`(60,59.9,0.04419,&quot;B&quot;)++
+1`(61,69.86,0.02579,&quot;B&quot;)++
+1`(62,62.06,0.02778,&quot;B&quot;)++
+1`(64,65.59,0.05087,&quot;B&quot;)++
+1`(67,67.03,0.06517,&quot;B&quot;)++
+1`(68,78.0,0.06961,&quot;B&quot;)++
+1`(69,65.5,0.175,&quot;B&quot;)++
+1`(70,85.67,0.05882,&quot;B&quot;)++
+1`(72,62.56,0.04786,&quot;B&quot;)++
+1`(75,89.71,0.0866,&quot;B&quot;)++
+1`(77,91.36,0.07407,&quot;B&quot;)++
+1`(80,91.88,0.07926,&quot;B&quot;)++
+1`(81,84.53,0.06127,&quot;B&quot;)++
+1`(82,96.66,0.1708,&quot;B&quot;)++
+1`(85,87.78,0.07632,&quot;B&quot;)++
+1`(89,91.46,0.1205,&quot;B&quot;)++
+1`(90,109.4,0.1397,&quot;B&quot;)++
+1`(91,102.9,0.06946,&quot;B&quot;)++
+1`(93,104.5,0.1001,&quot;B&quot;)++
+1`(94,97.59,0.07911,&quot;B&quot;)++
+1`(97,82.14,0.05882,&quot;B&quot;)++
+1`(98,68.81,0.02381,&quot;B&quot;)++
+1`(99,82.96,0.08449,&quot;B&quot;)++
+1`(102,50.41,0.0,&quot;B&quot;)++
+1`(103,84.58,0.07431,&quot;B&quot;)++
+1`(104,72.22,0.09749,&quot;B&quot;)++
+1`(105,74.22,0.03203,&quot;B&quot;)++
+1`(107,85.51,0.1218,&quot;B&quot;)++
+1`(108,85.56,0.08442,&quot;B&quot;)++
+1`(110,83.99,0.08278,&quot;B&quot;)++
+1`(111,71.68,0.05334,&quot;B&quot;)++
+1`(112,89.0,0.1105,&quot;B&quot;)++
+1`(113,107.0,0.1505,&quot;B&quot;)++
+1`(114,72.62,0.06136,&quot;B&quot;)++
+1`(115,64.48,0.105,&quot;B&quot;)++
+1`(116,87.54,0.07247,&quot;B&quot;)++
+1`(117,63.34,0.03846,&quot;B&quot;)++
+1`(121,83.74,0.08958,&quot;B&quot;)++
+1`(124,102.8,0.1221,&quot;B&quot;)++
+1`(125,91.99,0.08978,&quot;B&quot;)++
+1`(126,100.3,0.05104,&quot;B&quot;)++
+1`(129,105.9,0.1423,&quot;B&quot;)++
+1`(131,91.38,0.08187,&quot;B&quot;)++
+1`(134,114.3,0.1374,&quot;B&quot;)++
+1`(137,86.16,0.06968,&quot;B&quot;)++
+1`(138,79.93,0.08476,&quot;B&quot;)++
+1`(140,76.53,0.08611,&quot;B&quot;)++
+1`(141,66.53,0.0,&quot;B&quot;)++
+1`(143,82.66,0.06402,&quot;B&quot;)++
+1`(144,97.17,0.1012,&quot;B&quot;)++
+1`(145,77.79,0.03413,&quot;B&quot;)++
+1`(146,86.26,0.06042,&quot;B&quot;)++
+1`(148,107.1,0.08405,&quot;B&quot;)++
+1`(149,108.6,0.1599,&quot;B&quot;)++
+1`(150,97.19,0.06019,&quot;B&quot;)++
+1`(151,90.82,0.06296,&quot;B&quot;)++
+1`(152,58.08,0.07879,&quot;B&quot;)++
+1`(153,71.04,0.1571,&quot;B&quot;)++
+1`(154,76.25,0.05506,&quot;B&quot;)++
+1`(155,97.67,0.09722,&quot;B&quot;)++
+1`(156,86.6,0.08211,&quot;B&quot;)++
+1`(158,120.3,0.08436,&quot;B&quot;)++
+1`(159,84.08,0.07025,&quot;B&quot;)++
+1`(160,78.07,0.03953,&quot;B&quot;)++
+1`(161,88.91,0.07909,&quot;B&quot;)++
+1`(164,87.36,0.08194,&quot;B&quot;)++
+1`(166,102.3,0.05754,&quot;B&quot;)++
+1`(167,73.66,0.04603,&quot;B&quot;)++
+1`(170,104.6,0.08485,&quot;B&quot;)++
+1`(171,86.97,0.09391,&quot;B&quot;)++
+1`(174,72.01,0.04306,&quot;B&quot;)++
+1`(175,73.2,0.0,&quot;B&quot;)++
+1`(176,58.36,0.0,&quot;B&quot;)++
+1`(177,73.07,0.0991,&quot;B&quot;)++
+1`(179,88.18,0.009259,&quot;B&quot;)++
+1`(180,86.7,0.0399,&quot;B&quot;)++
+1`(184,79.12,0.06296,&quot;B&quot;)++
+1`(186,75.39,0.01042,&quot;B&quot;)++
+1`(188,84.42,0.1099,&quot;B&quot;)++
+1`(189,79.57,0.04306,&quot;B&quot;)++
+1`(190,86.65,0.04815,&quot;B&quot;)++
+1`(192,89.04,0.04773,&quot;B&quot;)++
+1`(193,62.25,0.0,&quot;B&quot;)++
+1`(196,90.81,0.08235,&quot;B&quot;)++
+1`(201,92.15,0.108,&quot;B&quot;)++
+1`(205,96.05,0.1015,&quot;B&quot;)++
+1`(207,67.08,0.05588,&quot;B&quot;)++
+1`(209,99.48,0.1126,&quot;B&quot;)++
+1`(210,113.7,0.1035,&quot;B&quot;)++
+1`(212,85.22,0.06913,&quot;B&quot;)++
+1`(217,86.2,0.1138,&quot;B&quot;)++
+1`(218,75.4,0.03571,&quot;B&quot;)++
+1`(221,99.71,0.08056,&quot;B&quot;)++
+1`(222,101.1,0.0909,&quot;B&quot;)++
+1`(223,71.94,0.05575,&quot;B&quot;)++
+1`(225,98.84,0.09678,&quot;B&quot;)++
+1`(226,110.4,0.1087,&quot;B&quot;)++
+1`(227,73.47,0.04464,&quot;B&quot;)++
+1`(228,114.2,0.1379,&quot;B&quot;)++
+1`(229,90.67,0.118,&quot;B&quot;)++
+1`(232,79.82,0.02083,&quot;B&quot;)++
+1`(233,78.44,0.03002,&quot;B&quot;)++
+1`(235,65.74,0.07222,&quot;B&quot;)++
+1`(236,98.27,0.07963,&quot;B&quot;)++
+1`(240,102.5,0.08219,&quot;B&quot;)++
+1`(242,94.11,0.09222,&quot;B&quot;)++
+1`(243,83.85,0.04052,&quot;B&quot;)++
+1`(244,87.16,0.1218,&quot;B&quot;)++
+1`(245,98.0,0.06106,&quot;B&quot;)++
+1`(247,73.68,0.06736,&quot;B&quot;)++
+1`(248,88.28,0.0497,&quot;B&quot;)++
+1`(249,105.0,0.1561,&quot;B&quot;)++
+1`(250,77.98,0.06136,&quot;B&quot;)++
+1`(251,80.88,0.09608,&quot;B&quot;)++
+1`(253,83.12,0.06544,&quot;B&quot;)++
+1`(268,78.28,0.07926,&quot;B&quot;)++
+1`(269,97.66,0.06189,&quot;B&quot;)++
+1`(270,89.27,0.0578,&quot;B&quot;)++
+1`(271,76.51,0.086,&quot;B&quot;)++
+1`(272,94.44,0.03333,&quot;B&quot;)++
+1`(273,78.27,0.0875,&quot;B&quot;)++
+1`(275,68.09,0.05159,&quot;B&quot;)++
+1`(277,79.46,0.08946,&quot;B&quot;)++
+1`(278,77.37,0.01111,&quot;B&quot;)++
+1`(280,98.91,0.05185,&quot;B&quot;)++
+1`(281,98.37,0.09993,&quot;B&quot;)++
+1`(283,84.7,0.0829,&quot;B&quot;)++
+1`(286,92.12,0.1017,&quot;B&quot;)++
+1`(287,85.56,0.008772,&quot;B&quot;)++
+1`(288,92.2,0.1155,&quot;B&quot;)++
+1`(289,87.4,0.05366,&quot;B&quot;)++
+1`(290,78.27,0.09314,&quot;B&quot;)++
+1`(291,79.29,0.06203,&quot;B&quot;)++
+1`(292,101.7,0.1021,&quot;B&quot;)++
+1`(293,109.1,0.1489,&quot;B&quot;)++
+1`(294,88.81,0.1056,&quot;B&quot;)++
+1`(295,84.35,0.0914,&quot;B&quot;)++
+1`(296,88.54,0.06343,&quot;B&quot;)++
+1`(297,94.17,0.05802,&quot;B&quot;)++
+1`(298,72.42,0.03194,&quot;B&quot;)++
+1`(300,105.8,0.0753,&quot;B&quot;)++
+1`(301,70.1,0.03125,&quot;B&quot;)++
+1`(303,88.13,0.07625,&quot;B&quot;)++
+1`(305,70.76,0.06528,&quot;B&quot;)++
+1`(306,82.69,0.05509,&quot;B&quot;)++
+1`(307,81.39,0.04815,&quot;B&quot;)++
+1`(308,92.0,0.025,&quot;B&quot;)++
+1`(309,60.9,0.01389,&quot;B&quot;)++
+1`(310,95.48,0.0221,&quot;B&quot;)++
+1`(311,93.96,0.03532,&quot;B&quot;)++
+1`(312,80.92,0.05741,&quot;B&quot;)++
+1`(313,103.7,0.05813,&quot;B&quot;)++
+1`(314,92.04,0.08411,&quot;B&quot;)++
+1`(315,81.23,0.04715,&quot;B&quot;)++
+1`(316,56.65,0.0,&quot;B&quot;)++
+1`(317,84.48,0.02784,&quot;B&quot;)++
+1`(318,81.6,0.01852,&quot;B&quot;)++
+1`(320,68.62,0.1145,&quot;B&quot;)++
+1`(321,81.76,0.02832,&quot;B&quot;)++
+1`(322,71.53,0.09744,&quot;B&quot;)++
+1`(324,92.8,0.1155,&quot;B&quot;)++
+1`(326,91.11,0.05556,&quot;B&quot;)++
+1`(327,88.7,0.05602,&quot;B&quot;)++
+1`(328,98.4,0.0589,&quot;B&quot;)++
+1`(329,82.74,0.02796,&quot;B&quot;)++
+1`(333,99.21,0.09858,&quot;B&quot;)++
+1`(334,76.91,0.02022,&quot;B&quot;)++
+1`(335,82.08,0.01667,&quot;B&quot;)++
+1`(336,84.53,0.03983,&quot;B&quot;)++
+1`(338,87.38,0.0585,&quot;B&quot;)++
+1`(340,71.98,0.06499,&quot;B&quot;)++
+1`(342,111.4,0.1414,&quot;B&quot;)++
+1`(343,71.25,0.0812,&quot;B&quot;)++
+1`(344,79.76,0.1075,&quot;B&quot;)++
+1`(346,84.16,0.07864,&quot;B&quot;)++
+1`(347,70.89,0.04074,&quot;B&quot;)++
+1`(348,86.54,0.05093,&quot;B&quot;)++
+1`(349,114.2,0.1251,&quot;B&quot;)++
+1`(350,79.67,0.06548,&quot;B&quot;)++
+1`(351,83.09,0.04766,&quot;B&quot;)++
+1`(352,83.61,0.04262,&quot;B&quot;)++
+1`(356,79.62,0.03922,&quot;B&quot;)++
+1`(357,89.02,0.09265,&quot;B&quot;)++
+1`(358,94.22,0.1258,&quot;B&quot;)++
+1`(359,96.74,0.05556,&quot;B&quot;)++
+1`(360,65.27,0.04762,&quot;B&quot;)++
+1`(361,75.79,0.05052,&quot;B&quot;)++
+1`(362,86.82,0.01635,&quot;B&quot;)++
+1`(363,92.94,0.05614,&quot;B&quot;)++
+1`(364,87.82,0.08312,&quot;B&quot;)++
+1`(365,117.2,0.09123,&quot;B&quot;)++
+1`(366,93.76,0.06987,&quot;B&quot;)++
+1`(369,93.85,0.08829,&quot;B&quot;)++
+1`(373,104.5,0.08178,&quot;B&quot;)++
+1`(376,99.16,0.06987,&quot;B&quot;)++
+1`(377,113.1,0.1251,&quot;B&quot;)++
+1`(378,76.51,0.1465,&quot;B&quot;)++
+1`(379,97.11,0.05781,&quot;B&quot;)++
+1`(380,97.96,0.1054,&quot;B&quot;)++
+1`(382,84.93,0.1318,&quot;B&quot;)++
+1`(383,79.73,0.06754,&quot;B&quot;)++
+1`(384,87.36,0.1092,&quot;B&quot;)++
+1`(385,95.23,0.09804,&quot;B&quot;)++
+1`(386,96.59,0.09173,&quot;B&quot;)++
+1`(388,87.65,0.0914,&quot;B&quot;)++
+1`(389,99.66,0.04537,&quot;B&quot;)++
+1`(390,79.73,0.08272,&quot;B&quot;)++
+1`(392,73.23,0.06696,&quot;B&quot;)++
+1`(393,64.01,0.0,&quot;B&quot;)++
+1`(396,88.33,0.06266,&quot;B&quot;)++
+1`(397,96.42,0.07911,&quot;B&quot;)++
+1`(398,97.33,0.1453,&quot;B&quot;)++
+1`(399,90.72,0.08296,&quot;B&quot;)++
+1`(400,80.79,0.05556,&quot;B&quot;)++
+1`(401,86.0,0.05356,&quot;B&quot;)</text>
         </initmark>
       </place>
       <place id="ID1412440080">
@@ -199,7 +438,7 @@
                   type="Solid"/>
         <textattr colour="Black"
                   bold="false"/>
-        <text>Yes</text>
+        <text>B</text>
         <ellipse w="76.000000"
                  h="76.000000"/>
         <token x="-10.000000"
@@ -269,7 +508,7 @@
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">[wa&lt;=880.8,wcp&lt;=0.1357,sea&lt;=36.46]</text>
+                version="4.0.1">[wp&lt;=105.0,wcp&lt;=0.1329]</text>
         </cond>
         <time id="ID1412790754">
           <posattr x="-37.500000"
@@ -345,8 +584,8 @@
                     bold="false"/>
         </bendpoint>
         <annot id="ID1412790889">
-          <posattr x="-310.000000"
-                   y="132.000000"/>
+          <posattr x="-327.000000"
+                   y="133.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -356,7 +595,7 @@
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">(sr,wa,wcp,sea,label)</text>
+                version="4.0.1">(sr,wp,wcp,label)</text>
         </annot>
       </arc>
       <arc id="ID1412791398"
@@ -388,7 +627,7 @@
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">(sr,wa,wcp,sea,label)</text>
+                version="4.0.1">(sr,wp,wcp,label)</text>
         </annot>
       </arc>
       <constraints/>
@@ -418,7 +657,7 @@
           <text>&lt;same as model&gt;</text>
         </value>
       </option>
-      <option name="extensions.10003.enable">
+      <option name="extensions.10006.enable">
         <value>
           <boolean>true</boolean>
         </value>
@@ -428,12 +667,12 @@
           <boolean>true</boolean>
         </value>
       </option>
-      <option name="extensions.10006.enable">
+      <option name="extensions.10002.enable">
         <value>
           <boolean>true</boolean>
         </value>
       </option>
-      <option name="extensions.10002.enable">
+      <option name="extensions.10003.enable">
         <value>
           <boolean>true</boolean>
         </value>
@@ -647,8 +886,8 @@
                  height="601">
         <sheets>
           <cpnsheet id="ID2215"
-                    panx="84.000000"
-                    pany="144.000000"
+                    panx="-116.000000"
+                    pany="136.000000"
                     zoom="1.000000"
                     instance="ID2149">
             <zorder>
@@ -743,6 +982,8 @@
           <IndexNode expanded="false"/>
           <IndexNode expanded="false"/>
           <IndexNode expanded="false"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
           <IndexNode expanded="true"/>
           <IndexNode expanded="true"/>
           <IndexNode expanded="true"/>
