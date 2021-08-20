@@ -618,7 +618,7 @@
                   type="solid"/>
         <textattr colour="Black"
                   bold="false"/>
-        <text>Rule10</text>
+        <text>Rule9</text>
         <box w="122.000000"
              h="42.000000"/>
         <binding x="7.200000"
@@ -692,7 +692,7 @@
                   type="solid"/>
         <textattr colour="Black"
                   bold="false"/>
-        <text>Rule11</text>
+        <text>Rule10</text>
         <box w="122.000000"
              h="42.000000"/>
         <binding x="7.200000"
@@ -754,80 +754,6 @@
                 version="4.0.1"/>
         </priority>
       </trans>
-      <trans id="ID1414651078"
-             explicit="false">
-        <posattr x="-110.000000"
-                 y="-294.000000"/>
-        <fillattr colour="White"
-                  pattern=""
-                  filled="false"/>
-        <lineattr colour="Black"
-                  thick="1"
-                  type="solid"/>
-        <textattr colour="Black"
-                  bold="false"/>
-        <text>Rule12</text>
-        <box w="122.000000"
-             h="56.000000"/>
-        <binding x="7.200000"
-                 y="-3.000000"/>
-        <cond id="ID1414651079">
-          <posattr x="-110.000000"
-                   y="-255.000000"/>
-          <fillattr colour="White"
-                    pattern="Solid"
-                    filled="false"/>
-          <lineattr colour="Black"
-                    thick="0"
-                    type="Solid"/>
-          <textattr colour="Black"
-                    bold="false"/>
-          <text tool="CPN Tools"
-                version="4.0.1">[inv=&quot;0-21&quot;,bq=&quot;left_up1&quot;]</text>
-        </cond>
-        <time id="ID1414651080">
-          <posattr x="-34.500000"
-                   y="-255.000000"/>
-          <fillattr colour="White"
-                    pattern="Solid"
-                    filled="false"/>
-          <lineattr colour="Black"
-                    thick="0"
-                    type="Solid"/>
-          <textattr colour="Black"
-                    bold="false"/>
-          <text tool="CPN Tools"
-                version="4.0.1"/>
-        </time>
-        <code id="ID1414651081">
-          <posattr x="-14.500000"
-                   y="-354.000000"/>
-          <fillattr colour="White"
-                    pattern="Solid"
-                    filled="false"/>
-          <lineattr colour="Black"
-                    thick="0"
-                    type="Solid"/>
-          <textattr colour="Black"
-                    bold="false"/>
-          <text tool="CPN Tools"
-                version="4.0.1"/>
-        </code>
-        <priority id="ID1414651083">
-          <posattr x="-209.000000"
-                   y="-333.000000"/>
-          <fillattr colour="White"
-                    pattern="Solid"
-                    filled="false"/>
-          <lineattr colour="Black"
-                    thick="0"
-                    type="Solid"/>
-          <textattr colour="Black"
-                    bold="false"/>
-          <text tool="CPN Tools"
-                version="4.0.1"/>
-        </priority>
-      </trans>
       <trans id="ID1414654620"
              explicit="false">
         <posattr x="-116.000000"
@@ -840,7 +766,7 @@
                   type="solid"/>
         <textattr colour="Black"
                   bold="false"/>
-        <text>Rule-5-1</text>
+        <text>Rule 11</text>
         <box w="122.000000"
              h="42.000000"/>
         <binding x="7.200000"
@@ -1429,96 +1355,6 @@
                 version="4.0.1">(sr,inv,bq,label)</text>
         </annot>
       </arc>
-      <arc id="ID1414652177"
-           orientation="PtoT"
-           order="1">
-        <posattr x="0.000000"
-                 y="0.000000"/>
-        <fillattr colour="White"
-                  pattern=""
-                  filled="false"/>
-        <lineattr colour="Black"
-                  thick="1"
-                  type="Solid"/>
-        <textattr colour="Black"
-                  bold="false"/>
-        <arrowattr headsize="1.200000"
-                   currentcyckle="2"/>
-        <transend idref="ID1414651078"/>
-        <placeend idref="ID1412415160"/>
-        <bendpoint id="ID1414652773"
-                   serial="1">
-          <posattr x="-504.000000"
-                   y="-294.000000"/>
-          <fillattr colour="White"
-                    pattern="Solid"
-                    filled="false"/>
-          <lineattr colour="Black"
-                    thick="0"
-                    type="Solid"/>
-          <textattr colour="Black"
-                    bold="false"/>
-        </bendpoint>
-        <annot id="ID1414652178">
-          <posattr x="-353.000000"
-                   y="-283.000000"/>
-          <fillattr colour="White"
-                    pattern="Solid"
-                    filled="false"/>
-          <lineattr colour="Black"
-                    thick="0"
-                    type="Solid"/>
-          <textattr colour="Black"
-                    bold="false"/>
-          <text tool="CPN Tools"
-                version="4.0.1">(sr,inv,bq,label)</text>
-        </annot>
-      </arc>
-      <arc id="ID1414652282"
-           orientation="TtoP"
-           order="1">
-        <posattr x="0.000000"
-                 y="0.000000"/>
-        <fillattr colour="White"
-                  pattern=""
-                  filled="false"/>
-        <lineattr colour="Black"
-                  thick="1"
-                  type="Solid"/>
-        <textattr colour="Black"
-                  bold="false"/>
-        <arrowattr headsize="1.200000"
-                   currentcyckle="2"/>
-        <transend idref="ID1414651078"/>
-        <placeend idref="ID1414607197"/>
-        <bendpoint id="ID1414653221"
-                   serial="1">
-          <posattr x="317.000000"
-                   y="-294.000000"/>
-          <fillattr colour="White"
-                    pattern="Solid"
-                    filled="false"/>
-          <lineattr colour="Black"
-                    thick="0"
-                    type="Solid"/>
-          <textattr colour="Black"
-                    bold="false"/>
-        </bendpoint>
-        <annot id="ID1414652283">
-          <posattr x="120.000000"
-                   y="-283.000000"/>
-          <fillattr colour="White"
-                    pattern="Solid"
-                    filled="false"/>
-          <lineattr colour="Black"
-                    thick="0"
-                    type="Solid"/>
-          <textattr colour="Black"
-                    bold="false"/>
-          <text tool="CPN Tools"
-                version="4.0.1">(sr,inv,bq,label)</text>
-        </annot>
-      </arc>
       <arc id="ID1414654951"
            orientation="PtoT"
            order="1">
@@ -1636,17 +1472,12 @@
           <text>&lt;same as model&gt;</text>
         </value>
       </option>
+      <option name="extensions.10003.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
       <option name="extensions.10002.enable">
-        <value>
-          <boolean>true</boolean>
-        </value>
-      </option>
-      <option name="extensions.10006.enable">
-        <value>
-          <boolean>true</boolean>
-        </value>
-      </option>
-      <option name="extensions.10001.enable">
         <value>
           <boolean>true</boolean>
         </value>
@@ -1656,7 +1487,12 @@
           <boolean>true</boolean>
         </value>
       </option>
-      <option name="extensions.10003.enable">
+      <option name="extensions.10001.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10006.enable">
         <value>
           <boolean>true</boolean>
         </value>
@@ -1865,8 +1701,8 @@
                  height="601">
         <sheets>
           <cpnsheet id="ID2215"
-                    panx="-47.000000"
-                    pany="1.000000"
+                    panx="-22.000000"
+                    pany="2.000000"
                     zoom="1.000000"
                     instance="ID2149">
             <zorder>
