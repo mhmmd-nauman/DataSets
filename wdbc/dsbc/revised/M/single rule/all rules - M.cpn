@@ -123,7 +123,7 @@
       <pageattr name="BC"/>
       <place id="ID1412415160">
         <posattr x="-504.000000"
-                 y="148.000000"/>
+                 y="126.000000"/>
         <fillattr colour="White"
                   pattern=""
                   filled="false"/>
@@ -137,8 +137,8 @@
                  h="74.000000"/>
         <token x="-10.000000"
                y="0.000000"/>
-        <marking x="-157.000000"
-                 y="-6.000000"
+        <marking x="-164.000000"
+                 y="2.000000"
                  hidden="false">
           <snap snap_id="0"
                 anchor.horizontal="2"
@@ -146,7 +146,7 @@
         </marking>
         <type id="ID1412415161">
           <posattr x="-562.000000"
-                   y="150.000000"/>
+                   y="128.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -158,9 +158,9 @@
           <text tool="CPN Tools"
                 version="4.0.1">P</text>
         </type>
-        <initmark id="ID1414649230">
-          <posattr x="-673.000000"
-                   y="312.000000"/>
+        <initmark id="ID1414657655">
+          <posattr x="-711.000000"
+                   y="1697.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -170,97 +170,297 @@
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">1`(1,&quot;0-2&quot;,&quot;left_up&quot;,&quot;B&quot;)++
-1`(2,&quot;15-17&quot;,&quot;left_up&quot;,&quot;B&quot;)++
-1`(3,&quot;3-5&quot;,&quot;left_low&quot;,&quot;B&quot;)++
-1`(4,&quot;15-17&quot;,&quot;left_low&quot;,&quot;B&quot;)++
-1`(5,&quot;0-2&quot;,&quot;left_up&quot;,&quot;B&quot;)++
-1`(6,&quot;0-2&quot;,&quot;left_up&quot;,&quot;B&quot;)++
-1`(7,&quot;3-5&quot;,&quot;left_up&quot;,&quot;B&quot;)++
-1`(8,&quot;3-5&quot;,&quot;left_up&quot;,&quot;B&quot;)++
-1`(9,&quot;0-2&quot;,&quot;central&quot;,&quot;B&quot;)++
-1`(10,&quot;0-2&quot;,&quot;central&quot;,&quot;B&quot;)++
-1`(11,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
-1`(12,&quot;0-2&quot;,&quot;left_up&quot;,&quot;B&quot;)++
-1`(13,&quot;3-5&quot;,&quot;left_low&quot;,&quot;B&quot;)++
-1`(14,&quot;0-2&quot;,&quot;left_up&quot;,&quot;B&quot;)++
-1`(15,&quot;3-5&quot;,&quot;left_up&quot;,&quot;B&quot;)++
-1`(16,&quot;3-5&quot;,&quot;left_low&quot;,&quot;B&quot;)++
-1`(17,&quot;3-5&quot;,&quot;left_up&quot;,&quot;B&quot;)++
-1`(18,&quot;3-5&quot;,&quot;left_low&quot;,&quot;B&quot;)++
-1`(19,&quot;15-17&quot;,&quot;left_up&quot;,&quot;B&quot;)++
-1`(20,&quot;0-2&quot;,&quot;left_up&quot;,&quot;B&quot;)++
-1`(21,&quot;0-2&quot;,&quot;left_up&quot;,&quot;B&quot;)++
-1`(22,&quot;3-5&quot;,&quot;left_up&quot;,&quot;B&quot;)++
-1`(23,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
-1`(24,&quot;6-8&quot;,&quot;right_up&quot;,&quot;B&quot;)++
-1`(25,&quot;3-5&quot;,&quot;left_up&quot;,&quot;B&quot;)++
-1`(26,&quot;3-5&quot;,&quot;left_low&quot;,&quot;B&quot;)++
-1`(27,&quot;0-2&quot;,&quot;right_up&quot;,&quot;B&quot;)++
-1`(28,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
-1`(29,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
-1`(30,&quot;3-5&quot;,&quot;left_up&quot;,&quot;B&quot;)++
-1`(31,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
-1`(32,&quot;0-2&quot;,&quot;left_up&quot;,&quot;B&quot;)++
-1`(33,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
-1`(34,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
-1`(35,&quot;9-11&quot;,&quot;left_up&quot;,&quot;B&quot;)++
-1`(36,&quot;9-11&quot;,&quot;left_low&quot;,&quot;B&quot;)++
-1`(37,&quot;6-8&quot;,&quot;left_low&quot;,&quot;B&quot;)++
-1`(38,&quot;0-2&quot;,&quot;right_low&quot;,&quot;B&quot;)++
-1`(39,&quot;0-2&quot;,&quot;left_up&quot;,&quot;B&quot;)++
-1`(40,&quot;0-2&quot;,&quot;left_up&quot;,&quot;B&quot;)++
-1`(41,&quot;0-2&quot;,&quot;left_up&quot;,&quot;B&quot;)++
-1`(42,&quot;12-14&quot;,&quot;right_low&quot;,&quot;B&quot;)++
-1`(43,&quot;0-2&quot;,&quot;left_up&quot;,&quot;B&quot;)++
-1`(44,&quot;6-8&quot;,&quot;left_low&quot;,&quot;B&quot;)++
-1`(45,&quot;0-2&quot;,&quot;right_low&quot;,&quot;B&quot;)++
-1`(46,&quot;0-2&quot;,&quot;left_up&quot;,&quot;B&quot;)++
-1`(47,&quot;0-2&quot;,&quot;left_up&quot;,&quot;B&quot;)++
-1`(48,&quot;3-5&quot;,&quot;left_up&quot;,&quot;B&quot;)++
-1`(49,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
-1`(50,&quot;0-2&quot;,&quot;central&quot;,&quot;B&quot;)++
-1`(51,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
-1`(52,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
-1`(53,&quot;0-2&quot;,&quot;left_up&quot;,&quot;M&quot;)++
-1`(54,&quot;0-2&quot;,&quot;left_up&quot;,&quot;M&quot;)++
-1`(55,&quot;0-2&quot;,&quot;right_up&quot;,&quot;M&quot;)++
-1`(56,&quot;6-8&quot;,&quot;left_up&quot;,&quot;M&quot;)++
-1`(57,&quot;0-2&quot;,&quot;left_low&quot;,&quot;M&quot;)++
-1`(58,&quot;3-5&quot;,&quot;left_low&quot;,&quot;M&quot;)++
-1`(59,&quot;6-8&quot;,&quot;right_low&quot;,&quot;M&quot;)++
-1`(60,&quot;3-5&quot;,&quot;left_up&quot;,&quot;M&quot;)++
-1`(61,&quot;3-5&quot;,&quot;right_up&quot;,&quot;M&quot;)++
-1`(62,&quot;12-14&quot;,&quot;right_low&quot;,&quot;M&quot;)++
-1`(63,&quot;0-2&quot;,&quot;left_up&quot;,&quot;M&quot;)++
-1`(64,&quot;0-2&quot;,&quot;left_up&quot;,&quot;M&quot;)++
-1`(65,&quot;0-2&quot;,&quot;left_low&quot;,&quot;M&quot;)++
-1`(66,&quot;9-11&quot;,&quot;left_low&quot;,&quot;M&quot;)++
-1`(67,&quot;3-5&quot;,&quot;right_up&quot;,&quot;M&quot;)++
-1`(68,&quot;24-26&quot;,&quot;left_low&quot;,&quot;M&quot;)++
-1`(69,&quot;0-2&quot;,&quot;left_low&quot;,&quot;M&quot;)++
-1`(70,&quot;0-2&quot;,&quot;left_low&quot;,&quot;M&quot;)++
-1`(71,&quot;6-8&quot;,&quot;right_low&quot;,&quot;M&quot;)++
-1`(72,&quot;0-2&quot;,&quot;left_low&quot;,&quot;M&quot;)++
-1`(73,&quot;0-2&quot;,&quot;left_up&quot;,&quot;M&quot;)++
-1`(74,&quot;0-2&quot;,&quot;right_up&quot;,&quot;M&quot;)++
-1`(75,&quot;3-5&quot;,&quot;central&quot;,&quot;M&quot;)++
-1`(76,&quot;9-11&quot;,&quot;left_up&quot;,&quot;M&quot;)++
-1`(77,&quot;6-8&quot;,&quot;right_low&quot;,&quot;M&quot;)++
-1`(78,&quot;6-8&quot;,&quot;left_up&quot;,&quot;M&quot;)++
-1`(79,&quot;15-17&quot;,&quot;right_up&quot;,&quot;M&quot;)++
-1`(80,&quot;6-8&quot;,&quot;left_low&quot;,&quot;M&quot;)++
-1`(81,&quot;6-8&quot;,&quot;left_low&quot;,&quot;M&quot;)++
-1`(82,&quot;0-2&quot;,&quot;left_up&quot;,&quot;M&quot;)++
-1`(83,&quot;0-2&quot;,&quot;left_up&quot;,&quot;M&quot;)++
-1`(84,&quot;0-2&quot;,&quot;left_up&quot;,&quot;M&quot;)++
-1`(85,&quot;3-5&quot;,&quot;left_low&quot;,&quot;M&quot;)++
-1`(86,&quot;3-5&quot;,&quot;left_low&quot;,&quot;M&quot;)</text>
+                version="4.0.1">1`(1,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(2,&quot;0-2&quot;,&quot;right_up&quot;,&quot;B&quot;)++
+1`(3,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(4,&quot;0-2&quot;,&quot;left_up&quot;,&quot;B&quot;)++
+1`(5,&quot;0-2&quot;,&quot;right_low&quot;,&quot;B&quot;)++
+1`(6,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(7,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(8,&quot;0-2&quot;,&quot;left_low&quot;,&quot;M&quot;)++
+1`(9,&quot;0-2&quot;,&quot;left_low&quot;,&quot;M&quot;)++
+1`(10,&quot;0-2&quot;,&quot;left_low&quot;,&quot;M&quot;)++
+1`(11,&quot;0-2&quot;,&quot;right_up&quot;,&quot;M&quot;)++
+1`(12,&quot;0-2&quot;,&quot;central&quot;,&quot;M&quot;)++
+1`(13,&quot;0-2&quot;,&quot;?&quot;,&quot;M&quot;)++
+1`(14,&quot;0-2&quot;,&quot;right_up&quot;,&quot;M&quot;)++
+1`(15,&quot;0-2&quot;,&quot;right_up&quot;,&quot;M&quot;)++
+1`(16,&quot;0-2&quot;,&quot;left_up&quot;,&quot;M&quot;)++
+1`(17,&quot;0-2&quot;,&quot;left_low&quot;,&quot;M&quot;)++
+1`(18,&quot;0-2&quot;,&quot;central&quot;,&quot;M&quot;)++
+1`(19,&quot;0-2&quot;,&quot;right_up&quot;,&quot;M&quot;)++
+1`(20,&quot;0-2&quot;,&quot;left_up&quot;,&quot;M&quot;)++
+1`(21,&quot;0-2&quot;,&quot;left_low&quot;,&quot;M&quot;)++
+1`(22,&quot;0-2&quot;,&quot;left_up&quot;,&quot;M&quot;)++
+1`(23,&quot;0-2&quot;,&quot;left_up&quot;,&quot;M&quot;)++
+1`(24,&quot;0-2&quot;,&quot;left_up&quot;,&quot;M&quot;)++
+1`(25,&quot;0-2&quot;,&quot;central&quot;,&quot;M&quot;)++
+1`(26,&quot;0-2&quot;,&quot;left_low&quot;,&quot;M&quot;)++
+1`(27,&quot;0-2&quot;,&quot;right_up&quot;,&quot;M&quot;)++
+1`(28,&quot;0-2&quot;,&quot;left_up&quot;,&quot;M&quot;)++
+1`(29,&quot;0-2&quot;,&quot;right_low&quot;,&quot;M&quot;)++
+1`(30,&quot;0-2&quot;,&quot;left_low&quot;,&quot;M&quot;)++
+1`(31,&quot;3-5&quot;,&quot;left_low&quot;,&quot;M&quot;)++
+1`(32,&quot;3-5&quot;,&quot;left_low&quot;,&quot;M&quot;)++
+1`(33,&quot;15-17&quot;,&quot;left_low&quot;,&quot;M&quot;)++
+1`(34,&quot;0-2&quot;,&quot;left_up&quot;,&quot;M&quot;)++
+1`(35,&quot;3-5&quot;,&quot;left_low&quot;,&quot;M&quot;)++
+1`(36,&quot;0-2&quot;,&quot;right_up&quot;,&quot;M&quot;)++
+1`(37,&quot;9-11&quot;,&quot;left_up&quot;,&quot;M&quot;)++
+1`(38,&quot;3-5&quot;,&quot;left_up&quot;,&quot;M&quot;)++
+1`(39,&quot;3-5&quot;,&quot;left_up&quot;,&quot;M&quot;)++
+1`(40,&quot;9-11&quot;,&quot;left_low&quot;,&quot;M&quot;)++
+1`(41,&quot;0-2&quot;,&quot;left_up&quot;,&quot;M&quot;)++
+1`(42,&quot;3-5&quot;,&quot;left_low&quot;,&quot;M&quot;)++
+1`(43,&quot;0-2&quot;,&quot;left_low&quot;,&quot;M&quot;)++
+1`(44,&quot;0-2&quot;,&quot;left_low&quot;,&quot;M&quot;)++
+1`(45,&quot;0-2&quot;,&quot;left_low&quot;,&quot;M&quot;)++
+1`(46,&quot;3-5&quot;,&quot;right_up&quot;,&quot;M&quot;)++
+1`(47,&quot;3-5&quot;,&quot;left_low&quot;,&quot;M&quot;)++
+1`(48,&quot;15-17&quot;,&quot;left_low&quot;,&quot;M&quot;)++
+1`(49,&quot;6-8&quot;,&quot;left_low&quot;,&quot;M&quot;)++
+1`(50,&quot;3-5&quot;,&quot;right_up&quot;,&quot;M&quot;)++
+1`(51,&quot;12-14&quot;,&quot;left_up&quot;,&quot;M&quot;)++
+1`(52,&quot;9-11&quot;,&quot;left_up&quot;,&quot;M&quot;)++
+1`(53,&quot;6-8&quot;,&quot;left_low&quot;,&quot;M&quot;)++
+1`(54,&quot;9-11&quot;,&quot;right_low&quot;,&quot;M&quot;)++
+1`(55,&quot;6-8&quot;,&quot;left_low&quot;,&quot;M&quot;)++
+1`(56,&quot;3-5&quot;,&quot;left_low&quot;,&quot;M&quot;)++
+1`(57,&quot;0-2&quot;,&quot;left_up&quot;,&quot;M&quot;)++
+1`(58,&quot;0-2&quot;,&quot;left_low&quot;,&quot;M&quot;)++
+1`(59,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(60,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(61,&quot;0-2&quot;,&quot;left_up&quot;,&quot;B&quot;)++
+1`(62,&quot;0-2&quot;,&quot;central&quot;,&quot;B&quot;)++
+1`(63,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(64,&quot;0-2&quot;,&quot;right_up&quot;,&quot;B&quot;)++
+1`(65,&quot;0-2&quot;,&quot;right_up&quot;,&quot;B&quot;)++
+1`(66,&quot;0-2&quot;,&quot;left_up&quot;,&quot;B&quot;)++
+1`(67,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(68,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(69,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(70,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(71,&quot;0-2&quot;,&quot;right_up&quot;,&quot;B&quot;)++
+1`(72,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(73,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(74,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(75,&quot;0-2&quot;,&quot;left_up&quot;,&quot;B&quot;)++
+1`(76,&quot;0-2&quot;,&quot;left_up&quot;,&quot;B&quot;)++
+1`(77,&quot;0-2&quot;,&quot;left_up&quot;,&quot;B&quot;)++
+1`(78,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(79,&quot;0-2&quot;,&quot;left_up&quot;,&quot;B&quot;)++
+1`(80,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(81,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(82,&quot;0-2&quot;,&quot;left_up&quot;,&quot;B&quot;)++
+1`(83,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(84,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(85,&quot;0-2&quot;,&quot;left_up&quot;,&quot;B&quot;)++
+1`(86,&quot;0-2&quot;,&quot;left_up&quot;,&quot;B&quot;)++
+1`(87,&quot;0-2&quot;,&quot;left_up&quot;,&quot;B&quot;)++
+1`(88,&quot;0-2&quot;,&quot;central&quot;,&quot;B&quot;)++
+1`(89,&quot;0-2&quot;,&quot;central&quot;,&quot;B&quot;)++
+1`(90,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(91,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(92,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(93,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(94,&quot;0-2&quot;,&quot;central&quot;,&quot;B&quot;)++
+1`(95,&quot;0-2&quot;,&quot;left_up&quot;,&quot;B&quot;)++
+1`(96,&quot;0-2&quot;,&quot;right_up&quot;,&quot;B&quot;)++
+1`(97,&quot;0-2&quot;,&quot;left_up&quot;,&quot;B&quot;)++
+1`(98,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(99,&quot;0-2&quot;,&quot;left_up&quot;,&quot;B&quot;)++
+1`(100,&quot;0-2&quot;,&quot;right_up&quot;,&quot;B&quot;)++
+1`(101,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(102,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(103,&quot;0-2&quot;,&quot;right_low&quot;,&quot;B&quot;)++
+1`(104,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(105,&quot;0-2&quot;,&quot;left_up&quot;,&quot;B&quot;)++
+1`(106,&quot;0-2&quot;,&quot;left_up&quot;,&quot;B&quot;)++
+1`(107,&quot;0-2&quot;,&quot;right_up&quot;,&quot;B&quot;)++
+1`(108,&quot;0-2&quot;,&quot;central&quot;,&quot;B&quot;)++
+1`(109,&quot;0-2&quot;,&quot;right_up&quot;,&quot;B&quot;)++
+1`(110,&quot;0-2&quot;,&quot;left_up&quot;,&quot;B&quot;)++
+1`(111,&quot;0-2&quot;,&quot;left_up&quot;,&quot;B&quot;)++
+1`(112,&quot;0-2&quot;,&quot;central&quot;,&quot;B&quot;)++
+1`(113,&quot;0-2&quot;,&quot;right_low&quot;,&quot;B&quot;)++
+1`(114,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(115,&quot;0-2&quot;,&quot;right_up&quot;,&quot;B&quot;)++
+1`(116,&quot;0-2&quot;,&quot;right_low&quot;,&quot;B&quot;)++
+1`(117,&quot;0-2&quot;,&quot;left_up&quot;,&quot;B&quot;)++
+1`(118,&quot;0-2&quot;,&quot;right_low&quot;,&quot;B&quot;)++
+1`(119,&quot;0-2&quot;,&quot;left_up&quot;,&quot;B&quot;)++
+1`(120,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(121,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(122,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(123,&quot;0-2&quot;,&quot;left_up&quot;,&quot;B&quot;)++
+1`(124,&quot;0-2&quot;,&quot;left_up&quot;,&quot;B&quot;)++
+1`(125,&quot;0-2&quot;,&quot;right_low&quot;,&quot;B&quot;)++
+1`(126,&quot;0-2&quot;,&quot;right_low&quot;,&quot;B&quot;)++
+1`(127,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(128,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(129,&quot;0-2&quot;,&quot;central&quot;,&quot;B&quot;)++
+1`(130,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(131,&quot;0-2&quot;,&quot;central&quot;,&quot;B&quot;)++
+1`(132,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(133,&quot;0-2&quot;,&quot;left_up&quot;,&quot;B&quot;)++
+1`(134,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(135,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(136,&quot;0-2&quot;,&quot;right_low&quot;,&quot;B&quot;)++
+1`(137,&quot;0-2&quot;,&quot;left_up&quot;,&quot;B&quot;)++
+1`(138,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(139,&quot;0-2&quot;,&quot;right_low&quot;,&quot;B&quot;)++
+1`(140,&quot;0-2&quot;,&quot;left_up&quot;,&quot;B&quot;)++
+1`(141,&quot;0-2&quot;,&quot;left_up&quot;,&quot;B&quot;)++
+1`(142,&quot;0-2&quot;,&quot;central&quot;,&quot;B&quot;)++
+1`(143,&quot;0-2&quot;,&quot;left_up&quot;,&quot;B&quot;)++
+1`(144,&quot;0-2&quot;,&quot;left_up&quot;,&quot;B&quot;)++
+1`(145,&quot;0-2&quot;,&quot;left_up&quot;,&quot;B&quot;)++
+1`(146,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(147,&quot;0-2&quot;,&quot;right_low&quot;,&quot;B&quot;)++
+1`(148,&quot;0-2&quot;,&quot;left_up&quot;,&quot;B&quot;)++
+1`(149,&quot;0-2&quot;,&quot;left_up&quot;,&quot;B&quot;)++
+1`(150,&quot;0-2&quot;,&quot;right_up&quot;,&quot;B&quot;)++
+1`(151,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(152,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(153,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(154,&quot;0-2&quot;,&quot;right_low&quot;,&quot;B&quot;)++
+1`(155,&quot;0-2&quot;,&quot;right_low&quot;,&quot;B&quot;)++
+1`(156,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(157,&quot;0-2&quot;,&quot;left_up&quot;,&quot;B&quot;)++
+1`(158,&quot;0-2&quot;,&quot;left_up&quot;,&quot;B&quot;)++
+1`(159,&quot;0-2&quot;,&quot;right_up&quot;,&quot;B&quot;)++
+1`(160,&quot;0-2&quot;,&quot;right_up&quot;,&quot;B&quot;)++
+1`(161,&quot;0-2&quot;,&quot;left_up&quot;,&quot;B&quot;)++
+1`(162,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(163,&quot;0-2&quot;,&quot;central&quot;,&quot;B&quot;)++
+1`(164,&quot;0-2&quot;,&quot;left_up&quot;,&quot;B&quot;)++
+1`(165,&quot;0-2&quot;,&quot;left_up&quot;,&quot;B&quot;)++
+1`(166,&quot;0-2&quot;,&quot;right_up&quot;,&quot;B&quot;)++
+1`(167,&quot;0-2&quot;,&quot;left_up&quot;,&quot;B&quot;)++
+1`(168,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(169,&quot;0-2&quot;,&quot;left_up&quot;,&quot;B&quot;)++
+1`(170,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(171,&quot;0-2&quot;,&quot;right_low&quot;,&quot;B&quot;)++
+1`(172,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(173,&quot;0-2&quot;,&quot;right_up&quot;,&quot;B&quot;)++
+1`(174,&quot;0-2&quot;,&quot;left_up&quot;,&quot;B&quot;)++
+1`(175,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(176,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(177,&quot;0-2&quot;,&quot;central&quot;,&quot;B&quot;)++
+1`(178,&quot;6-8&quot;,&quot;right_up&quot;,&quot;B&quot;)++
+1`(179,&quot;6-8&quot;,&quot;left_up&quot;,&quot;B&quot;)++
+1`(180,&quot;0-2&quot;,&quot;left_up&quot;,&quot;B&quot;)++
+1`(181,&quot;9-11&quot;,&quot;left_up&quot;,&quot;B&quot;)++
+1`(182,&quot;9-11&quot;,&quot;right_up&quot;,&quot;B&quot;)++
+1`(183,&quot;3-5&quot;,&quot;left_up&quot;,&quot;B&quot;)++
+1`(184,&quot;6-8&quot;,&quot;left_up&quot;,&quot;B&quot;)++
+1`(185,&quot;0-2&quot;,&quot;right_up&quot;,&quot;B&quot;)++
+1`(186,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(187,&quot;3-5&quot;,&quot;central&quot;,&quot;B&quot;)++
+1`(188,&quot;3-5&quot;,&quot;right_up&quot;,&quot;B&quot;)++
+1`(189,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(190,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(191,&quot;0-2&quot;,&quot;right_low&quot;,&quot;B&quot;)++
+1`(192,&quot;3-5&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(193,&quot;3-5&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(194,&quot;0-2&quot;,&quot;left_up&quot;,&quot;B&quot;)++
+1`(195,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(196,&quot;6-8&quot;,&quot;central&quot;,&quot;B&quot;)++
+1`(197,&quot;0-2&quot;,&quot;right_low&quot;,&quot;B&quot;)++
+1`(198,&quot;0-2&quot;,&quot;left_up&quot;,&quot;B&quot;)++
+1`(199,&quot;3-5&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(200,&quot;0-2&quot;,&quot;central&quot;,&quot;B&quot;)++
+1`(201,&quot;0-2&quot;,&quot;left_up&quot;,&quot;B&quot;)++
+1`(202,&quot;15-17&quot;,&quot;left_up&quot;,&quot;B&quot;)++
+1`(203,&quot;3-5&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(204,&quot;15-17&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(205,&quot;0-2&quot;,&quot;left_up&quot;,&quot;B&quot;)++
+1`(206,&quot;0-2&quot;,&quot;left_up&quot;,&quot;B&quot;)++
+1`(207,&quot;3-5&quot;,&quot;left_up&quot;,&quot;B&quot;)++
+1`(208,&quot;3-5&quot;,&quot;left_up&quot;,&quot;B&quot;)++
+1`(209,&quot;0-2&quot;,&quot;central&quot;,&quot;B&quot;)++
+1`(210,&quot;0-2&quot;,&quot;central&quot;,&quot;B&quot;)++
+1`(211,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(212,&quot;0-2&quot;,&quot;left_up&quot;,&quot;B&quot;)++
+1`(213,&quot;3-5&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(214,&quot;0-2&quot;,&quot;left_up&quot;,&quot;B&quot;)++
+1`(215,&quot;3-5&quot;,&quot;left_up&quot;,&quot;B&quot;)++
+1`(216,&quot;3-5&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(217,&quot;3-5&quot;,&quot;left_up&quot;,&quot;B&quot;)++
+1`(218,&quot;3-5&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(219,&quot;15-17&quot;,&quot;left_up&quot;,&quot;B&quot;)++
+1`(220,&quot;0-2&quot;,&quot;left_up&quot;,&quot;B&quot;)++
+1`(221,&quot;0-2&quot;,&quot;left_up&quot;,&quot;B&quot;)++
+1`(222,&quot;3-5&quot;,&quot;left_up&quot;,&quot;B&quot;)++
+1`(223,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(224,&quot;6-8&quot;,&quot;right_up&quot;,&quot;B&quot;)++
+1`(225,&quot;3-5&quot;,&quot;left_up&quot;,&quot;B&quot;)++
+1`(226,&quot;3-5&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(227,&quot;0-2&quot;,&quot;right_up&quot;,&quot;B&quot;)++
+1`(228,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(229,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(230,&quot;3-5&quot;,&quot;left_up&quot;,&quot;B&quot;)++
+1`(231,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(232,&quot;0-2&quot;,&quot;left_up&quot;,&quot;B&quot;)++
+1`(233,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(234,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(235,&quot;9-11&quot;,&quot;left_up&quot;,&quot;B&quot;)++
+1`(236,&quot;9-11&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(237,&quot;6-8&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(238,&quot;0-2&quot;,&quot;right_low&quot;,&quot;B&quot;)++
+1`(239,&quot;0-2&quot;,&quot;left_up&quot;,&quot;B&quot;)++
+1`(240,&quot;0-2&quot;,&quot;left_up&quot;,&quot;B&quot;)++
+1`(241,&quot;0-2&quot;,&quot;left_up&quot;,&quot;B&quot;)++
+1`(242,&quot;12-14&quot;,&quot;right_low&quot;,&quot;B&quot;)++
+1`(243,&quot;0-2&quot;,&quot;left_up&quot;,&quot;B&quot;)++
+1`(244,&quot;6-8&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(245,&quot;0-2&quot;,&quot;right_low&quot;,&quot;B&quot;)++
+1`(246,&quot;0-2&quot;,&quot;left_up&quot;,&quot;B&quot;)++
+1`(247,&quot;0-2&quot;,&quot;left_up&quot;,&quot;B&quot;)++
+1`(248,&quot;3-5&quot;,&quot;left_up&quot;,&quot;B&quot;)++
+1`(249,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(250,&quot;0-2&quot;,&quot;central&quot;,&quot;B&quot;)++
+1`(251,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(252,&quot;0-2&quot;,&quot;left_low&quot;,&quot;B&quot;)++
+1`(253,&quot;0-2&quot;,&quot;left_up&quot;,&quot;M&quot;)++
+1`(254,&quot;0-2&quot;,&quot;left_up&quot;,&quot;M&quot;)++
+1`(255,&quot;0-2&quot;,&quot;right_up&quot;,&quot;M&quot;)++
+1`(256,&quot;6-8&quot;,&quot;left_up&quot;,&quot;M&quot;)++
+1`(257,&quot;0-2&quot;,&quot;left_low&quot;,&quot;M&quot;)++
+1`(258,&quot;3-5&quot;,&quot;left_low&quot;,&quot;M&quot;)++
+1`(259,&quot;6-8&quot;,&quot;right_low&quot;,&quot;M&quot;)++
+1`(260,&quot;3-5&quot;,&quot;left_up&quot;,&quot;M&quot;)++
+1`(261,&quot;3-5&quot;,&quot;right_up&quot;,&quot;M&quot;)++
+1`(262,&quot;12-14&quot;,&quot;right_low&quot;,&quot;M&quot;)++
+1`(263,&quot;0-2&quot;,&quot;left_up&quot;,&quot;M&quot;)++
+1`(264,&quot;0-2&quot;,&quot;left_up&quot;,&quot;M&quot;)++
+1`(265,&quot;0-2&quot;,&quot;left_low&quot;,&quot;M&quot;)++
+1`(266,&quot;9-11&quot;,&quot;left_low&quot;,&quot;M&quot;)++
+1`(267,&quot;3-5&quot;,&quot;right_up&quot;,&quot;M&quot;)++
+1`(268,&quot;24-26&quot;,&quot;left_low&quot;,&quot;M&quot;)++
+1`(269,&quot;0-2&quot;,&quot;left_low&quot;,&quot;M&quot;)++
+1`(270,&quot;0-2&quot;,&quot;left_low&quot;,&quot;M&quot;)++
+1`(271,&quot;6-8&quot;,&quot;right_low&quot;,&quot;M&quot;)++
+1`(272,&quot;0-2&quot;,&quot;left_low&quot;,&quot;M&quot;)++
+1`(273,&quot;0-2&quot;,&quot;left_up&quot;,&quot;M&quot;)++
+1`(274,&quot;0-2&quot;,&quot;right_up&quot;,&quot;M&quot;)++
+1`(275,&quot;3-5&quot;,&quot;central&quot;,&quot;M&quot;)++
+1`(276,&quot;9-11&quot;,&quot;left_up&quot;,&quot;M&quot;)++
+1`(277,&quot;6-8&quot;,&quot;right_low&quot;,&quot;M&quot;)++
+1`(278,&quot;6-8&quot;,&quot;left_up&quot;,&quot;M&quot;)++
+1`(279,&quot;15-17&quot;,&quot;right_up&quot;,&quot;M&quot;)++
+1`(280,&quot;6-8&quot;,&quot;left_low&quot;,&quot;M&quot;)++
+1`(281,&quot;6-8&quot;,&quot;left_low&quot;,&quot;M&quot;)++
+1`(282,&quot;0-2&quot;,&quot;left_up&quot;,&quot;M&quot;)++
+1`(283,&quot;0-2&quot;,&quot;left_up&quot;,&quot;M&quot;)++
+1`(284,&quot;0-2&quot;,&quot;left_up&quot;,&quot;M&quot;)++
+1`(285,&quot;3-5&quot;,&quot;left_low&quot;,&quot;M&quot;)++
+1`(286,&quot;3-5&quot;,&quot;left_low&quot;,&quot;M&quot;)</text>
         </initmark>
       </place>
       <place id="ID1414607197">
-        <posattr x="317.000000"
-                 y="148.000000"/>
+        <posattr x="336.000000"
+                 y="126.000000"/>
         <fillattr colour="White"
                   pattern=""
                   filled="false"/>
@@ -274,16 +474,16 @@
                  h="76.000000"/>
         <token x="-10.000000"
                y="0.000000"/>
-        <marking x="44.500000"
-                 y="-11.000000"
+        <marking x="8.500000"
+                 y="64.000000"
                  hidden="false">
           <snap snap_id="0"
-                anchor.horizontal="0"
-                anchor.vertical="0"/>
+                anchor.horizontal="1"
+                anchor.vertical="3"/>
         </marking>
         <type id="ID1414607198">
-          <posattr x="363.000000"
-                   y="148.000000"/>
+          <posattr x="382.000000"
+                   y="126.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -296,8 +496,8 @@
                 version="4.0.1">P</text>
         </type>
         <initmark id="ID1414607199">
-          <posattr x="378.000000"
-                   y="184.000000"/>
+          <posattr x="397.000000"
+                   y="162.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -312,8 +512,8 @@
       </place>
       <trans id="ID1414588143"
              explicit="false">
-        <posattr x="-107.000000"
-                 y="148.000000"/>
+        <posattr x="-104.000000"
+                 y="336.000000"/>
         <fillattr colour="White"
                   pattern=""
                   filled="false"/>
@@ -328,8 +528,8 @@
         <binding x="7.200000"
                  y="-3.000000"/>
         <cond id="ID1414588144">
-          <posattr x="-107.000000"
-                   y="177.000000"/>
+          <posattr x="-104.000000"
+                   y="365.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -339,11 +539,11 @@
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">[inv=&quot;3-5&quot;]</text>
+                version="4.0.1">[inv=&quot;3-5&quot;,bq&lt;&gt;&quot;left_up&quot;]</text>
         </cond>
         <time id="ID1414588145">
-          <posattr x="-31.500000"
-                   y="177.000000"/>
+          <posattr x="-28.500000"
+                   y="365.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -356,8 +556,8 @@
                 version="4.0.1"/>
         </time>
         <code id="ID1414588146">
-          <posattr x="-11.500000"
-                   y="98.000000"/>
+          <posattr x="-8.500000"
+                   y="286.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -370,8 +570,8 @@
                 version="4.0.1"/>
         </code>
         <priority id="ID1414588148">
-          <posattr x="-206.000000"
-                   y="119.000000"/>
+          <posattr x="-203.000000"
+                   y="307.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -386,8 +586,8 @@
       </trans>
       <trans id="ID1414588325"
              explicit="false">
-        <posattr x="-107.000000"
-                 y="63.000000"/>
+        <posattr x="-103.000000"
+                 y="252.000000"/>
         <fillattr colour="White"
                   pattern=""
                   filled="false"/>
@@ -402,8 +602,8 @@
         <binding x="7.200000"
                  y="-3.000000"/>
         <cond id="ID1414588326">
-          <posattr x="-107.000000"
-                   y="93.000000"/>
+          <posattr x="-103.000000"
+                   y="282.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -413,11 +613,11 @@
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">[inv=&quot;15-17&quot;]</text>
+                version="4.0.1">[inv=&quot;15-17&quot;,bq=&quot;left_low&quot;]</text>
         </cond>
         <time id="ID1414588327">
-          <posattr x="-31.500000"
-                   y="93.000000"/>
+          <posattr x="-27.500000"
+                   y="282.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -430,8 +630,8 @@
                 version="4.0.1"/>
         </time>
         <code id="ID1414588328">
-          <posattr x="-11.500000"
-                   y="12.000000"/>
+          <posattr x="-7.500000"
+                   y="201.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -444,8 +644,8 @@
                 version="4.0.1"/>
         </code>
         <priority id="ID1414588330">
-          <posattr x="-206.000000"
-                   y="33.000000"/>
+          <posattr x="-202.000000"
+                   y="222.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -460,8 +660,8 @@
       </trans>
       <trans id="ID1414593510"
              explicit="false">
-        <posattr x="-105.000000"
-                 y="-22.000000"/>
+        <posattr x="-108.000000"
+                 y="126.000000"/>
         <fillattr colour="White"
                   pattern=""
                   filled="false"/>
@@ -476,8 +676,8 @@
         <binding x="7.200000"
                  y="-3.000000"/>
         <cond id="ID1414593511">
-          <posattr x="-105.000000"
-                   y="10.000000"/>
+          <posattr x="-108.000000"
+                   y="158.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -487,11 +687,11 @@
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">[inv=&quot;9-11&quot;]</text>
+                version="4.0.1">[inv=&quot;9-11&quot;,bq&lt;&gt;&quot;left_up&quot;,bq&lt;&gt;&quot;right_up&quot;]</text>
         </cond>
         <time id="ID1414593512">
-          <posattr x="-29.500000"
-                   y="10.000000"/>
+          <posattr x="-32.500000"
+                   y="158.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -504,8 +704,8 @@
                 version="4.0.1"/>
         </time>
         <code id="ID1414593513">
-          <posattr x="-9.500000"
-                   y="-75.000000"/>
+          <posattr x="-12.500000"
+                   y="73.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -518,8 +718,8 @@
                 version="4.0.1"/>
         </code>
         <priority id="ID1414593515">
-          <posattr x="-204.000000"
-                   y="-54.000000"/>
+          <posattr x="-207.000000"
+                   y="94.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -535,7 +735,7 @@
       <trans id="ID1414593770"
              explicit="false">
         <posattr x="-106.000000"
-                 y="-106.000000"/>
+                 y="21.000000"/>
         <fillattr colour="White"
                   pattern=""
                   filled="false"/>
@@ -551,7 +751,7 @@
                  y="-3.000000"/>
         <cond id="ID1414593771">
           <posattr x="-106.000000"
-                   y="-74.000000"/>
+                   y="53.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -561,11 +761,11 @@
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">[inv=&quot;6-8&quot;,bq=&quot;left_low&quot;]</text>
+                version="4.0.1">[inv=&quot;6-8&quot;,bq=&quot;right_low&quot;]</text>
         </cond>
         <time id="ID1414593772">
           <posattr x="-30.500000"
-                   y="-74.000000"/>
+                   y="53.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -579,7 +779,7 @@
         </time>
         <code id="ID1414593773">
           <posattr x="-10.500000"
-                   y="-159.000000"/>
+                   y="-32.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -593,7 +793,7 @@
         </code>
         <priority id="ID1414593775">
           <posattr x="-205.000000"
-                   y="-138.000000"/>
+                   y="-11.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -608,8 +808,82 @@
       </trans>
       <trans id="ID1414631060"
              explicit="false">
-        <posattr x="-105.000000"
-                 y="-188.000000"/>
+        <posattr x="-112.000000"
+                 y="-126.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>Rule9</text>
+        <box w="122.000000"
+             h="42.000000"/>
+        <binding x="7.200000"
+                 y="-3.000000"/>
+        <cond id="ID1414631061">
+          <posattr x="-112.000000"
+                   y="-94.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1">[inv=&quot;12-14&quot;]</text>
+        </cond>
+        <time id="ID1414631062">
+          <posattr x="-36.500000"
+                   y="-94.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1"/>
+        </time>
+        <code id="ID1414631063">
+          <posattr x="-16.500000"
+                   y="-179.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1"/>
+        </code>
+        <priority id="ID1414631065">
+          <posattr x="-211.000000"
+                   y="-158.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1"/>
+        </priority>
+      </trans>
+      <trans id="ID1414649660"
+             explicit="false">
+        <posattr x="-107.000000"
+                 y="-210.000000"/>
         <fillattr colour="White"
                   pattern=""
                   filled="false"/>
@@ -623,9 +897,9 @@
              h="42.000000"/>
         <binding x="7.200000"
                  y="-3.000000"/>
-        <cond id="ID1414631061">
-          <posattr x="-105.000000"
-                   y="-156.000000"/>
+        <cond id="ID1414649661">
+          <posattr x="-107.000000"
+                   y="-178.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -635,11 +909,11 @@
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">[inv=&quot;12-14&quot;]</text>
+                version="4.0.1">[inv=&quot;0-2&quot;,bq=&quot;right_up&quot;]</text>
         </cond>
-        <time id="ID1414631062">
-          <posattr x="-29.500000"
-                   y="-156.000000"/>
+        <time id="ID1414649662">
+          <posattr x="-31.500000"
+                   y="-178.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -651,9 +925,9 @@
           <text tool="CPN Tools"
                 version="4.0.1"/>
         </time>
-        <code id="ID1414631063">
-          <posattr x="-9.500000"
-                   y="-241.000000"/>
+        <code id="ID1414649663">
+          <posattr x="-11.500000"
+                   y="-263.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -665,9 +939,83 @@
           <text tool="CPN Tools"
                 version="4.0.1"/>
         </code>
-        <priority id="ID1414631065">
-          <posattr x="-204.000000"
-                   y="-220.000000"/>
+        <priority id="ID1414649665">
+          <posattr x="-206.000000"
+                   y="-242.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1"/>
+        </priority>
+      </trans>
+      <trans id="ID1414654620"
+             explicit="false">
+        <posattr x="-106.000000"
+                 y="-294.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>Rule 11</text>
+        <box w="122.000000"
+             h="42.000000"/>
+        <binding x="7.200000"
+                 y="-3.000000"/>
+        <cond id="ID1414654621">
+          <posattr x="-106.000000"
+                   y="-262.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1">[inv=&quot;6-8&quot;,bq=&quot;left_low&quot;]</text>
+        </cond>
+        <time id="ID1414654622">
+          <posattr x="-30.500000"
+                   y="-262.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1"/>
+        </time>
+        <code id="ID1414654623">
+          <posattr x="-10.500000"
+                   y="-347.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1"/>
+        </code>
+        <priority id="ID1414654625">
+          <posattr x="-205.000000"
+                   y="-326.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -697,9 +1045,22 @@
                    currentcyckle="2"/>
         <transend idref="ID1414588143"/>
         <placeend idref="ID1412415160"/>
+        <bendpoint id="ID1414656465"
+                   serial="1">
+          <posattr x="-504.000000"
+                   y="325.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+        </bendpoint>
         <annot id="ID1414595862">
-          <posattr x="-341.000000"
-                   y="159.000000"/>
+          <posattr x="-362.000000"
+                   y="336.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -729,10 +1090,10 @@
                    currentcyckle="2"/>
         <transend idref="ID1414588143"/>
         <placeend idref="ID1414607197"/>
-        <bendpoint id="ID1414625657"
+        <bendpoint id="ID1414657156"
                    serial="1">
-          <posattr x="252.000000"
-                   y="148.000000"/>
+          <posattr x="336.000000"
+                   y="336.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -743,8 +1104,8 @@
                     bold="false"/>
         </bendpoint>
         <annot id="ID1414623177">
-          <posattr x="92.000000"
-                   y="159.000000"/>
+          <posattr x="133.000000"
+                   y="348.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -777,7 +1138,7 @@
         <bendpoint id="ID1414645077"
                    serial="1">
           <posattr x="-504.000000"
-                   y="63.000000"/>
+                   y="252.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -788,8 +1149,8 @@
                     bold="false"/>
         </bendpoint>
         <annot id="ID1414642061">
-          <posattr x="-344.000000"
-                   y="74.000000"/>
+          <posattr x="-367.000000"
+                   y="263.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -821,8 +1182,8 @@
         <placeend idref="ID1412415160"/>
         <bendpoint id="ID1414644452"
                    serial="1">
-          <posattr x="-504.000000"
-                   y="-22.000000"/>
+          <posattr x="-420.000000"
+                   y="126.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -833,8 +1194,8 @@
                     bold="false"/>
         </bendpoint>
         <annot id="ID1414642351">
-          <posattr x="-349.000000"
-                   y="-11.000000"/>
+          <posattr x="-305.000000"
+                   y="137.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -867,7 +1228,7 @@
         <bendpoint id="ID1414643839"
                    serial="1">
           <posattr x="-504.000000"
-                   y="-106.000000"/>
+                   y="21.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -879,7 +1240,7 @@
         </bendpoint>
         <annot id="ID1414642644">
           <posattr x="-353.000000"
-                   y="-95.000000"/>
+                   y="33.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -912,7 +1273,7 @@
         <bendpoint id="ID1414643238"
                    serial="1">
           <posattr x="-504.000000"
-                   y="-188.000000"/>
+                   y="-126.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -923,8 +1284,8 @@
                     bold="false"/>
         </bendpoint>
         <annot id="ID1414642940">
-          <posattr x="-351.000000"
-                   y="-177.000000"/>
+          <posattr x="-354.000000"
+                   y="-115.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -956,8 +1317,8 @@
         <placeend idref="ID1414607197"/>
         <bendpoint id="ID1414648753"
                    serial="1">
-          <posattr x="317.000000"
-                   y="63.000000"/>
+          <posattr x="336.000000"
+                   y="252.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -968,8 +1329,8 @@
                     bold="false"/>
         </bendpoint>
         <annot id="ID1414646373">
-          <posattr x="122.000000"
-                   y="74.000000"/>
+          <posattr x="133.000000"
+                   y="263.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -1001,8 +1362,8 @@
         <placeend idref="ID1414607197"/>
         <bendpoint id="ID1414648405"
                    serial="1">
-          <posattr x="317.000000"
-                   y="-22.000000"/>
+          <posattr x="270.000000"
+                   y="126.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -1013,8 +1374,8 @@
                     bold="false"/>
         </bendpoint>
         <annot id="ID1414646705">
-          <posattr x="123.000000"
-                   y="-11.000000"/>
+          <posattr x="99.000000"
+                   y="137.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -1046,8 +1407,8 @@
         <placeend idref="ID1414607197"/>
         <bendpoint id="ID1414648060"
                    serial="1">
-          <posattr x="317.000000"
-                   y="-106.000000"/>
+          <posattr x="336.000000"
+                   y="21.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -1058,8 +1419,8 @@
                     bold="false"/>
         </bendpoint>
         <annot id="ID1414647040">
-          <posattr x="122.000000"
-                   y="-95.000000"/>
+          <posattr x="131.000000"
+                   y="32.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -1091,8 +1452,8 @@
         <placeend idref="ID1414607197"/>
         <bendpoint id="ID1414647718"
                    serial="1">
-          <posattr x="317.000000"
-                   y="-188.000000"/>
+          <posattr x="336.000000"
+                   y="-126.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -1103,8 +1464,188 @@
                     bold="false"/>
         </bendpoint>
         <annot id="ID1414647378">
-          <posattr x="123.000000"
-                   y="-177.000000"/>
+          <posattr x="128.000000"
+                   y="-115.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1">(sr,inv,bq,label)</text>
+        </annot>
+      </arc>
+      <arc id="ID1414650004"
+           orientation="PtoT"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="ID1414649660"/>
+        <placeend idref="ID1412415160"/>
+        <bendpoint id="ID1414650071"
+                   serial="1">
+          <posattr x="-504.000000"
+                   y="-210.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+        </bendpoint>
+        <annot id="ID1414650005">
+          <posattr x="-352.000000"
+                   y="-199.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1">(sr,inv,bq,label)</text>
+        </annot>
+      </arc>
+      <arc id="ID1414650286"
+           orientation="TtoP"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="ID1414649660"/>
+        <placeend idref="ID1414607197"/>
+        <bendpoint id="ID1414650365"
+                   serial="1">
+          <posattr x="336.000000"
+                   y="-210.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+        </bendpoint>
+        <annot id="ID1414650287">
+          <posattr x="130.000000"
+                   y="-198.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1">(sr,inv,bq,label)</text>
+        </annot>
+      </arc>
+      <arc id="ID1414654951"
+           orientation="PtoT"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="ID1414654620"/>
+        <placeend idref="ID1412415160"/>
+        <bendpoint id="ID1414656095"
+                   serial="1">
+          <posattr x="-504.000000"
+                   y="-294.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+        </bendpoint>
+        <annot id="ID1414654952">
+          <posattr x="-353.000000"
+                   y="-283.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1">(sr,inv,bq,label)</text>
+        </annot>
+      </arc>
+      <arc id="ID1414655232"
+           orientation="TtoP"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="ID1414654620"/>
+        <placeend idref="ID1414607197"/>
+        <bendpoint id="ID1414655982"
+                   serial="1">
+          <posattr x="336.000000"
+                   y="-294.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+        </bendpoint>
+        <annot id="ID1414655233">
+          <posattr x="131.000000"
+                   y="-283.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -1367,14 +1908,14 @@
     </options>
     <binders>
       <cpnbinder id="ID1412671820"
-                 x="450"
-                 y="121"
-                 width="1016"
-                 height="601">
+                 x="303"
+                 y="63"
+                 width="1067"
+                 height="680">
         <sheets>
           <cpnsheet id="ID2215"
-                    panx="5.000000"
-                    pany="15.000000"
+                    panx="69.000000"
+                    pany="73.000000"
                     zoom="1.000000"
                     instance="ID2149">
             <zorder>
