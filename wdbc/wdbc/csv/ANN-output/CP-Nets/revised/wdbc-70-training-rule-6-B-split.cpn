@@ -684,7 +684,7 @@
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">[wa&gt;876.5,wp&lt;=119.4,ma&gt;719.5]</text>
+                version="4.0.1">[wa&lt;=782.7,wp&lt;=109.7,ma&lt;=597.8]</text>
         </cond>
         <time id="ID1412790754">
           <posattr x="-37.500000"
