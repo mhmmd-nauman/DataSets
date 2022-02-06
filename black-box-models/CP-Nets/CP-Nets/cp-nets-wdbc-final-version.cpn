@@ -680,7 +680,7 @@
                   type="solid"/>
         <textattr colour="Teal"
                   bold="false"/>
-        <text>Daignosis_M_Labeller</text>
+        <text>Diagnosis_M_Labeller</text>
         <box w="162.000000"
              h="40.000000"/>
         <subst subpage="ID1413993311"
@@ -1401,127 +1401,6 @@
         </annot>
       </arc>
       <constraints/>
-      <Aux id="ID1414057549">
-        <posattr x="-1386.000000"
-                 y="152.000000"/>
-        <fillattr colour="White"
-                  pattern=""
-                  filled="false"/>
-        <lineattr colour="Black"
-                  thick="1"
-                  type="Solid"/>
-        <textattr colour="Black"
-                  bold="false"/>
-        <label/>
-        <text>fun ListDeadMarkings () = PredAllNodes (fn n =&gt; (OutArcs n) = []);
-Reachable (1,17);
-SccReachable (1,17);
-ArcsInPath(1,40);
-List.map ArcToBE (ArcsInPath(1,40));</text>
-      </Aux>
-      <Aux id="ID1414059638">
-        <posattr x="-1326.000000"
-                 y="-210.000000"/>
-        <fillattr colour="White"
-                  pattern=""
-                  filled="false"/>
-        <lineattr colour="Black"
-                  thick="1"
-                  type="Solid"/>
-        <textattr colour="Black"
-                  bold="false"/>
-        <label/>
-        <text>let 
-
-val fid=TextIO.openOut &quot;DeadMarkingAnalysis.txt&quot;
-val _ =TextIO.output(fid,&quot;List of DeadMarkings: \n&quot;) 
-val _ =EvalNodes(ListDeadMarkings(), fn n=&gt;INT.output(fid,n))
-val _ =TextIO.output(fid,&quot;\nNumber of DeadMarkings:&quot;)
-val _ =INT.output(fid,length(ListDeadMarkings()))
-in
-TextIO.closeOut(fid)
-end;</text>
-      </Aux>
-      <Aux id="ID1414079999">
-        <posattr x="-1272.000000"
-                 y="-362.000000"/>
-        <fillattr colour="White"
-                  pattern=""
-                  filled="false"/>
-        <lineattr colour="Black"
-                  thick="1"
-                  type="Solid"/>
-        <textattr colour="Black"
-                  bold="false"/>
-        <label/>
-        <text>fun ListDeadMarkings () : Node list = PredAllNodes Terminal</text>
-      </Aux>
-      <Aux id="ID1414080359">
-        <posattr x="-1459.000000"
-                 y="31.000000"/>
-        <fillattr colour="White"
-                  pattern=""
-                  filled="false"/>
-        <lineattr colour="Black"
-                  thick="1"
-                  type="Solid"/>
-        <textattr colour="Black"
-                  bold="false"/>
-        <label/>
-        <text>let
-fun Mark_NextSend sr = ms_to_col(Mark.DTree_Classifier&apos;Next_Send 1 sr);
-fun ValidTerminal sr = ((Mark.DTree_Classifier&apos;All_Classified 1 sr)==1`3);
-fun InvalidTerminal() = PreNodes(ListDeadMarkings(),
-         fn sr=&gt;not(ValidTerminal sr), NoLimit);
-in
-PredAllArcs 
-         (fn a =&gt;
-         Mark_NextSend(DestNode a) &lt;
-         Mark_NextSend(SourceNode a))
-end</text>
-      </Aux>
-      <Aux id="ID1414086188">
-        <posattr x="-1176.000000"
-                 y="-145.000000"/>
-        <fillattr colour="White"
-                  pattern=""
-                  filled="false"/>
-        <lineattr colour="Black"
-                  thick="1"
-                  type="Solid"/>
-        <textattr colour="Black"
-                  bold="false"/>
-        <label/>
-        <text>print(NodeDescriptor 9999)</text>
-      </Aux>
-      <Aux id="ID1414087976">
-        <posattr x="-966.000000"
-                 y="-504.000000"/>
-        <fillattr colour="White"
-                  pattern=""
-                  filled="false"/>
-        <lineattr colour="Black"
-                  thick="1"
-                  type="Solid"/>
-        <textattr colour="Black"
-                  bold="false"/>
-        <label/>
-        <text>Text</text>
-      </Aux>
-      <Aux id="ID1414088123">
-        <posattr x="-1092.000000"
-                 y="-420.000000"/>
-        <fillattr colour="White"
-                  pattern=""
-                  filled="false"/>
-        <lineattr colour="Black"
-                  thick="1"
-                  type="Solid"/>
-        <textattr colour="Black"
-                  bold="false"/>
-        <label/>
-        <text>PredAllNodes Terminal</text>
-      </Aux>
     </page>
     <page id="ID1413993311">
       <pageattr name="Diagnosis_M_Model"/>
@@ -4300,8 +4179,8 @@ end</text>
                  height="644">
         <sheets>
           <cpnsheet id="ID2215"
-                    panx="18.000000"
-                    pany="87.000000"
+                    panx="-16.000000"
+                    pany="-23.000000"
                     zoom="1.000000"
                     instance="ID2149">
             <zorder>
@@ -4339,8 +4218,8 @@ end</text>
         <zorder>
           <position value="3"/>
           <position value="2"/>
-          <position value="0"/>
           <position value="1"/>
+          <position value="0"/>
         </zorder>
       </cpnbinder>
     </binders>
@@ -4410,9 +4289,7 @@ end</text>
           <IndexNode expanded="false"/>
         </IndexNode>
       </IndexNode>
-      <IndexNode expanded="false">
-        <IndexNode expanded="false"/>
-      </IndexNode>
+      <IndexNode expanded="false"/>
       <IndexNode expanded="true">
         <IndexNode expanded="false">
           <IndexNode expanded="true"/>
