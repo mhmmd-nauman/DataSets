@@ -11,7 +11,6 @@ Age,menopause,tumor-size,inv-nodes,node-caps,deg-malig,breast,breast-quad,irradi
 50-59,ge40,35-39,0-2,no,2,left,left_low,no,M
 50-59,premeno,25-29,0-2,no,2,left,right_up,no,M
 30-39,premeno,0-4,0-2,no,2,right,central,no,M
-50-59,ge40,30-34,0-2,no,3,left,?,no,M
 50-59,premeno,25-29,0-2,no,2,left,right_up,no,M
 50-59,premeno,30-34,0-2,no,3,left,right_up,no,M
 40-49,premeno,35-39,0-2,no,1,right,left_up,no,M

@@ -1,0 +1,2 @@
+Train MAE:  0.8103 , Train Loss:  0.4542
+Val MAE:  0.7368 , Val Loss:  0.6418

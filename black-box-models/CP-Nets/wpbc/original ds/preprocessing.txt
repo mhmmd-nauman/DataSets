@@ -1,2 +1,5 @@
+removed the ID coloumn
+
 Lymph node status
 values ? records were deleted
+
