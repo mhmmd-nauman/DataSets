@@ -37,7 +37,6 @@ Age,menopause,tumor-size,inv-nodes,node-caps,deg-malig,breast,breast-quad,irradi
 50-59,premeno,50-54,11-Sep,yes,2,right,left_up,no,M
 40-49,premeno,30-34,5-Mar,no,2,right,left_up,no,M
 30-39,premeno,30-34,5-Mar,no,3,right,left_up,yes,M
-70-79,ge40,15-19,11-Sep,?,1,left,left_low,yes,M
 60-69,ge40,30-34,0-2,no,3,right,left_up,yes,M
 50-59,premeno,25-29,5-Mar,yes,3,left,left_low,yes,M
 40-49,premeno,25-29,0-2,no,2,right,left_low,no,M
@@ -194,7 +193,6 @@ Age,menopause,tumor-size,inv-nodes,node-caps,deg-malig,breast,breast-quad,irradi
 60-69,ge40,14-Oct,0-2,no,1,left,left_up,no,B
 40-49,premeno,45-49,0-2,no,2,left,left_low,yes,B
 60-69,ge40,45-49,8-Jun,yes,3,left,central,no,B
-40-49,premeno,25-29,0-2,?,2,left,right_low,yes,B
 60-69,ge40,50-54,0-2,no,2,right,left_up,yes,B
 50-59,premeno,30-34,5-Mar,yes,2,left,left_low,yes,B
 30-39,premeno,20-24,0-2,no,3,left,central,no,B
