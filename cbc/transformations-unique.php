@@ -22,7 +22,7 @@ function prints($i){
 //exit;
 
 header("Content-Type: text/csv");
-header("Content-Disposition: attachment; filename=transformation-status.csv");
+header("Content-Disposition: attachment; filename=unique-products.csv");
 // Disable caching
 header("Cache-Control: no-cache, no-store, must-revalidate"); // HTTP 1.1
 header("Pragma: no-cache"); // HTTP 1.0
@@ -33,10 +33,10 @@ header("Expires: 0"); // Proxies
 require '../vendor/autoload.php';
 use PhpOffice\PhpSpreadsheet\IOFactory;
 
-$spreadsheet = IOFactory::load("Partner Product Feed -03-25-2022.xlsx");
+$spreadsheet = IOFactory::load("unique-products-brands.xlsx");
 $sheetData = $spreadsheet->getActiveSheet()->toArray(null, true, true, true);
 
-$spreadsheet1 = IOFactory::load("export_catalog_product_20220323_093911.xlsx");
+$spreadsheet1 = IOFactory::load("export_catalog_product_20220330_182740.xlsx");
 $sheetData1 = $spreadsheet1->getActiveSheet()->toArray(null, true, true, true);
 $a=array();
 $b=array();
@@ -47,55 +47,29 @@ $qty = array();
 $size = array();
 $color = array();
 $qty_in_box = array();
-foreach($sheetData1 as $row){
-	$b[$row['A']]= $row;
-	
-}
-//print_r($b);
-//exit;
-foreach($sheetData as $row){
-	$a[]=trim($row['A']);
-	$names[$row['A']] = trim($row['B']);
-	$row['G'] = str_replace(",","", trim($row['G']));
-	$row['F'] = str_replace(",","", trim($row['F']));
-	$c[$row['A']]= str_replace("$","", trim($row['G']));// min adv price
-	$mrsp[$row['A']]= str_replace("$","", trim($row['F']));
-	$qty[$row['A']]= str_replace("","", trim($row['J']));
-	$size[$row['A']]= str_replace("","", trim($row['C']));
-	$color[$row['A']]= str_replace("","", trim($row['E']));
-	$qty_in_box[$row['A']]= str_replace("","", trim($row['D']));
-}
-//echo"<pre>";
-//print_r($sheetData);
-//echo"</pre>";
-//exit();
 
-foreach($b as $sku=>$row){
-	if(!empty($row['A'])){
+foreach($sheetData as $row){
+	$a[$row['A']]= $row;
+	//str_replace("$","", trim($row['G']));
+	//
+}
+
+foreach($sheetData1 as $row){
+	
 		//$old_emp_code = trim($row['A']);
 		//$status = trim($row['G']);
 		//$ecr_page = trim($row['P']);
 		//print_r($b);
 		//exit;
-		if(in_array(trim($row['A']),$a)){
-				
+		if(!in_array(trim($row['G']),$a)){
+				   $a[] = trim($row['G']);
 				// both data set have product
-				if(empty($row['AU'])){
-					// it has no additional attributes attached
-					$attibute_string = "";
-					if(!empty($size[$row['A']])){
-						$attibute_string = "products_size=".$size[$row['A']];
-					}
-					if(!empty($qty_in_box[$row['A']])){
-						if(!empty($attibute_string)){
-							$attibute_string .= ",qty_in_box=".$qty_in_box[$row['A']];
-						}else{
-							$attibute_string = "qty_in_box=".$qty_in_box[$row['A']];
-						}
-					}
+				
+					
+					
 					outputCSV(array(
 								array(
-													   trim($sku), // sku
+													   trim($row['A']), // sku
 														   
 														   $row['B'],
 														   $row['C'],
@@ -106,7 +80,7 @@ foreach($b as $sku=>$row){
 														   $row['H'],
 														   $row['I'],
 														   $row['J'],
-														   '2',//$row['K'], // disable products product_online
+														   $row['K'], // disable products product_online
 														   $row['L'],
 														   $row['M'],
 														   
@@ -144,7 +118,7 @@ foreach($b as $sku=>$row){
 														   $row['AR'],
 														   $row['AS'],
 														   $row['AT'],
-														   $attibute_string,
+														   $row['AU'],
 														   $row['AV'], // qty
 														   $row['AW'], // mark it out of stock
 														   $row['AX'],
@@ -190,12 +164,11 @@ foreach($b as $sku=>$row){
 													   
 
 								)));
-				}
-		}
+						}
 			
 				   
 
 		
-	}
+	
 }
 exit;
