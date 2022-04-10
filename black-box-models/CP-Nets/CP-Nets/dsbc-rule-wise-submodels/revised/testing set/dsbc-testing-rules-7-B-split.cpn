@@ -133,8 +133,8 @@
                  h="74.000000"/>
         <token x="-10.000000"
                y="0.000000"/>
-        <marking x="-132.000000"
-                 y="7.000000"
+        <marking x="-140.000000"
+                 y="27.000000"
                  hidden="false">
           <snap snap_id="0"
                 anchor.horizontal="2"
@@ -154,9 +154,9 @@
           <text tool="CPN Tools"
                 version="4.0.1">P</text>
         </type>
-        <initmark id="ID1414612396">
-          <posattr x="-621.500000"
-                   y="997.000000"/>
+        <initmark id="ID1414612859">
+          <posattr x="-629.500000"
+                   y="287.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -166,172 +166,62 @@
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">1`(1,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(2,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(3,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
+                version="4.0.1">1`(1,&quot;0-2&quot;,&quot;no&quot;,&quot;M&quot;)++
+1`(2,&quot;3-5&quot;,&quot;no&quot;,&quot;B&quot;)++
+1`(3,&quot;0-2&quot;,&quot;no&quot;,&quot;M&quot;)++
 1`(4,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(5,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
+1`(5,&quot;6-8&quot;,&quot;yes&quot;,&quot;M&quot;)++
 1`(6,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(7,&quot;9-11&quot;,&quot;yes&quot;,&quot;M&quot;)++
-1`(8,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(9,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(10,&quot;0-2&quot;,&quot;yes&quot;,&quot;B&quot;)++
+1`(7,&quot;0-2&quot;,&quot;no&quot;,&quot;M&quot;)++
+1`(8,&quot;3-5&quot;,&quot;yes&quot;,&quot;M&quot;)++
+1`(9,&quot;0-2&quot;,&quot;no&quot;,&quot;M&quot;)++
+1`(10,&quot;3-5&quot;,&quot;yes&quot;,&quot;B&quot;)++
 1`(11,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(12,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(13,&quot;6-8&quot;,&quot;yes&quot;,&quot;M&quot;)++
+1`(12,&quot;9-11&quot;,&quot;yes&quot;,&quot;B&quot;)++
+1`(13,&quot;0-2&quot;,&quot;no&quot;,&quot;M&quot;)++
 1`(14,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(15,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(16,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
+1`(15,&quot;3-5&quot;,&quot;no&quot;,&quot;M&quot;)++
+1`(16,&quot;3-5&quot;,&quot;yes&quot;,&quot;B&quot;)++
 1`(17,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(18,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
+1`(18,&quot;3-5&quot;,&quot;no&quot;,&quot;M&quot;)++
 1`(19,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(20,&quot;3-5&quot;,&quot;yes&quot;,&quot;B&quot;)++
+1`(20,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
 1`(21,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
 1`(22,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(23,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(24,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
+1`(23,&quot;9-11&quot;,&quot;yes&quot;,&quot;B&quot;)++
+1`(24,&quot;0-2&quot;,&quot;no&quot;,&quot;M&quot;)++
 1`(25,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
 1`(26,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(27,&quot;3-5&quot;,&quot;no&quot;,&quot;M&quot;)++
-1`(28,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
+1`(27,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
+1`(28,&quot;15-17&quot;,&quot;yes&quot;,&quot;B&quot;)++
 1`(29,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(30,&quot;3-5&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(31,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
+1`(30,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
+1`(31,&quot;0-2&quot;,&quot;no&quot;,&quot;M&quot;)++
 1`(32,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
 1`(33,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
 1`(34,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
 1`(35,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
 1`(36,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(37,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
+1`(37,&quot;0-2&quot;,&quot;no&quot;,&quot;M&quot;)++
 1`(38,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
 1`(39,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(40,&quot;3-5&quot;,&quot;no&quot;,&quot;M&quot;)++
+1`(40,&quot;0-2&quot;,&quot;no&quot;,&quot;M&quot;)++
 1`(41,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
 1`(42,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
 1`(43,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(44,&quot;12-14&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(45,&quot;3-5&quot;,&quot;yes&quot;,&quot;M&quot;)++
+1`(44,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
+1`(45,&quot;6-8&quot;,&quot;yes&quot;,&quot;M&quot;)++
 1`(46,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(47,&quot;0-2&quot;,&quot;yes&quot;,&quot;B&quot;)++
+1`(47,&quot;0-2&quot;,&quot;no&quot;,&quot;M&quot;)++
 1`(48,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
 1`(49,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(50,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(51,&quot;3-5&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(52,&quot;3-5&quot;,&quot;no&quot;,&quot;M&quot;)++
+1`(50,&quot;6-8&quot;,&quot;yes&quot;,&quot;B&quot;)++
+1`(51,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
+1`(52,&quot;0-2&quot;,&quot;no&quot;,&quot;M&quot;)++
 1`(53,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(54,&quot;0-2&quot;,&quot;yes&quot;,&quot;B&quot;)++
-1`(55,&quot;0-2&quot;,&quot;yes&quot;,&quot;B&quot;)++
-1`(56,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(57,&quot;3-5&quot;,&quot;yes&quot;,&quot;M&quot;)++
-1`(58,&quot;15-17&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(59,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(60,&quot;3-5&quot;,&quot;yes&quot;,&quot;M&quot;)++
-1`(61,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(62,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(63,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(64,&quot;6-8&quot;,&quot;yes&quot;,&quot;M&quot;)++
-1`(65,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(66,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(67,&quot;6-8&quot;,&quot;yes&quot;,&quot;M&quot;)++
-1`(68,&quot;9-11&quot;,&quot;yes&quot;,&quot;M&quot;)++
-1`(69,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(70,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(71,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(72,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(73,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(74,&quot;6-8&quot;,&quot;yes&quot;,&quot;M&quot;)++
-1`(75,&quot;15-17&quot;,&quot;yes&quot;,&quot;M&quot;)++
-1`(76,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(77,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(78,&quot;3-5&quot;,&quot;yes&quot;,&quot;M&quot;)++
-1`(79,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(80,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(81,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(82,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(83,&quot;0-2&quot;,&quot;yes&quot;,&quot;B&quot;)++
-1`(84,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(85,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(86,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(87,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(88,&quot;0-2&quot;,&quot;yes&quot;,&quot;B&quot;)++
-1`(89,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(90,&quot;24-26&quot;,&quot;yes&quot;,&quot;M&quot;)++
-1`(91,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(92,&quot;3-5&quot;,&quot;yes&quot;,&quot;B&quot;)++
-1`(93,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(94,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(95,&quot;3-5&quot;,&quot;yes&quot;,&quot;M&quot;)++
-1`(96,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(97,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(98,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(99,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(100,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(101,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(102,&quot;3-5&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(103,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(104,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(105,&quot;6-8&quot;,&quot;yes&quot;,&quot;M&quot;)++
-1`(106,&quot;0-2&quot;,&quot;yes&quot;,&quot;B&quot;)++
-1`(107,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(108,&quot;6-8&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(109,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(110,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(111,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(112,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(113,&quot;6-8&quot;,&quot;yes&quot;,&quot;M&quot;)++
-1`(114,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(115,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(116,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(117,&quot;12-14&quot;,&quot;yes&quot;,&quot;M&quot;)++
-1`(118,&quot;3-5&quot;,&quot;yes&quot;,&quot;M&quot;)++
-1`(119,&quot;6-8&quot;,&quot;yes&quot;,&quot;M&quot;)++
-1`(120,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(121,&quot;3-5&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(122,&quot;15-17&quot;,&quot;yes&quot;,&quot;B&quot;)++
-1`(123,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(124,&quot;3-5&quot;,&quot;yes&quot;,&quot;M&quot;)++
-1`(125,&quot;3-5&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(126,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(127,&quot;9-11&quot;,&quot;no&quot;,&quot;M&quot;)++
-1`(128,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(129,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(130,&quot;3-5&quot;,&quot;yes&quot;,&quot;M&quot;)++
-1`(131,&quot;3-5&quot;,&quot;yes&quot;,&quot;M&quot;)++
-1`(132,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(133,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(134,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(135,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(136,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(137,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(138,&quot;6-8&quot;,&quot;no&quot;,&quot;M&quot;)++
-1`(139,&quot;3-5&quot;,&quot;yes&quot;,&quot;M&quot;)++
-1`(140,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(141,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(142,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(143,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(144,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(145,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(146,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(147,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(148,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(149,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(150,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(151,&quot;9-11&quot;,&quot;yes&quot;,&quot;M&quot;)++
-1`(152,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(153,&quot;3-5&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(154,&quot;0-2&quot;,&quot;yes&quot;,&quot;B&quot;)++
-1`(155,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(156,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(157,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(158,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(159,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(160,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(161,&quot;3-5&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(162,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(163,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(164,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(165,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
-1`(166,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)</text>
+1`(54,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)++
+1`(55,&quot;6-8&quot;,&quot;yes&quot;,&quot;M&quot;)++
+1`(56,&quot;0-2&quot;,&quot;no&quot;,&quot;B&quot;)</text>
         </initmark>
       </place>
       <place id="ID1412440080">
@@ -398,7 +288,7 @@
                   type="solid"/>
         <textattr colour="Black"
                   bold="false"/>
-        <text>Rule1</text>
+        <text>Rule7</text>
         <box w="122.000000"
              h="42.000000"/>
         <binding x="7.200000"
@@ -415,7 +305,7 @@
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">[nc=&quot;no&quot;]</text>
+                version="4.0.1">[nc=&quot;yes&quot;,inv=&quot;15-17&quot;]</text>
         </cond>
         <time id="ID1412790754">
           <posattr x="-37.500000"
@@ -448,154 +338,6 @@
         <priority id="ID1412790757">
           <posattr x="-212.000000"
                    y="136.000000"/>
-          <fillattr colour="White"
-                    pattern="Solid"
-                    filled="false"/>
-          <lineattr colour="Black"
-                    thick="0"
-                    type="Solid"/>
-          <textattr colour="Black"
-                    bold="false"/>
-          <text tool="CPN Tools"
-                version="4.0.1"/>
-        </priority>
-      </trans>
-      <trans id="ID1414612875"
-             explicit="false">
-        <posattr x="-111.980469"
-                 y="84.000000"/>
-        <fillattr colour="White"
-                  pattern=""
-                  filled="false"/>
-        <lineattr colour="Black"
-                  thick="1"
-                  type="solid"/>
-        <textattr colour="Black"
-                  bold="false"/>
-        <text>Rule2</text>
-        <box w="122.000000"
-             h="42.000000"/>
-        <binding x="7.200000"
-                 y="-3.000000"/>
-        <cond id="ID1414612876">
-          <posattr x="-111.980469"
-                   y="116.000000"/>
-          <fillattr colour="White"
-                    pattern="Solid"
-                    filled="false"/>
-          <lineattr colour="Black"
-                    thick="0"
-                    type="Solid"/>
-          <textattr colour="Black"
-                    bold="false"/>
-          <text tool="CPN Tools"
-                version="4.0.1">[nc=&quot;yes&quot;,inv=&quot;0-2&quot;]</text>
-        </cond>
-        <time id="ID1414612877">
-          <posattr x="-36.480469"
-                   y="116.000000"/>
-          <fillattr colour="White"
-                    pattern="Solid"
-                    filled="false"/>
-          <lineattr colour="Black"
-                    thick="0"
-                    type="Solid"/>
-          <textattr colour="Black"
-                    bold="false"/>
-          <text tool="CPN Tools"
-                version="4.0.1"/>
-        </time>
-        <code id="ID1414612878">
-          <posattr x="-16.480469"
-                   y="31.000000"/>
-          <fillattr colour="White"
-                    pattern="Solid"
-                    filled="false"/>
-          <lineattr colour="Black"
-                    thick="0"
-                    type="Solid"/>
-          <textattr colour="Black"
-                    bold="false"/>
-          <text tool="CPN Tools"
-                version="4.0.1"/>
-        </code>
-        <priority id="ID1414612880">
-          <posattr x="-210.980469"
-                   y="52.000000"/>
-          <fillattr colour="White"
-                    pattern="Solid"
-                    filled="false"/>
-          <lineattr colour="Black"
-                    thick="0"
-                    type="Solid"/>
-          <textattr colour="Black"
-                    bold="false"/>
-          <text tool="CPN Tools"
-                version="4.0.1"/>
-        </priority>
-      </trans>
-      <trans id="ID1414612902"
-             explicit="false">
-        <posattr x="-108.980469"
-                 y="0.000000"/>
-        <fillattr colour="White"
-                  pattern=""
-                  filled="false"/>
-        <lineattr colour="Black"
-                  thick="1"
-                  type="solid"/>
-        <textattr colour="Black"
-                  bold="false"/>
-        <text>Rule7</text>
-        <box w="122.000000"
-             h="42.000000"/>
-        <binding x="7.200000"
-                 y="-3.000000"/>
-        <cond id="ID1414612903">
-          <posattr x="-108.980469"
-                   y="32.000000"/>
-          <fillattr colour="White"
-                    pattern="Solid"
-                    filled="false"/>
-          <lineattr colour="Black"
-                    thick="0"
-                    type="Solid"/>
-          <textattr colour="Black"
-                    bold="false"/>
-          <text tool="CPN Tools"
-                version="4.0.1">[nc=&quot;no&quot;,inv=&quot;15-17&quot;]</text>
-        </cond>
-        <time id="ID1414612904">
-          <posattr x="-33.480469"
-                   y="32.000000"/>
-          <fillattr colour="White"
-                    pattern="Solid"
-                    filled="false"/>
-          <lineattr colour="Black"
-                    thick="0"
-                    type="Solid"/>
-          <textattr colour="Black"
-                    bold="false"/>
-          <text tool="CPN Tools"
-                version="4.0.1"/>
-        </time>
-        <code id="ID1414612905">
-          <posattr x="-13.480469"
-                   y="-53.000000"/>
-          <fillattr colour="White"
-                    pattern="Solid"
-                    filled="false"/>
-          <lineattr colour="Black"
-                    thick="0"
-                    type="Solid"/>
-          <textattr colour="Black"
-                    bold="false"/>
-          <text tool="CPN Tools"
-                version="4.0.1"/>
-        </code>
-        <priority id="ID1414612907">
-          <posattr x="-207.980469"
-                   y="-32.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -698,186 +440,6 @@
                 version="4.0.1">(sr,inv,nc,label)</text>
         </annot>
       </arc>
-      <arc id="ID1414613053"
-           orientation="PtoT"
-           order="1">
-        <posattr x="0.000000"
-                 y="0.000000"/>
-        <fillattr colour="White"
-                  pattern=""
-                  filled="false"/>
-        <lineattr colour="Black"
-                  thick="1"
-                  type="Solid"/>
-        <textattr colour="Black"
-                  bold="false"/>
-        <arrowattr headsize="1.200000"
-                   currentcyckle="2"/>
-        <transend idref="ID1414612875"/>
-        <placeend idref="ID1412415160"/>
-        <bendpoint id="ID1414613209"
-                   serial="1">
-          <posattr x="-489.000000"
-                   y="84.000000"/>
-          <fillattr colour="White"
-                    pattern="Solid"
-                    filled="false"/>
-          <lineattr colour="Black"
-                    thick="0"
-                    type="Solid"/>
-          <textattr colour="Black"
-                    bold="false"/>
-        </bendpoint>
-        <annot id="ID1414613054">
-          <posattr x="-333.000000"
-                   y="95.000000"/>
-          <fillattr colour="White"
-                    pattern="Solid"
-                    filled="false"/>
-          <lineattr colour="Black"
-                    thick="0"
-                    type="Solid"/>
-          <textattr colour="Black"
-                    bold="false"/>
-          <text tool="CPN Tools"
-                version="4.0.1">(sr,inv,nc,label)</text>
-        </annot>
-      </arc>
-      <arc id="ID1414613090"
-           orientation="PtoT"
-           order="1">
-        <posattr x="0.000000"
-                 y="0.000000"/>
-        <fillattr colour="White"
-                  pattern=""
-                  filled="false"/>
-        <lineattr colour="Black"
-                  thick="1"
-                  type="Solid"/>
-        <textattr colour="Black"
-                  bold="false"/>
-        <arrowattr headsize="1.200000"
-                   currentcyckle="2"/>
-        <transend idref="ID1414612902"/>
-        <placeend idref="ID1412415160"/>
-        <bendpoint id="ID1414613130"
-                   serial="1">
-          <posattr x="-489.000000"
-                   y="0.000000"/>
-          <fillattr colour="White"
-                    pattern="Solid"
-                    filled="false"/>
-          <lineattr colour="Black"
-                    thick="0"
-                    type="Solid"/>
-          <textattr colour="Black"
-                    bold="false"/>
-        </bendpoint>
-        <annot id="ID1414613091">
-          <posattr x="-333.000000"
-                   y="8.000000"/>
-          <fillattr colour="White"
-                    pattern="Solid"
-                    filled="false"/>
-          <lineattr colour="Black"
-                    thick="0"
-                    type="Solid"/>
-          <textattr colour="Black"
-                    bold="false"/>
-          <text tool="CPN Tools"
-                version="4.0.1">(sr,inv,nc,label)</text>
-        </annot>
-      </arc>
-      <arc id="ID1414613725"
-           orientation="TtoP"
-           order="1">
-        <posattr x="0.000000"
-                 y="0.000000"/>
-        <fillattr colour="White"
-                  pattern=""
-                  filled="false"/>
-        <lineattr colour="Black"
-                  thick="1"
-                  type="Solid"/>
-        <textattr colour="Black"
-                  bold="false"/>
-        <arrowattr headsize="1.200000"
-                   currentcyckle="2"/>
-        <transend idref="ID1414612875"/>
-        <placeend idref="ID1412440080"/>
-        <bendpoint id="ID1414613958"
-                   serial="1">
-          <posattr x="276.000000"
-                   y="84.000000"/>
-          <fillattr colour="White"
-                    pattern="Solid"
-                    filled="false"/>
-          <lineattr colour="Black"
-                    thick="0"
-                    type="Solid"/>
-          <textattr colour="Black"
-                    bold="false"/>
-        </bendpoint>
-        <annot id="ID1414613726">
-          <posattr x="104.000000"
-                   y="95.000000"/>
-          <fillattr colour="White"
-                    pattern="Solid"
-                    filled="false"/>
-          <lineattr colour="Black"
-                    thick="0"
-                    type="Solid"/>
-          <textattr colour="Black"
-                    bold="false"/>
-          <text tool="CPN Tools"
-                version="4.0.1">(sr,inv,nc,label)</text>
-        </annot>
-      </arc>
-      <arc id="ID1414613801"
-           orientation="TtoP"
-           order="1">
-        <posattr x="0.000000"
-                 y="0.000000"/>
-        <fillattr colour="White"
-                  pattern=""
-                  filled="false"/>
-        <lineattr colour="Black"
-                  thick="1"
-                  type="Solid"/>
-        <textattr colour="Black"
-                  bold="false"/>
-        <arrowattr headsize="1.200000"
-                   currentcyckle="2"/>
-        <transend idref="ID1414612902"/>
-        <placeend idref="ID1412440080"/>
-        <bendpoint id="ID1414613880"
-                   serial="1">
-          <posattr x="276.000000"
-                   y="0.000000"/>
-          <fillattr colour="White"
-                    pattern="Solid"
-                    filled="false"/>
-          <lineattr colour="Black"
-                    thick="0"
-                    type="Solid"/>
-          <textattr colour="Black"
-                    bold="false"/>
-        </bendpoint>
-        <annot id="ID1414613802">
-          <posattr x="106.000000"
-                   y="11.000000"/>
-          <fillattr colour="White"
-                    pattern="Solid"
-                    filled="false"/>
-          <lineattr colour="Black"
-                    thick="0"
-                    type="Solid"/>
-          <textattr colour="Black"
-                    bold="false"/>
-          <text tool="CPN Tools"
-                version="4.0.1">(sr,inv,nc,label)</text>
-        </annot>
-      </arc>
       <constraints/>
     </page>
     <instances>
@@ -910,7 +472,7 @@
           <boolean>true</boolean>
         </value>
       </option>
-      <option name="extensions.10006.enable">
+      <option name="extensions.10002.enable">
         <value>
           <boolean>true</boolean>
         </value>
@@ -920,12 +482,12 @@
           <boolean>true</boolean>
         </value>
       </option>
-      <option name="extensions.10002.enable">
+      <option name="extensions.10001.enable">
         <value>
           <boolean>true</boolean>
         </value>
       </option>
-      <option name="extensions.10001.enable">
+      <option name="extensions.10006.enable">
         <value>
           <boolean>true</boolean>
         </value>
@@ -1134,8 +696,8 @@
                  height="601">
         <sheets>
           <cpnsheet id="ID2215"
-                    panx="-161.019531"
-                    pany="88.492188"
+                    panx="223.980469"
+                    pany="109.492188"
                     zoom="1.000000"
                     instance="ID2149">
             <zorder>
