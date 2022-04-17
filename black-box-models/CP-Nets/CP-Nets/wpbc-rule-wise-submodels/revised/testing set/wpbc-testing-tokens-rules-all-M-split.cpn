@@ -39,11 +39,6 @@
           <intinf/>
           <layout>colset INTINF = intinf;</layout>
         </color>
-        <color id="ID1412312425">
-          <id>TIME</id>
-          <time/>
-          <layout>colset TIME = time;</layout>
-        </color>
         <color id="ID1412322990">
           <id>REAL</id>
           <real/>
@@ -67,13 +62,6 @@
           </alias>
           <layout>colset WA = REAL;</layout>
         </color>
-        <color id="ID1414612663">
-          <id>MA</id>
-          <alias>
-            <id>REAL</id>
-          </alias>
-          <layout>colset MA = REAL;</layout>
-        </color>
         <color id="ID1414578034">
           <id>WP</id>
           <alias>
@@ -89,18 +77,18 @@
           <layout>colset WCP = REAL;</layout>
         </color>
         <color id="ID1412415365">
-          <id>WT</id>
+          <id>TIME</id>
           <alias>
-            <id>REAL</id>
+            <id>INT</id>
           </alias>
-          <layout>colset WT = REAL;</layout>
+          <layout>colset TIME = INT;</layout>
         </color>
         <color id="ID1414585529">
-          <id>MT</id>
+          <id>SES</id>
           <alias>
             <id>REAL</id>
           </alias>
-          <layout>colset MT = REAL;</layout>
+          <layout>colset SES = REAL;</layout>
         </color>
         <color id="ID1414586552">
           <id>MR</id>
@@ -110,11 +98,11 @@
           <layout>colset MR = REAL;</layout>
         </color>
         <color id="ID1414610755">
-          <id>SEA</id>
+          <id>TSE</id>
           <alias>
             <id>REAL</id>
           </alias>
-          <layout>colset SEA = REAL;</layout>
+          <layout>colset TSE = REAL;</layout>
         </color>
         <color id="ID1412800524">
           <id>L</id>
@@ -125,17 +113,14 @@
           <id>P</id>
           <product>
             <id>NO</id>
-            <id>MA</id>
-            <id>WA</id>
-            <id>SEA</id>
+            <id>TIME</id>
             <id>WP</id>
-            <id>WCP</id>
-            <id>WT</id>
-            <id>MT</id>
-            <id>MR</id>
+            <id>WA</id>
+            <id>TSE</id>
+            <id>SES</id>
             <id>L</id>
           </product>
-          <layout>colset P = product NO*MA*WA*SEA*WP *WCP*WT*MT*MR*L;</layout>
+          <layout>colset P = product NO*TIME*WP *WA*TSE*SES*L;</layout>
         </color>
         <var id="ID1412416313">
           <type>
@@ -146,10 +131,10 @@
         </var>
         <var id="ID1412437406">
           <type>
-            <id>WCP</id>
+            <id>TIME</id>
           </type>
-          <id>wcp</id>
-          <layout>var wcp : WCP ;</layout>
+          <id>t</id>
+          <layout>var t : TIME ;</layout>
         </var>
         <var id="ID1414578097">
           <type>
@@ -160,24 +145,24 @@
         </var>
         <var id="ID1412438155">
           <type>
-            <id>WT</id>
+            <id>WA</id>
           </type>
-          <id>wt</id>
-          <layout>var wt : WT;</layout>
+          <id>wa</id>
+          <layout>var wa : WA;</layout>
         </var>
         <var id="ID1414585898">
           <type>
-            <id>MT</id>
+            <id>TSE</id>
           </type>
-          <id>mt</id>
-          <layout>var mt: MT;</layout>
+          <id>tse</id>
+          <layout>var tse: TSE;</layout>
         </var>
         <var id="ID1414586992">
           <type>
-            <id>MR</id>
+            <id>SES</id>
           </type>
-          <id>mr</id>
-          <layout>var mr: MR;</layout>
+          <id>ses</id>
+          <layout>var ses: SES;</layout>
         </var>
         <var id="ID1412658933">
           <type>
@@ -186,31 +171,10 @@
           <id>label</id>
           <layout>var label : L;</layout>
         </var>
-        <var id="ID1414577545">
-          <type>
-            <id>WA</id>
-          </type>
-          <id>wa</id>
-          <layout>var wa:WA;</layout>
-        </var>
-        <var id="ID1414610968">
-          <type>
-            <id>SEA</id>
-          </type>
-          <id>sea</id>
-          <layout>var sea:SEA;</layout>
-        </var>
-        <var id="ID1414612817">
-          <type>
-            <id>MA</id>
-          </type>
-          <id>ma</id>
-          <layout>var ma:MA;</layout>
-        </var>
       </block>
     </globbox>
     <page id="ID6">
-      <pageattr name="WDBC"/>
+      <pageattr name="WPBC"/>
       <place id="ID1412415160">
         <posattr x="-489.000000"
                  y="168.000000"/>
@@ -227,12 +191,12 @@
                  h="74.000000"/>
         <token x="-10.000000"
                y="0.000000"/>
-        <marking x="-185.000000"
-                 y="119.000000"
+        <marking x="-227.000000"
+                 y="35.000000"
                  hidden="false">
           <snap snap_id="0"
                 anchor.horizontal="2"
-                anchor.vertical="3"/>
+                anchor.vertical="2"/>
         </marking>
         <type id="ID1412415161">
           <posattr x="-547.000000"
@@ -248,9 +212,9 @@
           <text tool="CPN Tools"
                 version="4.0.1">P</text>
         </type>
-        <initmark id="ID1414616701">
-          <posattr x="-809.000000"
-                   y="704.000000"/>
+        <initmark id="ID1414617574">
+          <posattr x="-721.000000"
+                   y="198.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -260,126 +224,51 @@
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">1`(1,417.20,476.50,18.21,81.39,0.04815,31.62,24.49,11.60,&quot;B&quot;)++
-1`(2,1419.00,3432.00,199.70,214.00,0.16590,47.16,31.12,20.73,&quot;M&quot;)++
-1`(3,290.90,349.90,11.28,68.03,0.04866,36.92,28.20,9.76,&quot;B&quot;)++
-1`(4,432.70,517.80,13.88,84.35,0.09140,25.75,17.46,11.85,&quot;B&quot;)++
-1`(5,527.20,624.10,32.96,90.24,0.01111,22.25,19.31,13.05,&quot;B&quot;)++
-1`(6,485.80,547.40,27.49,89.02,0.09265,22.43,19.07,12.56,&quot;B&quot;)++
-1`(7,386.80,470.90,15.46,78.44,0.03002,41.78,33.81,11.22,&quot;B&quot;)++
-1`(8,1509.00,2360.00,170.00,206.80,0.29100,28.01,19.67,22.27,&quot;M&quot;)++
-1`(9,1384.00,2022.00,81.89,168.20,0.22800,32.07,20.52,21.10,&quot;M&quot;)++
-1`(10,415.10,527.80,23.13,86.04,0.06835,38.81,29.29,11.63,&quot;B&quot;)++
-1`(11,1482.00,2227.00,130.20,195.00,0.24320,25.80,21.90,22.01,&quot;M&quot;)++
-1`(12,1092.00,1873.00,88.25,161.10,0.20480,34.37,21.43,18.77,&quot;M&quot;)++
-1`(13,359.90,489.50,20.20,83.69,0.07485,32.04,21.98,10.80,&quot;B&quot;)++
-1`(14,442.70,589.50,18.95,87.64,0.06876,20.14,10.91,11.93,&quot;B&quot;)++
-1`(15,561.30,686.60,21.03,101.10,0.09090,17.13,13.90,13.56,&quot;B&quot;)++
-1`(16,485.60,633.70,18.40,95.29,0.14070,22.15,18.17,12.65,&quot;B&quot;)++
-1`(17,797.80,1150.00,40.51,123.80,0.09975,33.88,23.24,16.02,&quot;M&quot;)++
-1`(18,475.90,711.40,23.94,97.65,0.22100,40.68,24.04,12.46,&quot;M&quot;)++
-1`(19,381.90,440.80,15.48,76.25,0.05506,16.30,13.08,11.15,&quot;B&quot;)++
-1`(20,427.90,516.50,28.47,82.98,0.03715,25.72,21.60,11.76,&quot;B&quot;)++
-1`(21,509.20,626.90,26.50,95.14,0.06384,24.38,19.54,12.87,&quot;B&quot;)++
-1`(22,257.80,326.60,19.63,67.84,0.07262,17.84,13.90,9.29,&quot;B&quot;)++
-1`(23,557.20,705.60,28.93,96.69,0.07763,41.61,30.72,13.38,&quot;B&quot;)++
-1`(24,1682.00,2782.00,180.20,211.50,0.22640,23.87,19.83,23.09,&quot;M&quot;)++
-1`(25,803.10,1748.00,176.50,157.10,0.21340,27.65,21.08,15.50,&quot;M&quot;)++
-1`(26,538.90,677.30,22.79,97.67,0.09722,20.50,15.34,13.15,&quot;B&quot;)++
-1`(27,656.10,809.20,49.45,114.10,0.11080,18.34,13.98,14.69,&quot;B&quot;)++
-1`(28,386.30,476.10,16.04,84.93,0.13180,20.53,12.96,11.27,&quot;B&quot;)++
-1`(29,904.60,2215.00,102.60,177.00,0.20950,31.56,21.38,16.65,&quot;M&quot;)++
-1`(30,585.90,706.60,29.34,97.90,0.03312,17.50,15.79,13.78,&quot;B&quot;)++
-1`(31,234.30,317.00,28.85,64.01,0.00000,22.80,16.84,8.73,&quot;B&quot;)++
-1`(32,525.20,621.90,20.21,96.31,0.06608,24.61,18.29,12.96,&quot;B&quot;)++
-1`(33,599.50,869.30,18.85,113.90,0.18270,30.80,19.62,13.98,&quot;M&quot;)++
-1`(34,1130.00,1866.00,96.05,165.90,0.17890,26.58,21.31,18.94,&quot;M&quot;)++
-1`(35,1364.00,2010.00,137.90,165.30,0.21050,27.00,23.56,20.94,&quot;M&quot;)++
-1`(36,1192.00,1589.00,63.33,148.70,0.17320,33.58,25.12,19.79,&quot;M&quot;)++
-1`(37,394.10,466.70,18.15,78.00,0.06961,23.84,19.04,11.31,&quot;B&quot;)++
-1`(38,298.30,361.20,11.77,72.22,0.09749,26.83,19.40,9.88,&quot;B&quot;)++
-1`(39,360.50,412.30,20.67,74.08,0.00000,24.77,21.48,10.86,&quot;B&quot;)++
-1`(40,656.40,808.90,23.11,113.50,0.12050,31.73,24.99,14.47,&quot;B&quot;)++
-1`(41,632.60,684.60,10.77,94.44,0.03333,20.65,16.82,14.29,&quot;B&quot;)++
-1`(42,920.60,1408.00,49.00,141.20,0.20660,44.87,39.28,17.46,&quot;M&quot;)++
-1`(43,680.70,760.20,20.72,101.70,0.07955,17.58,14.70,14.81,&quot;B&quot;)++
-1`(44,344.90,410.40,20.74,76.51,0.08600,25.21,20.39,10.71,&quot;B&quot;)++
-1`(45,807.20,1261.00,35.03,132.70,0.18640,27.26,17.88,16.13,&quot;M&quot;)++
-1`(46,372.70,447.10,11.68,79.73,0.06754,20.83,14.93,11.04,&quot;B&quot;)++
-1`(47,1264.00,1938.00,69.06,171.10,0.26850,31.86,21.51,20.34,&quot;M&quot;)++
-1`(48,886.30,1260.00,67.34,130.70,0.14740,26.30,18.80,16.78,&quot;M&quot;)++
-1`(49,406.30,491.80,18.62,80.88,0.09608,21.19,14.93,11.52,&quot;B&quot;)++
-1`(50,659.70,830.50,23.04,108.10,0.09594,28.39,19.34,14.53,&quot;B&quot;)++
-1`(51,538.40,629.60,17.85,92.48,0.07958,37.17,28.06,13.21,&quot;B&quot;)++
-1`(52,493.10,674.70,34.37,99.31,0.10960,24.37,18.22,12.88,&quot;B&quot;)++
-1`(53,334.30,375.40,10.08,70.76,0.06528,24.54,18.61,10.49,&quot;B&quot;)++
-1`(54,662.70,803.70,33.76,102.90,0.06946,29.11,24.02,14.62,&quot;B&quot;)++
-1`(55,448.60,532.80,13.25,84.08,0.07025,18.41,12.74,12.06,&quot;B&quot;)++
-1`(56,513.70,585.40,17.67,88.81,0.10560,19.93,16.02,12.95,&quot;B&quot;)++
-1`(57,701.90,967.00,38.49,113.80,0.11200,28.06,19.07,15.05,&quot;M&quot;)++
-1`(58,642.50,826.40,26.85,109.50,0.15650,30.86,19.77,14.42,&quot;M&quot;)++
-1`(59,565.40,993.60,43.40,116.60,0.11600,29.87,19.63,13.43,&quot;M&quot;)++
-1`(60,370.00,472.40,25.78,82.76,0.07887,25.58,18.59,10.94,&quot;B&quot;)++
-1`(61,1261.00,1731.00,99.04,155.00,0.16280,38.25,28.25,20.13,&quot;M&quot;)++
-1`(62,481.90,677.90,30.29,96.05,0.10150,24.64,18.60,12.47,&quot;B&quot;)++
-1`(63,458.40,624.60,18.57,93.85,0.08829,24.04,18.02,12.21,&quot;B&quot;)++
-1`(64,1274.00,1657.00,74.85,150.20,0.14250,23.03,19.66,20.16,&quot;M&quot;)++
-1`(65,320.80,357.40,7.33,71.08,0.08333,22.04,16.58,10.26,&quot;B&quot;)++
-1`(66,441.30,513.90,19.39,84.48,0.12020,30.36,24.89,11.99,&quot;B&quot;)++
-1`(67,477.10,741.60,27.19,103.40,0.17410,23.75,15.70,12.45,&quot;M&quot;)++
-1`(68,516.40,600.60,15.75,90.81,0.08235,22.00,16.33,12.91,&quot;B&quot;)++
-1`(69,529.40,639.30,15.09,99.48,0.11260,29.16,22.54,13.11,&quot;B&quot;)++
-1`(70,461.40,513.10,15.82,81.60,0.01852,16.47,14.08,12.18,&quot;B&quot;)++
-1`(71,300.20,380.50,49.85,71.04,0.15710,19.49,15.34,9.73,&quot;B&quot;)++
-1`(72,512.20,597.50,18.24,89.27,0.05780,23.64,16.21,12.87,&quot;B&quot;)++
-1`(73,1162.00,1813.00,68.17,161.40,0.17850,30.90,26.47,19.27,&quot;M&quot;)++
-1`(74,1250.00,1479.00,52.49,146.00,0.21730,25.07,19.54,20.18,&quot;M&quot;)++
-1`(75,551.70,830.60,36.35,104.50,0.10010,22.35,14.76,13.27,&quot;B&quot;)++
-1`(76,358.90,433.10,9.60,80.78,0.07966,19.35,15.62,10.88,&quot;B&quot;)++
-1`(77,460.30,564.20,16.51,86.60,0.08211,25.22,17.94,12.25,&quot;B&quot;)++
-1`(78,748.90,1156.00,48.31,124.90,0.15140,26.00,19.48,15.46,&quot;M&quot;)++
-1`(79,541.60,602.00,13.56,88.28,0.04970,27.82,17.43,13.20,&quot;B&quot;)++
-1`(80,798.80,1315.00,54.18,136.80,0.20730,31.48,20.68,16.13,&quot;M&quot;)++
-1`(81,1027.00,1485.00,48.90,140.90,0.17760,25.00,18.87,18.22,&quot;M&quot;)++
-1`(82,546.40,708.80,24.68,98.84,0.09678,23.60,17.02,13.27,&quot;B&quot;)++
-1`(83,685.00,832.70,24.19,125.40,0.24750,27.57,22.53,14.90,&quot;M&quot;)++
-1`(84,445.30,562.60,18.02,86.54,0.05093,27.06,18.90,12.06,&quot;B&quot;)++
-1`(85,731.30,909.40,32.52,117.70,0.21630,36.33,23.95,15.46,&quot;M&quot;)++
-1`(86,546.10,621.20,20.98,92.94,0.05614,29.20,21.57,13.30,&quot;B&quot;)++
-1`(87,918.60,1362.00,87.17,143.20,0.18270,33.15,21.00,17.06,&quot;M&quot;)++
-1`(88,1123.00,1332.00,116.20,151.70,0.17670,29.94,24.80,19.17,&quot;M&quot;)++
-1`(89,1138.00,1538.00,81.23,148.20,0.12180,25.73,18.91,19.00,&quot;M&quot;)++
-1`(90,815.80,939.70,33.12,122.10,0.17750,23.05,19.51,16.25,&quot;M&quot;)++
-1`(91,355.30,441.20,17.74,77.79,0.03413,20.72,14.97,10.75,&quot;B&quot;)++
-1`(92,1288.00,1844.00,52.34,162.30,0.16970,39.16,27.06,20.31,&quot;M&quot;)++
-1`(93,674.80,829.50,19.75,105.90,0.08308,22.74,17.66,14.80,&quot;B&quot;)++
-1`(94,2501.00,4254.00,542.20,251.20,0.26250,31.37,26.27,27.42,&quot;M&quot;)++
-1`(95,641.20,873.20,48.29,110.40,0.10870,16.90,13.47,14.34,&quot;B&quot;)++
-1`(96,181.00,268.60,19.15,59.16,0.00000,30.37,24.54,7.76,&quot;B&quot;)++
-1`(97,646.10,734.60,20.52,100.40,0.05563,31.98,26.99,14.40,&quot;B&quot;)++
-1`(98,399.80,462.00,12.67,79.93,0.08476,22.02,15.39,11.43,&quot;B&quot;)++
-1`(99,491.90,585.70,28.30,86.82,0.01635,20.98,18.07,12.54,&quot;B&quot;)++
-1`(100,403.50,474.20,16.97,82.28,0.09653,37.16,23.93,11.51,&quot;B&quot;)++
-1`(101,2010.00,3234.00,153.10,229.30,0.27560,23.58,17.46,25.73,&quot;M&quot;)++
-1`(102,403.30,510.50,10.50,83.74,0.08958,15.97,10.82,11.41,&quot;B&quot;)++
-1`(103,641.20,862.10,32.14,111.40,0.14140,21.51,16.54,14.42,&quot;B&quot;)++
-1`(104,558.10,675.20,19.29,97.33,0.14530,27.20,18.89,13.51,&quot;B&quot;)++
-1`(105,324.20,390.40,22.68,71.53,0.09744,20.61,16.18,10.25,&quot;B&quot;)++
-1`(106,773.50,1226.00,138.50,143.70,0.24620,31.64,23.20,15.66,&quot;M&quot;)++
-1`(107,506.30,622.10,20.35,91.88,0.07926,24.82,18.00,12.86,&quot;B&quot;)++
-1`(108,704.40,980.90,44.91,125.10,0.23930,19.08,14.26,15.34,&quot;M&quot;)++
-1`(109,349.60,408.30,21.98,73.20,0.00000,19.20,15.15,10.66,&quot;B&quot;)++
-1`(110,466.50,622.90,18.04,92.74,0.06335,31.99,22.44,12.25,&quot;B&quot;)++
-1`(111,537.30,687.60,16.89,95.10,0.10450,23.89,18.22,13.17,&quot;B&quot;)++
-1`(112,321.20,403.70,22.79,75.40,0.03571,24.47,17.48,10.20,&quot;B&quot;)++
-1`(113,648.20,808.90,38.87,108.40,0.12250,29.25,21.46,14.48,&quot;M&quot;)++
-1`(114,496.40,624.00,18.51,90.67,0.11800,31.31,23.97,12.62,&quot;B&quot;)++
-1`(115,203.90,249.80,10.21,58.08,0.07879,29.72,20.70,8.22,&quot;B&quot;)</text>
+                version="4.0.1">1`(1,19,178.6,1926.0,1.1990,0.006356,&quot;M&quot;)++
+1`(2,123,123.8,1150.0,1.1870,0.004029,&quot;B&quot;)++
+1`(3,55,159.8,1724.0,1.0010,0.007392,&quot;B&quot;)++
+1`(4,62,184.2,2403.0,0.8561,0.004910,&quot;B&quot;)++
+1`(5,34,143.2,1362.0,2.1290,0.006455,&quot;B&quot;)++
+1`(6,5,177.0,1986.0,1.5600,0.009327,&quot;B&quot;)++
+1`(7,34,168.2,2022.0,1.3610,0.005467,&quot;B&quot;)++
+1`(8,68,128.9,1085.0,1.2590,0.006518,&quot;B&quot;)++
+1`(9,7,91.8,508.1,1.0270,0.007405,&quot;B&quot;)++
+1`(10,65,129.3,1269.0,1.1500,0.004626,&quot;B&quot;)++
+1`(11,10,194.5,2690.0,1.7170,0.003676,&quot;B&quot;)++
+1`(12,4,229.3,3234.0,0.8509,0.006369,&quot;M&quot;)++
+1`(13,123,98.9,567.7,1.1560,0.009110,&quot;B&quot;)++
+1`(14,3,161.0,1565.0,2.4030,0.006133,&quot;B&quot;)++
+1`(15,36,127.3,1084.0,0.5679,0.002667,&quot;B&quot;)++
+1`(16,39,162.3,1844.0,1.0330,0.005043,&quot;M&quot;)++
+1`(17,125,136.5,1299.0,0.9849,0.005771,&quot;B&quot;)++
+1`(18,68,126.8,905.4,1.4160,0.007494,&quot;B&quot;)++
+1`(19,91,139.2,1410.0,0.4757,0.002866,&quot;B&quot;)++
+1`(20,62,115.9,988.6,0.9988,0.002826,&quot;B&quot;)++
+1`(21,19,111.8,888.3,1.1780,0.007781,&quot;M&quot;)++
+1`(22,7,232.2,3903.0,0.8535,0.005137,&quot;M&quot;)++
+1`(23,94,134.9,1227.0,0.8225,0.005627,&quot;B&quot;)++
+1`(24,56,119.8,928.8,1.0590,0.010150,&quot;B&quot;)++
+1`(25,77,105.3,706.0,1.0690,0.006983,&quot;B&quot;)++
+1`(26,76,105.5,740.7,0.6123,0.003350,&quot;B&quot;)++
+1`(27,12,137.9,1295.0,1.6330,0.006717,&quot;M&quot;)++
+1`(28,35,165.5,1725.0,0.9409,0.005199,&quot;B&quot;)++
+1`(29,11,170.1,2145.0,1.1930,0.006458,&quot;M&quot;)++
+1`(30,10,161.1,1873.0,1.5300,0.007548,&quot;B&quot;)++
+1`(31,5,130.7,1260.0,1.3910,0.006123,&quot;B&quot;)++
+1`(32,105,109.5,826.4,1.8510,0.008005,&quot;B&quot;)++
+1`(33,34,106.0,788.0,1.5280,0.009680,&quot;B&quot;)++
+1`(34,10,159.9,1816.0,1.4580,0.006852,&quot;M&quot;)++
+1`(35,14,153.9,1740.0,1.4080,0.005288,&quot;M&quot;)++
+1`(36,36,124.1,943.2,1.0330,0.005607,&quot;M&quot;)++
+1`(37,74,101.7,768.9,1.8090,0.009098,&quot;M&quot;)++
+1`(38,43,91.9,591.7,1.4260,0.005427,&quot;B&quot;)++
+1`(39,66,171.1,1938.0,1.0230,0.005485,&quot;B&quot;)++
+1`(40,7,171.6,2196.0,1.1400,0.004934,&quot;M&quot;)</text>
         </initmark>
       </place>
       <place id="ID1412440080">
         <posattr x="276.000000"
-                 y="252.000000"/>
+                 y="283.000000"/>
         <fillattr colour="White"
                   pattern=""
                   filled="false"/>
@@ -388,7 +277,7 @@
                   type="Solid"/>
         <textattr colour="Black"
                   bold="false"/>
-        <text>B</text>
+        <text>M</text>
         <ellipse w="76.000000"
                  h="76.000000"/>
         <token x="-10.000000"
@@ -402,7 +291,7 @@
         </marking>
         <type id="ID1412440081">
           <posattr x="322.000000"
-                   y="252.000000"/>
+                   y="283.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -416,7 +305,7 @@
         </type>
         <initmark id="ID1412440082">
           <posattr x="337.000000"
-                   y="288.000000"/>
+                   y="319.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -441,7 +330,7 @@
                   type="solid"/>
         <textattr colour="Black"
                   bold="false"/>
-        <text>Rule6</text>
+        <text>Rule2</text>
         <box w="122.000000"
              h="42.000000"/>
         <binding x="7.200000"
@@ -458,7 +347,7 @@
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">[wa&lt;=782.7,wp&lt;=109.7,ma&lt;=597.8]</text>
+                version="4.0.1">[wp&lt;=162.7,wa&gt;1313.0,t&lt;=17,tse&lt;=1.332]</text>
         </cond>
         <time id="ID1412790754">
           <posattr x="-37.500000"
@@ -503,10 +392,10 @@
                 version="4.0.1"/>
         </priority>
       </trans>
-      <trans id="ID1414615235"
+      <trans id="ID1414615761"
              explicit="false">
-        <posattr x="-105.980469"
-                 y="252.000000"/>
+        <posattr x="-107.980469"
+                 y="27.492188"/>
         <fillattr colour="White"
                   pattern=""
                   filled="false"/>
@@ -515,14 +404,14 @@
                   type="solid"/>
         <textattr colour="Black"
                   bold="false"/>
-        <text>Rule3</text>
+        <text>Rule5</text>
         <box w="122.000000"
              h="42.000000"/>
         <binding x="7.200000"
                  y="-3.000000"/>
-        <cond id="ID1414615236">
-          <posattr x="-105.980469"
-                   y="284.000000"/>
+        <cond id="ID1414615762">
+          <posattr x="-107.980469"
+                   y="59.492188"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -532,11 +421,11 @@
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">[wa&lt;=935.0,wp&gt;101.6,mr&gt;14.2,sea&lt;=36.74]</text>
+                version="4.0.1">[wp&gt;162.7]</text>
         </cond>
-        <time id="ID1414615237">
-          <posattr x="-30.480469"
-                   y="284.000000"/>
+        <time id="ID1414615763">
+          <posattr x="-32.480469"
+                   y="59.492188"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -548,9 +437,9 @@
           <text tool="CPN Tools"
                 version="4.0.1"/>
         </time>
-        <code id="ID1414615238">
-          <posattr x="-10.480469"
-                   y="199.000000"/>
+        <code id="ID1414615764">
+          <posattr x="-12.480469"
+                   y="-25.507812"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -562,83 +451,9 @@
           <text tool="CPN Tools"
                 version="4.0.1"/>
         </code>
-        <priority id="ID1414615240">
-          <posattr x="-204.980469"
-                   y="220.000000"/>
-          <fillattr colour="White"
-                    pattern="Solid"
-                    filled="false"/>
-          <lineattr colour="Black"
-                    thick="0"
-                    type="Solid"/>
-          <textattr colour="Black"
-                    bold="false"/>
-          <text tool="CPN Tools"
-                version="4.0.1"/>
-        </priority>
-      </trans>
-      <trans id="ID1414615621"
-             explicit="false">
-        <posattr x="-105.980469"
-                 y="336.000000"/>
-        <fillattr colour="White"
-                  pattern=""
-                  filled="false"/>
-        <lineattr colour="Black"
-                  thick="1"
-                  type="solid"/>
-        <textattr colour="Black"
-                  bold="false"/>
-        <text>Rule1</text>
-        <box w="122.000000"
-             h="42.000000"/>
-        <binding x="7.200000"
-                 y="-3.000000"/>
-        <cond id="ID1414615622">
-          <posattr x="-105.980469"
-                   y="368.000000"/>
-          <fillattr colour="White"
-                    pattern="Solid"
-                    filled="false"/>
-          <lineattr colour="Black"
-                    thick="0"
-                    type="Solid"/>
-          <textattr colour="Black"
-                    bold="false"/>
-          <text tool="CPN Tools"
-                version="4.0.1">[wa&lt;=876.5,wp&lt;=98.86]</text>
-        </cond>
-        <time id="ID1414615623">
-          <posattr x="-30.480469"
-                   y="368.000000"/>
-          <fillattr colour="White"
-                    pattern="Solid"
-                    filled="false"/>
-          <lineattr colour="Black"
-                    thick="0"
-                    type="Solid"/>
-          <textattr colour="Black"
-                    bold="false"/>
-          <text tool="CPN Tools"
-                version="4.0.1"/>
-        </time>
-        <code id="ID1414615624">
-          <posattr x="-10.480469"
-                   y="283.000000"/>
-          <fillattr colour="White"
-                    pattern="Solid"
-                    filled="false"/>
-          <lineattr colour="Black"
-                    thick="0"
-                    type="Solid"/>
-          <textattr colour="Black"
-                    bold="false"/>
-          <text tool="CPN Tools"
-                version="4.0.1"/>
-        </code>
-        <priority id="ID1414615626">
-          <posattr x="-204.980469"
-                   y="304.000000"/>
+        <priority id="ID1414615766">
+          <posattr x="-206.980469"
+                   y="-4.507812"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -682,8 +497,8 @@
                     bold="false"/>
         </bendpoint>
         <annot id="ID1412790889">
-          <posattr x="-316.000000"
-                   y="133.000000"/>
+          <posattr x="-336.000000"
+                   y="154.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -693,7 +508,7 @@
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">(sr,ma,wa,sea,wp,wcp,wt,mt,mr,label)</text>
+                version="4.0.1">(sr,t,wp,wa,tse,ses,label)</text>
         </annot>
       </arc>
       <arc id="ID1412791398"
@@ -738,10 +553,10 @@
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">(sr,ma,wa,sea,wp,wcp,wt,mt,mr,label)</text>
+                version="4.0.1">(sr,t,wp,wa,tse,ses,label)</text>
         </annot>
       </arc>
-      <arc id="ID1414615353"
+      <arc id="ID1414615792"
            orientation="PtoT"
            order="1">
         <posattr x="0.000000"
@@ -756,12 +571,12 @@
                   bold="false"/>
         <arrowattr headsize="1.200000"
                    currentcyckle="2"/>
-        <transend idref="ID1414615235"/>
+        <transend idref="ID1414615761"/>
         <placeend idref="ID1412415160"/>
-        <bendpoint id="ID1414615387"
+        <bendpoint id="ID1414615811"
                    serial="1">
-          <posattr x="-504.000000"
-                   y="252.000000"/>
+          <posattr x="-489.000000"
+                   y="27.492188"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -771,9 +586,9 @@
           <textattr colour="Black"
                     bold="false"/>
         </bendpoint>
-        <annot id="ID1414615354">
-          <posattr x="-463.000000"
-                   y="217.000000"/>
+        <annot id="ID1414615793">
+          <posattr x="-338.000000"
+                   y="38.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -783,10 +598,10 @@
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">(sr,ma,wa,sea,wp,wcp,wt,mt,mr,label)</text>
+                version="4.0.1">(sr,t,wp,wa,tse,ses,label)</text>
         </annot>
       </arc>
-      <arc id="ID1414615465"
+      <arc id="ID1414615859"
            orientation="TtoP"
            order="1">
         <posattr x="0.000000"
@@ -801,89 +616,12 @@
                   bold="false"/>
         <arrowattr headsize="1.200000"
                    currentcyckle="2"/>
-        <transend idref="ID1414615235"/>
+        <transend idref="ID1414615761"/>
         <placeend idref="ID1412440080"/>
-        <annot id="ID1414615466">
-          <posattr x="89.000000"
-                   y="264.000000"/>
-          <fillattr colour="White"
-                    pattern="Solid"
-                    filled="false"/>
-          <lineattr colour="Black"
-                    thick="0"
-                    type="Solid"/>
-          <textattr colour="Black"
-                    bold="false"/>
-          <text tool="CPN Tools"
-                version="4.0.1">(sr,ma,wa,sea,wp,wcp,wt,mt,mr,label)</text>
-        </annot>
-      </arc>
-      <arc id="ID1414615793"
-           orientation="PtoT"
-           order="1">
-        <posattr x="0.000000"
-                 y="0.000000"/>
-        <fillattr colour="White"
-                  pattern=""
-                  filled="false"/>
-        <lineattr colour="Black"
-                  thick="1"
-                  type="Solid"/>
-        <textattr colour="Black"
-                  bold="false"/>
-        <arrowattr headsize="1.200000"
-                   currentcyckle="2"/>
-        <transend idref="ID1414615621"/>
-        <placeend idref="ID1412415160"/>
-        <bendpoint id="ID1414615854"
-                   serial="1">
-          <posattr x="-504.000000"
-                   y="336.000000"/>
-          <fillattr colour="White"
-                    pattern="Solid"
-                    filled="false"/>
-          <lineattr colour="Black"
-                    thick="0"
-                    type="Solid"/>
-          <textattr colour="Black"
-                    bold="false"/>
-        </bendpoint>
-        <annot id="ID1414615794">
-          <posattr x="-422.000000"
-                   y="347.000000"/>
-          <fillattr colour="White"
-                    pattern="Solid"
-                    filled="false"/>
-          <lineattr colour="Black"
-                    thick="0"
-                    type="Solid"/>
-          <textattr colour="Black"
-                    bold="false"/>
-          <text tool="CPN Tools"
-                version="4.0.1">(sr,ma,wa,sea,wp,wcp,wt,mt,mr,label)</text>
-        </annot>
-      </arc>
-      <arc id="ID1414616050"
-           orientation="TtoP"
-           order="1">
-        <posattr x="0.000000"
-                 y="0.000000"/>
-        <fillattr colour="White"
-                  pattern=""
-                  filled="false"/>
-        <lineattr colour="Black"
-                  thick="1"
-                  type="Solid"/>
-        <textattr colour="Black"
-                  bold="false"/>
-        <arrowattr headsize="1.200000"
-                   currentcyckle="2"/>
-        <transend idref="ID1414615621"/>
-        <placeend idref="ID1412440080"/>
-        <bendpoint id="ID1414616123"
+        <bendpoint id="ID1414615887"
                    serial="1">
           <posattr x="276.000000"
-                   y="336.000000"/>
+                   y="27.492188"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -893,9 +631,9 @@
           <textattr colour="Black"
                     bold="false"/>
         </bendpoint>
-        <annot id="ID1414616051">
+        <annot id="ID1414615860">
           <posattr x="107.000000"
-                   y="347.000000"/>
+                   y="38.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -905,7 +643,7 @@
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">(sr,ma,wa,sea,wp,wcp,wt,mt,mr,label)</text>
+                version="4.0.1">(sr,t,wp,wa,tse,ses,label)</text>
         </annot>
       </arc>
       <constraints/>
@@ -935,12 +673,12 @@
           <text>&lt;same as model&gt;</text>
         </value>
       </option>
-      <option name="extensions.10003.enable">
+      <option name="extensions.10006.enable">
         <value>
           <boolean>true</boolean>
         </value>
       </option>
-      <option name="extensions.10006.enable">
+      <option name="extensions.10002.enable">
         <value>
           <boolean>true</boolean>
         </value>
@@ -950,7 +688,7 @@
           <boolean>true</boolean>
         </value>
       </option>
-      <option name="extensions.10002.enable">
+      <option name="extensions.10003.enable">
         <value>
           <boolean>true</boolean>
         </value>
@@ -1158,14 +896,14 @@
     </options>
     <binders>
       <cpnbinder id="ID1412671820"
-                 x="450"
-                 y="121"
-                 width="1016"
-                 height="601">
+                 x="454"
+                 y="77"
+                 width="1200"
+                 height="734">
         <sheets>
           <cpnsheet id="ID2215"
-                    panx="36.980469"
-                    pany="186.492188"
+                    panx="-180.019531"
+                    pany="249.492188"
                     zoom="1.000000"
                     instance="ID2149">
             <zorder>
@@ -1257,11 +995,6 @@
           <IndexNode expanded="false"/>
           <IndexNode expanded="false"/>
           <IndexNode expanded="false"/>
-          <IndexNode expanded="false"/>
-          <IndexNode expanded="true"/>
-          <IndexNode expanded="true"/>
-          <IndexNode expanded="true"/>
-          <IndexNode expanded="true"/>
           <IndexNode expanded="true"/>
           <IndexNode expanded="true"/>
           <IndexNode expanded="true"/>
