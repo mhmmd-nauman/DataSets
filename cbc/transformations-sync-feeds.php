@@ -20,9 +20,8 @@ function prints($i){
 //exit;
 //print_r(get_stage_scale(2544,$db));
 //exit;
-
 header("Content-Type: text/csv");
-header("Content-Disposition: attachment; filename=transformation-status.csv");
+header("Content-Disposition: attachment; filename=sync-file".time().".csv");
 // Disable caching
 header("Cache-Control: no-cache, no-store, must-revalidate"); // HTTP 1.1
 header("Pragma: no-cache"); // HTTP 1.0
@@ -44,6 +43,8 @@ $c=array();
 $mrsp=array();
 $names = array();
 $qty = array();
+$instock = array();
+$isonline = array();
 foreach($sheetData as $row){
 	$a[]=trim($row['A']);
 	$names[$row['A']] = trim($row['B']);
@@ -52,124 +53,32 @@ foreach($sheetData as $row){
 	$c[$row['A']]= str_replace("$","", trim($row['G']));// min adv price
 	$mrsp[$row['A']]= str_replace("$","", trim($row['F']));
 	$qty[$row['A']]= str_replace("","", trim($row['J']));
+	if($row['J'] > 0){
+		$instock[$row['A']] = 0;
+		$isonline[$row['A']] = 1;
+	} else{
+		$instock[$row['A']] = 1;
+		$isonline[$row['A']] = 2;
+	}
 }
-foreach($sheetData1 as $row){
-	
-	$b[$row['A']]= $row;
-	//str_replace("$","", trim($row['G']));
-	
-	//
-	
-}
+
 //echo"<pre>";
-//print_r($a);
+//print_r($sheetData);
 //echo"</pre>";
 //exit();
-/*
-outputCSV(array(
-													   array(
-														   'sku',
-														   'store_view_code',
-														   'attribute_set_code',
-														   'product_type',
-														   'categories',
-														   'product_websites',
-														   'name',
-														   'description',
-														   'short_description',
-														   'weight',
-														   'product_online',
-														   'tax_class_name',
-														   'visibility',
-														   'price',
-														   'special_price',
-														   'special_price_from_date',
-														   'special_price_to_date',
-														   'url_key',
-														   'meta_title',
-														   'meta_keywords',
-														   'meta_description',
-														   'base_image',
-														   'base_image_label',
-														   'small_image',
-														   'small_image_label',
-														   'thumbnail_image',
-														   'thumbnail_image_label',
-														   'swatch_image',
-														   'swatch_image_label',
-														   'created_at',
-														   'updated_at',
-														   'new_from_date',
-														   'new_to_date',
-														   'display_product_options_in',
-														   'map_price',
-														   'msrp_price',
-														   'map_enabled',
-														   'gift_message_available',
-														   'custom_design',
-														   'custom_design_from',
-														   'custom_design_to',
-														   'custom_layout_update',
-														   'page_layout',
-														   'product_options_container',
-														   'msrp_display_actual_price_type',
-														   'country_of_manufacture',
-														   'additional_attributes',
-														   'qty',
-														   'out_of_stock_qty',
-														   'use_config_min_qty',
-														   'is_qty_decimal',
-														   'allow_backorders',
-														   'use_config_backorders',
-														   'min_cart_qty',
-														   'use_config_min_sale_qty',
-														   'max_cart_qty',
-														   'use_config_max_sale_qty',
-														   'is_in_stock',
-														   'notify_on_stock_below',
-														   'use_config_notify_stock_qty',
-														   'manage_stock',
-														   'use_config_manage_stock',
-														   'use_config_qty_increments',
-														   'qty_increments',
-														   'use_config_enable_qty_inc',
-														   'enable_qty_increments',
-														   'is_decimal_divided',
-														   'website_id',
-														   'deferred_stock_update',
-														   'use_config_deferred_stock_update',
-														   'related_skus',
-														   'crosssell_skus',
-														   'upsell_skus',
-														   'hide_from_product_page',
-														   'custom_options',
-														   
-														   'bundle_price_type',
-														   'bundle_sku_type',
-														   'bundle_price_view',
-														   
-														   'bundle_weight_type',
-														   'bundle_values',
-														   'bundle_shipment_type',
-														   'associated_skus',
-														   
-														   'downloadable_links',
-														   'downloadable_samples',
-														   'configurable_variations',
-														   'configurable_variation_labels',
-														   
-						)));
-						*/
-foreach($b as $sku=>$row){
-	     //print_r($row);
-		 //exit;
-		//$old_emp_code = trim($row['A']);
+
+foreach($sheetData1 as $row){
+	
+		$sku = trim($row['A']);
 		//$status = trim($row['G']);
 		//$ecr_page = trim($row['P']);
 		
 		
-				if(!in_array($sku,$a) && $row['K'] == 1 ){
-							
+				if(in_array($sku,$a)){
+				$url=str_replace(" ","-", trim($names[$sku]));
+				$url=str_replace("'","", $url);	
+				$url=str_replace("&","", $url);
+				$url=str_replace("/","", $url)."-".$sku;			
 				outputCSV(array(
 													   array(
 														   trim($sku), // sku
@@ -179,15 +88,15 @@ foreach($b as $sku=>$row){
 														   $row['D'],
 														   $row['E'],
 														   $row['F'],
-														   $row['G'],// name
+														   $names[$sku],// name
 														   $row['H'],
 														   $row['I'],
 														   $row['J'],
-														   '2',//$row['K'], // disable products product_online
+														   $isonline[$sku],//$row['K'], // disable products product_online
 														   $row['L'],
 														   $row['M'],
 														   
-														   $row['N'],//price
+														   $c[$sku],//price
 														   $row['O'],
 														   $row['P'],
 														   $row['Q'],
@@ -210,7 +119,7 @@ foreach($b as $sku=>$row){
 														   
 														   $row['AH'],
 														   $row['AI'],
-														   $row['AJ'], // msrp_price
+														   $mrsp[$sku], // msrp_price
 														   $row['AK'],
 														   $row['AL'],
 														   $row['AM'],
@@ -222,8 +131,8 @@ foreach($b as $sku=>$row){
 														   $row['AS'],
 														   $row['AT'],
 														   $row['AU'],
-														   $row['AV'], // qty
-														   $row['AW'], // mark it out of stock
+														   $qty[$sku], // qty
+														   $instock[$sku], // mark it out of stock
 														   $row['AX'],
 														   $row['AY'],
 														   $row['AZ'],
@@ -263,7 +172,7 @@ foreach($b as $sku=>$row){
 														   $row['CH'],
 														   $row['CI'],
 														   $row['CJ'],
-														   $row['CK'], // configurable_variation_labels
+														   $row['CK'],
 														   
 
 						)));

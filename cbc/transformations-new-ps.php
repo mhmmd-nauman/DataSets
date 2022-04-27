@@ -29,13 +29,13 @@ header("Expires: 0"); // Proxies
 
 
 
-require '../vendor/autoload.php';
+require 'vendor/autoload.php';
 use PhpOffice\PhpSpreadsheet\IOFactory;
 
-$spreadsheet = IOFactory::load("Partner Product Feed -03-25-2022.xlsx");
+$spreadsheet = IOFactory::load("Partner Product Feed - 04-22-2022.xlsx");
 $sheetData = $spreadsheet->getActiveSheet()->toArray(null, true, true, true);
 
-$spreadsheet1 = IOFactory::load("export_catalog_product_20220323_093911.xlsx");
+$spreadsheet1 = IOFactory::load("export_catalog_product_20220422_190929.xlsx");
 $sheetData1 = $spreadsheet1->getActiveSheet()->toArray(null, true, true, true);
 $a=array();
 $b=array();
@@ -43,6 +43,7 @@ $c=array();
 $mrsp=array();
 $names = array();
 $qty = array();
+$instock = array();
 foreach($sheetData as $row){
 	$a[]=trim($row['A']);
 	$names[$row['A']] = trim($row['B']);
@@ -51,6 +52,11 @@ foreach($sheetData as $row){
 	$c[$row['A']]= str_replace("$","", trim($row['G']));// min adv price
 	$mrsp[$row['A']]= str_replace("$","", trim($row['F']));
 	$qty[$row['A']]= str_replace("","", trim($row['J']));
+	if($row['J'] > 0){
+		$instock[$row['A']] = 0;
+	} else{
+		$instock[$row['A']] = 1;
+	}
 }
 foreach($sheetData1 as $row){
 	
@@ -220,7 +226,7 @@ foreach($a as $sku){
 														   '',
 														   '',// additional_attributes
 														   $qty[$sku], // qty
-														   '0',
+														   $instock[$sku],
 														   '1',
 														   '0',
 														   '0',
