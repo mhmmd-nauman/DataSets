@@ -32,10 +32,10 @@ header("Expires: 0"); // Proxies
 require 'vendor/autoload.php';
 use PhpOffice\PhpSpreadsheet\IOFactory;
 
-$spreadsheet = IOFactory::load("Partner Product Feed - 04-22-2022.xlsx");
+$spreadsheet = IOFactory::load("Partner Product Feed - 04-27-2022.xlsx");
 $sheetData = $spreadsheet->getActiveSheet()->toArray(null, true, true, true);
 
-$spreadsheet1 = IOFactory::load("export_catalog_product_20220422_190929.xlsx");
+$spreadsheet1 = IOFactory::load("export_catalog_product_20220427_181131.xlsx");
 $sheetData1 = $spreadsheet1->getActiveSheet()->toArray(null, true, true, true);
 $a=array();
 $b=array();

@@ -32,10 +32,10 @@ header("Expires: 0"); // Proxies
 require 'vendor/autoload.php';
 use PhpOffice\PhpSpreadsheet\IOFactory;
 
-$spreadsheet = IOFactory::load("Partner Product Feed - 04-22-2022.xlsx");
+$spreadsheet = IOFactory::load("Partner Product Feed - 04-27-2022.xlsx");
 $sheetData = $spreadsheet->getActiveSheet()->toArray(null, true, true, true);
 
-$spreadsheet1 = IOFactory::load("export_catalog_product_20220422_190929.xlsx");
+$spreadsheet1 = IOFactory::load("export_catalog_product_20220427_181131.xlsx");
 $sheetData1 = $spreadsheet1->getActiveSheet()->toArray(null, true, true, true);
 $a=array();
 $b=array();
@@ -45,6 +45,11 @@ $names = array();
 $qty = array();
 $instock = array();
 $isonline = array();
+
+$size = array();
+$color = array();
+$qty_in_box = array();
+
 foreach($sheetData as $row){
 	$a[]=trim($row['A']);
 	$names[$row['A']] = trim($row['B']);
@@ -60,6 +65,11 @@ foreach($sheetData as $row){
 		$instock[$row['A']] = 1;
 		$isonline[$row['A']] = 2;
 	}
+	
+	$size[$row['A']]= str_replace("","", trim($row['C']));
+	$color[$row['A']]= str_replace("","", trim($row['E']));
+	$qty_in_box[$row['A']]= str_replace("","", trim($row['D']));
+	
 }
 
 //echo"<pre>";
@@ -75,11 +85,69 @@ foreach($sheetData1 as $row){
 		
 		
 				if(in_array($sku,$a)){
-				$url=str_replace(" ","-", trim($names[$sku]));
-				$url=str_replace("'","", $url);	
-				$url=str_replace("&","", $url);
-				$url=str_replace("/","", $url)."-".$sku;			
-				outputCSV(array(
+					
+					$url=str_replace(" ","-", trim($names[$sku]));
+					$url=str_replace("'","", $url);	
+					$url=str_replace("&","", $url);
+					$url=str_replace("/","", $url)."-".$sku;			
+					$attibute_string = "";
+					$aditional_attributes_array=explode(",",$row['AU']);
+					foreach((array)$aditional_attributes_array as $atr_row){
+						$row_data=explode("=",$atr_row);
+						if(!empty($row_data[0])&&!empty($row_data[1])){
+							$attributes_array[$row_data[0]] = $row_data[1];
+						}
+					}
+					if(!empty($size[$row['A']])){
+						$flag=0;
+						foreach((array)$aditional_attributes_array as $atr_row){
+							$row_data=explode("=",$atr_row);
+							if($row_data == "products_size"){
+								$flag=1;
+								$attributes_array[$row_data[0]] = $size[$row['A']];
+							}
+						}
+						if($flag == 0){
+							$attributes_array['products_size'] = $size[$row['A']];
+						}
+					}
+					
+					if(!empty($qty_in_box[$row['A']])){
+						$flag=0;
+						foreach((array)$aditional_attributes_array as $atr_row){
+							$row_data=explode("=",$atr_row);
+							if($row_data == "qty_in_box"){
+								$flag=1;
+								$attributes_array[$row_data[0]] = $size[$row['A']];
+							}
+						}
+						if($flag == 0){
+							$attributes_array['qty_in_box'] = $size[$row['A']];
+						}
+					}
+					
+					if(!empty($color[$row['A']])){
+						$flag=0;
+						foreach((array)$aditional_attributes_array as $atr_row){
+							$row_data=explode("=",$atr_row);
+							if($row_data == "product_color"){
+								$flag=1;
+								$attributes_array[$row_data[0]] = $size[$row['A']];
+							}
+						}
+						if($flag == 0){
+							$attributes_array['product_color'] = $size[$row['A']];
+						}
+					}
+					
+					foreach((array)$attributes_array as $atr=>$value){
+						$attibute_string.="$atr=$value,";
+					}
+					if(!empty($attibute_string)){
+						$attibute_string = substr($attibute_string, 0, -1);
+					}
+					$row['AU'] = $attibute_string;
+					outputCSV(array(
 													   array(
 														   trim($sku), // sku
 														   
