@@ -32,10 +32,10 @@ header("Expires: 0"); // Proxies
 require 'vendor/autoload.php';
 use PhpOffice\PhpSpreadsheet\IOFactory;
 
-$spreadsheet = IOFactory::load("Partner Product Feed - 04-27-2022.xlsx");
+$spreadsheet = IOFactory::load("Partner Product Feed - 05-09-2022.xlsx");
 $sheetData = $spreadsheet->getActiveSheet()->toArray(null, true, true, true);
 
-$spreadsheet1 = IOFactory::load("export_catalog_product_20220427_181131.xlsx");
+$spreadsheet1 = IOFactory::load("export_catalog_product_20220508_132705.xlsx");
 $sheetData1 = $spreadsheet1->getActiveSheet()->toArray(null, true, true, true);
 $a=array();
 $b=array();
@@ -49,7 +49,7 @@ $isonline = array();
 $size = array();
 $color = array();
 $qty_in_box = array();
-
+$images = array();
 foreach($sheetData as $row){
 	$a[]=trim($row['A']);
 	$names[$row['A']] = trim($row['B']);
@@ -76,7 +76,11 @@ foreach($sheetData as $row){
 //print_r($sheetData);
 //echo"</pre>";
 //exit();
-
+foreach($sheetData1 as $row){
+	if(strpos($row['V'],".png")){
+		$images[$row['G']][] = array($row['A'],$row['V']) ;
+	}
+}
 foreach($sheetData1 as $row){
 	
 		$sku = trim($row['A']);
@@ -85,7 +89,24 @@ foreach($sheetData1 as $row){
 		
 		
 				if(in_array($sku,$a)){
-					
+
+					if(empty($row['V'])){
+						$image_base_path = "";
+						$image_small_path = "";
+						$image_thumb_path = "";
+						$image_additional_path = "";
+						if(array_key_exists($names[$sku],$images)){
+							$image_base_path = $images[$names[$sku]][count($images[$names[$sku]])-1][1];
+							$image_small_path = $image_base_path;
+							$image_thumb_path = $image_base_path;
+							$image_additional_path = $image_base_path;			
+						}	
+					}else{
+						$image_base_path = $row['V'];
+						$image_small_path = $row['X'];
+						$image_thumb_path = $row['Z'];
+						$image_additional_path = $row['BW'];
+					}
 					$url=str_replace(" ","-", trim($names[$sku]));
 					$url=str_replace("'","", $url);	
 					$url=str_replace("&","", $url);
@@ -110,6 +131,10 @@ foreach($sheetData1 as $row){
 						if($flag == 0){
 							$attributes_array['products_size'] = $size[$row['A']];
 						}
+					}else{
+						if(array_key_exists("products_size",$attributes_array)){
+							unset($attributes_array['products_size']);
+						}
 					}
 					
 					if(!empty($qty_in_box[$row['A']])){
@@ -118,12 +143,17 @@ foreach($sheetData1 as $row){
 							$row_data=explode("=",$atr_row);
 							if($row_data == "qty_in_box"){
 								$flag=1;
-								$attributes_array[$row_data[0]] = $size[$row['A']];
+								$attributes_array[$row_data[0]] = $qty_in_box[$row['A']];
 							}
 						}
 						if($flag == 0){
-							$attributes_array['qty_in_box'] = $size[$row['A']];
+							$attributes_array['qty_in_box'] = $qty_in_box[$row['A']];
 						}
+					}else{
+						if(array_key_exists("qty_in_box",$attributes_array)){
+							unset($attributes_array['qty_in_box']);
+						}
+						
 					}
 					
 					if(!empty($color[$row['A']])){
@@ -132,11 +162,15 @@ foreach($sheetData1 as $row){
 							$row_data=explode("=",$atr_row);
 							if($row_data == "product_color"){
 								$flag=1;
-								$attributes_array[$row_data[0]] = $size[$row['A']];
+								$attributes_array[$row_data[0]] = $color[$row['A']];
 							}
 						}
 						if($flag == 0){
-							$attributes_array['product_color'] = $size[$row['A']];
+							$attributes_array['product_color'] = $color[$row['A']];
+						}
+					}else{
+						if(array_key_exists("product_color",$attributes_array)){
+							unset($attributes_array['product_color']);
 						}
 					}
 					
@@ -172,11 +206,11 @@ foreach($sheetData1 as $row){
 														   $row['S'],// name
 														   $row['T'], // meta_keywords
 														   $row['U'], // name,
-														   $row['V'],
+														   $image_base_path,//$row['V'],
 														   $row['W'],
-														   $row['X'],
+														   $image_small_path,//$row['X'],
 														   $row['Y'],
-														   $row['Z'],
+														   $image_thumb_path,//$row['Z'],
 														   $row['AA'], // 
 														   $row['AB'],
 														   $row['AC'],
@@ -226,7 +260,7 @@ foreach($sheetData1 as $row){
 														   $row['BT'],
 														   $row['BU'],
 														   $row['BV'], // upsell_position
-														   $row['BW'],
+														   $image_additional_path,//$row['BW'],
 														   $row['BX'], // additional_image_labels
 														   $row['BY'],
 														   $row['BZ'],

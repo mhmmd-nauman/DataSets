@@ -1,4 +1,5 @@
 <?php
+$csv_ok = 1;
 function outputCSV($data) {
     $output = fopen("php://output", "w");
     foreach ($data as $row) {
@@ -20,22 +21,23 @@ function prints($i){
 //exit;
 //print_r(get_stage_scale(2544,$db));
 //exit;
-header("Content-Type: text/csv");
-header("Content-Disposition: attachment; filename=transformation-status.csv");
-// Disable caching
-header("Cache-Control: no-cache, no-store, must-revalidate"); // HTTP 1.1
-header("Pragma: no-cache"); // HTTP 1.0
-header("Expires: 0"); // Proxies
-
+if($csv_ok == 1){
+	header("Content-Type: text/csv");
+	header("Content-Disposition: attachment; filename=transformation-status".time().".csv");
+	// Disable caching
+	header("Cache-Control: no-cache, no-store, must-revalidate"); // HTTP 1.1
+	header("Pragma: no-cache"); // HTTP 1.0
+	header("Expires: 0"); // Proxies
+}
 
 
 require 'vendor/autoload.php';
 use PhpOffice\PhpSpreadsheet\IOFactory;
 
-$spreadsheet = IOFactory::load("Partner Product Feed - 04-27-2022.xlsx");
+$spreadsheet = IOFactory::load("Partner Product Feed - 05-09-2022.xlsx");
 $sheetData = $spreadsheet->getActiveSheet()->toArray(null, true, true, true);
 
-$spreadsheet1 = IOFactory::load("export_catalog_product_20220427_181131.xlsx");
+$spreadsheet1 = IOFactory::load("export_catalog_product_20220508_132705.xlsx");
 $sheetData1 = $spreadsheet1->getActiveSheet()->toArray(null, true, true, true);
 $a=array();
 $b=array();
@@ -44,6 +46,7 @@ $mrsp=array();
 $names = array();
 $qty = array();
 $instock = array();
+$images = array();
 foreach($sheetData as $row){
 	$a[]=trim($row['A']);
 	$names[$row['A']] = trim($row['B']);
@@ -64,11 +67,14 @@ foreach($sheetData1 as $row){
 	//str_replace("$","", trim($row['G']));
 	
 	//
-	
+	if(strpos($row['V'],".png")){
+		$images[$row['G']][] = array($row['A'],$row['V']) ;
+	}
 }
 //echo"<pre>";
-//print_r($sheetData);
+//print_r($images["Oliva Serie 'V' Maduro"]);
 //echo"</pre>";
+//echo $images["Oliva Serie 'V' Maduro"][count($images["Oliva Serie 'V' Maduro"])-1][1];
 //exit();
 outputCSV(array(
 													   array(
@@ -145,6 +151,8 @@ outputCSV(array(
 														   'related_skus',
 														   'crosssell_skus',
 														   'upsell_skus',
+														   'additional_images',
+														   'additional_image_labels',
 														   'hide_from_product_page',
 														   'custom_options',
 														   
@@ -174,7 +182,11 @@ foreach($a as $sku){
 				$url=str_replace(" ","-", trim($names[$sku]));
 				$url=str_replace("'","", $url);	
 				$url=str_replace("&","", $url);
-				$url=str_replace("/","", $url)."-".$sku;			
+				$url=str_replace("/","", $url)."-".$sku;
+				$image_path = "";
+				if(array_key_exists($names[$sku],$images)){
+					$image_path = $images[$names[$sku]][count($images[$names[$sku]])-1][1];			
+				}
 				outputCSV(array(
 													   array(
 														   trim($sku), // sku
@@ -197,12 +209,12 @@ foreach($a as $sku){
 														   $url,// url_key
 														   $names[$sku],// name
 														   $names[$sku], // meta_keywords
-														   $names[$sku], // name,
+														   $names[$sku], // meta_description,
+														   $image_path, // base_image
 														   '',
+														   $image_path, // small_image
 														   '',
-														   '',
-														   '',
-														   '',
+														   $image_path, // thumbnail_image
 														   '', // 
 														   '',
 														   '',
@@ -251,9 +263,10 @@ foreach($a as $sku){
 														   '',
 														   '',
 														   '',
-														   '', // upsell_position
+														   
+														   $image_path, // additional_image_labels
 														   '',
-														   '', // additional_image_labels
+														   '', 
 														   '',
 														   '',
 														   '',
@@ -267,6 +280,8 @@ foreach($a as $sku){
 														   '',
 														   '',
 														   '', // configurable_variation_labels
+														   '',
+														   ''
 														   
 
 						)));
