@@ -23,7 +23,7 @@ function prints($i){
 //exit;
 if($csv_ok == 1){
 	header("Content-Type: text/csv");
-	header("Content-Disposition: attachment; filename=transformation-status".time().".csv");
+	header("Content-Disposition: attachment; filename=new-products-".date("Y-m-d").".csv");
 	// Disable caching
 	header("Cache-Control: no-cache, no-store, must-revalidate"); // HTTP 1.1
 	header("Pragma: no-cache"); // HTTP 1.0
@@ -34,10 +34,10 @@ if($csv_ok == 1){
 require 'vendor/autoload.php';
 use PhpOffice\PhpSpreadsheet\IOFactory;
 
-$spreadsheet = IOFactory::load("Partner Product Feed - 05-09-2022.xlsx");
+$spreadsheet = IOFactory::load("Partner Product Feed - 06-02-2022.xlsx");
 $sheetData = $spreadsheet->getActiveSheet()->toArray(null, true, true, true);
 
-$spreadsheet1 = IOFactory::load("export_catalog_product_20220508_132705.xlsx");
+$spreadsheet1 = IOFactory::load("export_catalog_product_20220417_06-02-2022.xlsx");
 $sheetData1 = $spreadsheet1->getActiveSheet()->toArray(null, true, true, true);
 $a=array();
 $b=array();
@@ -47,6 +47,11 @@ $names = array();
 $qty = array();
 $instock = array();
 $images = array();
+
+$size = array();
+$color = array();
+$qty_in_box = array();
+$attributes_array = array();
 foreach($sheetData as $row){
 	$a[]=trim($row['A']);
 	$names[$row['A']] = trim($row['B']);
@@ -60,6 +65,12 @@ foreach($sheetData as $row){
 	} else{
 		$instock[$row['A']] = 1;
 	}
+
+	$size[$row['A']]= str_replace("","", trim($row['C']));
+	$color[$row['A']]= str_replace("","", trim($row['E']));
+	$qty_in_box[$row['A']]= str_replace("","", trim($row['D']));
+	
+
 }
 foreach($sheetData1 as $row){
 	
@@ -187,6 +198,80 @@ foreach($a as $sku){
 				if(array_key_exists($names[$sku],$images)){
 					$image_path = $images[$names[$sku]][count($images[$names[$sku]])-1][1];			
 				}
+
+
+				$attibute_string = "";
+					$aditional_attributes_array= array();//explode(",",$row['AU']);
+					foreach((array)$aditional_attributes_array as $atr_row){
+						$row_data=explode("=",$atr_row);
+						if(!empty($row_data[0])&&!empty($row_data[1])){
+							$attributes_array[$row_data[0]] = $row_data[1];
+						}
+					}
+					if(!empty($size[$sku])){
+						$flag=0;
+						foreach((array)$aditional_attributes_array as $atr_row){
+							$row_data=explode("=",$atr_row);
+							if($row_data == "products_size"){
+								$flag=1;
+								$attributes_array[$row_data[0]] = $size[$sku];
+							}
+						}
+						if($flag == 0){
+							$attributes_array['products_size'] = $size[$sku];
+						}
+					}else{
+						if(array_key_exists("products_size",$attributes_array)){
+							unset($attributes_array['products_size']);
+						}
+					}
+					
+					if(!empty($qty_in_box[$sku])){
+						$flag=0;
+						foreach((array)$aditional_attributes_array as $atr_row){
+							$row_data=explode("=",$atr_row);
+							if($row_data == "qty_in_box"){
+								$flag=1;
+								$attributes_array[$row_data[0]] = $qty_in_box[$sku];
+							}
+						}
+						if($flag == 0){
+							$attributes_array['qty_in_box'] = $qty_in_box[$sku];
+						}
+					}else{
+						if(array_key_exists("qty_in_box",$attributes_array)){
+							unset($attributes_array['qty_in_box']);
+						}
+						
+					}
+					
+					if(!empty($color[$sku])){
+						$flag=0;
+						foreach((array)$aditional_attributes_array as $atr_row){
+							$row_data=explode("=",$atr_row);
+							if($row_data == "product_color"){
+								$flag=1;
+								$attributes_array[$row_data[0]] = $color[$sku];
+							}
+						}
+						if($flag == 0){
+							$attributes_array['product_color'] = $color[$sku];
+						}
+					}else{
+						if(array_key_exists("product_color",$attributes_array)){
+							unset($attributes_array['product_color']);
+						}
+					}
+					
+					foreach((array)$attributes_array as $atr=>$value){
+						$attibute_string.="$atr=$value,";
+					}
+					if(!empty($attibute_string)){
+						$attibute_string = substr($attibute_string, 0, -1);
+					}
+					//$row['AU'] = $attibute_string;
+
+
 				outputCSV(array(
 													   array(
 														   trim($sku), // sku
@@ -236,7 +321,7 @@ foreach($a as $sku){
 														   '', // product_options_container
 														   'Use config',
 														   '',
-														   '',// additional_attributes
+														   $attibute_string,// additional_attributes
 														   $qty[$sku], // qty
 														   $instock[$sku],
 														   '1',

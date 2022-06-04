@@ -21,7 +21,7 @@ function prints($i){
 //print_r(get_stage_scale(2544,$db));
 //exit;
 header("Content-Type: text/csv");
-header("Content-Disposition: attachment; filename=sync-file".time().".csv");
+header("Content-Disposition: attachment; filename=sync-file-".date("Y-m-d").".csv");
 // Disable caching
 header("Cache-Control: no-cache, no-store, must-revalidate"); // HTTP 1.1
 header("Pragma: no-cache"); // HTTP 1.0
@@ -32,10 +32,10 @@ header("Expires: 0"); // Proxies
 require 'vendor/autoload.php';
 use PhpOffice\PhpSpreadsheet\IOFactory;
 
-$spreadsheet = IOFactory::load("Partner Product Feed - 05-09-2022.xlsx");
+$spreadsheet = IOFactory::load("Partner Product Feed - 06-02-2022.xlsx");
 $sheetData = $spreadsheet->getActiveSheet()->toArray(null, true, true, true);
 
-$spreadsheet1 = IOFactory::load("export_catalog_product_20220508_132705.xlsx");
+$spreadsheet1 = IOFactory::load("export_catalog_product_20220417_06-02-2022.xlsx");
 $sheetData1 = $spreadsheet1->getActiveSheet()->toArray(null, true, true, true);
 $a=array();
 $b=array();
@@ -181,6 +181,9 @@ foreach($sheetData1 as $row){
 						$attibute_string = substr($attibute_string, 0, -1);
 					}
 					$row['AU'] = $attibute_string;
+					($image_base_path == "no_selection")?$image_base_path="":"";
+					($image_small_path == "no_selection")?$image_small_path="":"";
+					($image_thumb_path == "no_selection")?$image_thumb_path="":"";
 					outputCSV(array(
 													   array(
 														   trim($sku), // sku
