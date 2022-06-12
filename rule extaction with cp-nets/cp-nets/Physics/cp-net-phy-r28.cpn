@@ -360,7 +360,7 @@
                   type="solid"/>
         <textattr colour="Black"
                   bold="false"/>
-        <text>Rule 2</text>
+        <text>Rule 28</text>
         <box w="122.000000"
              h="42.000000"/>
         <binding x="7.200000"
@@ -377,7 +377,7 @@
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">[pn = &quot;Agriculture&quot;,at &lt;=41,td&lt;=716]</text>
+                version="4.0.1">[td &gt; 971, at &lt;= 49, pn = &quot;Physics&quot;]</text>
         </cond>
         <time id="ID1412866969">
           <posattr x="130.500000"
@@ -513,17 +513,7 @@
           <text>&lt;same as model&gt;</text>
         </value>
       </option>
-      <option name="extensions.10006.enable">
-        <value>
-          <boolean>true</boolean>
-        </value>
-      </option>
       <option name="extensions.10005.enable">
-        <value>
-          <boolean>true</boolean>
-        </value>
-      </option>
-      <option name="extensions.10001.enable">
         <value>
           <boolean>true</boolean>
         </value>
@@ -533,7 +523,17 @@
           <boolean>true</boolean>
         </value>
       </option>
+      <option name="extensions.10001.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
       <option name="extensions.10002.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10006.enable">
         <value>
           <boolean>true</boolean>
         </value>
@@ -737,7 +737,7 @@
     <binders>
       <cpnbinder id="ID1412858219"
                  x="148"
-                 y="98"
+                 y="96"
                  width="1016"
                  height="601">
         <sheets>

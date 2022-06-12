@@ -360,7 +360,7 @@
                   type="solid"/>
         <textattr colour="Black"
                   bold="false"/>
-        <text>Rule 12</text>
+        <text>Rule 14</text>
         <box w="122.000000"
              h="42.000000"/>
         <binding x="7.200000"
@@ -377,7 +377,7 @@
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">[td &gt; 692, pn = &quot;Agriculture&quot;, at &gt; 41, os3 &gt;= 41, os4 &gt; 123]</text>
+                version="4.0.1">[td &lt;= 890, pn = &quot;Physics&quot;]</text>
         </cond>
         <time id="ID1412866969">
           <posattr x="130.500000"
@@ -513,17 +513,7 @@
           <text>&lt;same as model&gt;</text>
         </value>
       </option>
-      <option name="extensions.10006.enable">
-        <value>
-          <boolean>true</boolean>
-        </value>
-      </option>
       <option name="extensions.10005.enable">
-        <value>
-          <boolean>true</boolean>
-        </value>
-      </option>
-      <option name="extensions.10001.enable">
         <value>
           <boolean>true</boolean>
         </value>
@@ -533,7 +523,17 @@
           <boolean>true</boolean>
         </value>
       </option>
+      <option name="extensions.10001.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
       <option name="extensions.10002.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10006.enable">
         <value>
           <boolean>true</boolean>
         </value>
@@ -737,13 +737,13 @@
     <binders>
       <cpnbinder id="ID1412858219"
                  x="148"
-                 y="98"
+                 y="96"
                  width="1016"
                  height="601">
         <sheets>
           <cpnsheet id="ID2215"
-                    panx="-103.000000"
-                    pany="138.000000"
+                    panx="-105.000000"
+                    pany="140.000000"
                     zoom="1.000000"
                     instance="ID2149">
             <zorder>

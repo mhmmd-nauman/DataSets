@@ -350,8 +350,8 @@
       </place>
       <trans id="ID1412866967"
              explicit="false">
-        <posattr x="55.000000"
-                 y="227.000000"/>
+        <posattr x="69.000000"
+                 y="226.000000"/>
         <fillattr colour="White"
                   pattern=""
                   filled="false"/>
@@ -360,14 +360,14 @@
                   type="solid"/>
         <textattr colour="Black"
                   bold="false"/>
-        <text>Rule 12</text>
+        <text>Rule 29</text>
         <box w="122.000000"
              h="42.000000"/>
         <binding x="7.200000"
                  y="-3.000000"/>
         <cond id="ID1412868735">
-          <posattr x="42.000000"
-                   y="277.000000"/>
+          <posattr x="56.000000"
+                   y="276.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -377,11 +377,11 @@
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">[td &gt; 692, pn = &quot;Agriculture&quot;, at &gt; 41, os3 &gt;= 41, os4 &gt; 123]</text>
+                version="4.0.1">[td &gt; 971, at &lt;= 49, pn = &quot;Chemistry&quot;]</text>
         </cond>
         <time id="ID1412866969">
-          <posattr x="130.500000"
-                   y="259.000000"/>
+          <posattr x="144.500000"
+                   y="258.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -394,8 +394,8 @@
                 version="4.0.1"/>
         </time>
         <code id="ID1412866970">
-          <posattr x="150.500000"
-                   y="174.000000"/>
+          <posattr x="164.500000"
+                   y="173.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -408,8 +408,8 @@
                 version="4.0.1"/>
         </code>
         <priority id="ID1412866972">
-          <posattr x="-44.000000"
-                   y="195.000000"/>
+          <posattr x="-30.000000"
+                   y="194.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -440,8 +440,8 @@
         <transend idref="ID1412866967"/>
         <placeend idref="ID1412415160"/>
         <annot id="ID1412870625">
-          <posattr x="-210.000000"
-                   y="166.000000"/>
+          <posattr x="-202.000000"
+                   y="164.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -472,8 +472,8 @@
         <transend idref="ID1412866967"/>
         <placeend idref="ID1412440080"/>
         <annot id="ID1412872316">
-          <posattr x="294.000000"
-                   y="181.000000"/>
+          <posattr x="303.000000"
+                   y="182.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -513,17 +513,7 @@
           <text>&lt;same as model&gt;</text>
         </value>
       </option>
-      <option name="extensions.10006.enable">
-        <value>
-          <boolean>true</boolean>
-        </value>
-      </option>
       <option name="extensions.10005.enable">
-        <value>
-          <boolean>true</boolean>
-        </value>
-      </option>
-      <option name="extensions.10001.enable">
         <value>
           <boolean>true</boolean>
         </value>
@@ -533,7 +523,17 @@
           <boolean>true</boolean>
         </value>
       </option>
+      <option name="extensions.10001.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
       <option name="extensions.10002.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10006.enable">
         <value>
           <boolean>true</boolean>
         </value>
@@ -737,7 +737,7 @@
     <binders>
       <cpnbinder id="ID1412858219"
                  x="148"
-                 y="98"
+                 y="96"
                  width="1016"
                  height="601">
         <sheets>
