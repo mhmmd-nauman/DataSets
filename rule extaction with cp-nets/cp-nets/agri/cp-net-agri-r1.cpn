@@ -1065,16 +1065,6 @@
           <text>&lt;same as model&gt;</text>
         </value>
       </option>
-      <option name="extensions.10006.enable">
-        <value>
-          <boolean>true</boolean>
-        </value>
-      </option>
-      <option name="extensions.10002.enable">
-        <value>
-          <boolean>true</boolean>
-        </value>
-      </option>
       <option name="extensions.10005.enable">
         <value>
           <boolean>true</boolean>
@@ -1086,6 +1076,16 @@
         </value>
       </option>
       <option name="extensions.10001.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10002.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10006.enable">
         <value>
           <boolean>true</boolean>
         </value>
@@ -1288,14 +1288,14 @@
     </options>
     <binders>
       <cpnbinder id="ID1412858219"
-                 x="148"
-                 y="98"
+                 x="852"
+                 y="105"
                  width="1016"
                  height="601">
         <sheets>
           <cpnsheet id="ID2215"
-                    panx="-97.000000"
-                    pany="268.000000"
+                    panx="298.000000"
+                    pany="154.000000"
                     zoom="1.000000"
                     instance="ID2149">
             <zorder>
@@ -1374,10 +1374,8 @@
           <IndexNode expanded="false"/>
         </IndexNode>
       </IndexNode>
-      <IndexNode expanded="false">
-        <IndexNode expanded="false"/>
-      </IndexNode>
-      <IndexNode expanded="false">
+      <IndexNode expanded="false"/>
+      <IndexNode expanded="true">
         <IndexNode expanded="false">
           <IndexNode expanded="true"/>
           <IndexNode expanded="true"/>
