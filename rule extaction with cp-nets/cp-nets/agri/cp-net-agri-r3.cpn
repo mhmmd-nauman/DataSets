@@ -260,11 +260,11 @@
                  h="74.000000"/>
         <token x="-10.000000"
                y="0.000000"/>
-        <marking x="-61.000000"
-                 y="82.000000"
+        <marking x="30.000000"
+                 y="75.000000"
                  hidden="false">
           <snap snap_id="0"
-                anchor.horizontal="2"
+                anchor.horizontal="3"
                 anchor.vertical="2"/>
         </marking>
         <type id="ID1412415161">
@@ -912,7 +912,7 @@
                   type="solid"/>
         <textattr colour="Black"
                   bold="false"/>
-        <text>Rule 2</text>
+        <text>Rule 3</text>
         <box w="122.000000"
              h="42.000000"/>
         <binding x="7.200000"
@@ -1065,16 +1065,6 @@
           <text>&lt;same as model&gt;</text>
         </value>
       </option>
-      <option name="extensions.10006.enable">
-        <value>
-          <boolean>true</boolean>
-        </value>
-      </option>
-      <option name="extensions.10002.enable">
-        <value>
-          <boolean>true</boolean>
-        </value>
-      </option>
       <option name="extensions.10005.enable">
         <value>
           <boolean>true</boolean>
@@ -1086,6 +1076,16 @@
         </value>
       </option>
       <option name="extensions.10001.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10002.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10006.enable">
         <value>
           <boolean>true</boolean>
         </value>

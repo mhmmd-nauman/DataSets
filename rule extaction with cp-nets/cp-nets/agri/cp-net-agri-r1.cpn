@@ -260,12 +260,12 @@
                  h="74.000000"/>
         <token x="-10.000000"
                y="0.000000"/>
-        <marking x="77.000000"
-                 y="81.000000"
+        <marking x="-72.000000"
+                 y="49.000000"
                  hidden="false">
           <snap snap_id="0"
                 anchor.horizontal="3"
-                anchor.vertical="3"/>
+                anchor.vertical="2"/>
         </marking>
         <type id="ID1412415161">
           <posattr x="-196.000000"
@@ -912,14 +912,14 @@
                   type="solid"/>
         <textattr colour="Black"
                   bold="false"/>
-        <text>Rule 2</text>
+        <text>Rule 1</text>
         <box w="122.000000"
              h="42.000000"/>
         <binding x="7.200000"
                  y="-3.000000"/>
         <cond id="ID1412868735">
-          <posattr x="42.000000"
-                   y="277.000000"/>
+          <posattr x="290.500000"
+                   y="265.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -1065,16 +1065,6 @@
           <text>&lt;same as model&gt;</text>
         </value>
       </option>
-      <option name="extensions.10006.enable">
-        <value>
-          <boolean>true</boolean>
-        </value>
-      </option>
-      <option name="extensions.10002.enable">
-        <value>
-          <boolean>true</boolean>
-        </value>
-      </option>
       <option name="extensions.10005.enable">
         <value>
           <boolean>true</boolean>
@@ -1086,6 +1076,16 @@
         </value>
       </option>
       <option name="extensions.10001.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10002.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10006.enable">
         <value>
           <boolean>true</boolean>
         </value>
@@ -1288,14 +1288,14 @@
     </options>
     <binders>
       <cpnbinder id="ID1412858219"
-                 x="148"
-                 y="98"
+                 x="318"
+                 y="124"
                  width="1016"
                  height="601">
         <sheets>
           <cpnsheet id="ID2215"
-                    panx="-97.000000"
-                    pany="268.000000"
+                    panx="-103.000000"
+                    pany="113.000000"
                     zoom="1.000000"
                     instance="ID2149">
             <zorder>
@@ -1374,10 +1374,8 @@
           <IndexNode expanded="false"/>
         </IndexNode>
       </IndexNode>
-      <IndexNode expanded="false">
-        <IndexNode expanded="false"/>
-      </IndexNode>
-      <IndexNode expanded="false">
+      <IndexNode expanded="false"/>
+      <IndexNode expanded="true">
         <IndexNode expanded="false">
           <IndexNode expanded="true"/>
           <IndexNode expanded="true"/>
