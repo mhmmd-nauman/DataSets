@@ -30,15 +30,18 @@ if($csv_ok == 1){
 	header("Expires: 0"); // Proxies
 }
 
+require 'file.php';
 
+/*
 require 'vendor/autoload.php';
 use PhpOffice\PhpSpreadsheet\IOFactory;
 
-$spreadsheet = IOFactory::load("Partner Product Feed - 06-02-2022.xlsx");
+$spreadsheet = IOFactory::load("Partner Product Feed - 06-30-2022.xlsx");
 $sheetData = $spreadsheet->getActiveSheet()->toArray(null, true, true, true);
 
-$spreadsheet1 = IOFactory::load("export_catalog_product_20220417_06-02-2022.xlsx");
+$spreadsheet1 = IOFactory::load("export_catalog_product_20220703_033204.xlsx");
 $sheetData1 = $spreadsheet1->getActiveSheet()->toArray(null, true, true, true);
+*/
 $a=array();
 $b=array();
 $c=array();
@@ -270,8 +273,8 @@ foreach($a as $sku){
 						$attibute_string = substr($attibute_string, 0, -1);
 					}
 					//$row['AU'] = $attibute_string;
-
-
+					$enable_disable='2';
+					($instock[$sku]==0)?$enable_disable='1':$enable_disable='2';
 				outputCSV(array(
 													   array(
 														   trim($sku), // sku
@@ -284,7 +287,7 @@ foreach($a as $sku){
 														   '<p></p>',
 														   '',
 														   '2', // weight
-														   '1',
+														   $enable_disable,//$instock[$sku]==0)?'1':'2', // enabled-disabled
 														   'State Mandated Fee',
 														   'Catalog, Search',
 														   $c[$sku],//price

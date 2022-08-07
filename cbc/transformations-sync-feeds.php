@@ -28,15 +28,18 @@ header("Pragma: no-cache"); // HTTP 1.0
 header("Expires: 0"); // Proxies
 
 
-
+require 'file.php';
+/*
 require 'vendor/autoload.php';
 use PhpOffice\PhpSpreadsheet\IOFactory;
 
-$spreadsheet = IOFactory::load("Partner Product Feed - 06-02-2022.xlsx");
+$spreadsheet = IOFactory::load("Partner Product Feed - 06-30-2022.xlsx");
 $sheetData = $spreadsheet->getActiveSheet()->toArray(null, true, true, true);
 
-$spreadsheet1 = IOFactory::load("export_catalog_product_20220417_06-02-2022.xlsx");
+$spreadsheet1 = IOFactory::load("export_catalog_product_20220703_033204.xlsx");
 $sheetData1 = $spreadsheet1->getActiveSheet()->toArray(null, true, true, true);
+*/
+
 $a=array();
 $b=array();
 $c=array();
@@ -60,12 +63,18 @@ foreach($sheetData as $row){
 	$qty[$row['A']]= str_replace("","", trim($row['J']));
 	if($row['J'] > 0){
 		$instock[$row['A']] = 0;
-		$isonline[$row['A']] = 1;
+		//$isonline[$row['A']] = 1;
 	} else{
 		$instock[$row['A']] = 1;
-		$isonline[$row['A']] = 2;
+		//$isonline[$row['A']] = 2;
 	}
 	
+	if($row['K'] == "DISCON" || $row['K'] == "DISABLED"	){
+		$isonline[$row['A']] = 2;
+	}else{
+		$isonline[$row['A']] = 1;
+	}
+
 	$size[$row['A']]= str_replace("","", trim($row['C']));
 	$color[$row['A']]= str_replace("","", trim($row['E']));
 	$qty_in_box[$row['A']]= str_replace("","", trim($row['D']));
@@ -197,7 +206,7 @@ foreach($sheetData1 as $row){
 														   $row['H'],
 														   $row['I'],
 														   $row['J'],
-														   $isonline[$sku],//$row['K'], // disable products product_online
+														   ($instock[$sku]==1)?'2':$isonline[$sku],//$row['K'], // $instock[$sku] disable products product_online
 														   $row['L'],
 														   $row['M'],
 														   

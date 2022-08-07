@@ -29,15 +29,18 @@ header("Pragma: no-cache"); // HTTP 1.0
 header("Expires: 0"); // Proxies
 
 
-
+require 'file.php';
+/*
 require 'vendor/autoload.php';
 use PhpOffice\PhpSpreadsheet\IOFactory;
 
-$spreadsheet = IOFactory::load("Partner Product Feed -05-27-2022.xlsx");
+$spreadsheet = IOFactory::load("Partner Product Feed - 06-30-2022.xlsx");
 $sheetData = $spreadsheet->getActiveSheet()->toArray(null, true, true, true);
 
-$spreadsheet1 = IOFactory::load("export_catalog_product_20220527_145605.xlsx");
+$spreadsheet1 = IOFactory::load("export_catalog_product_20220703_033204.xlsx");
 $sheetData1 = $spreadsheet1->getActiveSheet()->toArray(null, true, true, true);
+*/
+
 $a=array();
 $b=array();
 $c=array();
