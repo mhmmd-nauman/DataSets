@@ -1,0 +1,1424 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE workspaceElements PUBLIC "-//CPN//DTD CPNXML 1.0//EN" "http://cpntools.org/DTD/6/cpn.dtd">
+
+<workspaceElements>
+  <generator tool="CPN Tools"
+             version="4.0.1"
+             format="6"/>
+  <cpnet>
+    <globbox>
+      <block id="ID1412310166">
+        <id>Standard priorities</id>
+        <ml id="ID1412310255">val P_HIGH = 100;
+          <layout>val P_HIGH = 100;</layout>
+        </ml>
+        <ml id="ID1412310292">val P_NORMAL = 1000;
+          <layout>val P_NORMAL = 1000;</layout>
+        </ml>
+        <ml id="ID1412310322">val P_LOW = 10000;
+          <layout>val P_LOW = 10000;</layout>
+        </ml>
+      </block>
+      <block id="ID1">
+        <id>Standard declarations</id>
+        <color id="ID85042">
+          <id>UNIT</id>
+          <unit/>
+          <layout>colset UNIT = unit;</layout>
+        </color>
+        <color id="ID4">
+          <id>BOOL</id>
+          <bool/>
+        </color>
+        <color id="ID3">
+          <id>INT</id>
+          <int/>
+        </color>
+        <color id="ID1412312409">
+          <id>INTINF</id>
+          <intinf/>
+          <layout>colset INTINF = intinf;</layout>
+        </color>
+        <color id="ID1412312425">
+          <id>TIME</id>
+          <time/>
+          <layout>colset TIME = time;</layout>
+        </color>
+        <color id="ID1412322990">
+          <id>REAL</id>
+          <real/>
+          <layout>colset REAL = real;</layout>
+        </color>
+        <color id="ID5">
+          <id>STRING</id>
+          <string/>
+        </color>
+        <color id="ID1412415325">
+          <id>NO</id>
+          <alias>
+            <id>INT</id>
+          </alias>
+          <layout>colset NO = INT;</layout>
+        </color>
+        <color id="ID1412799376">
+          <id>OS1</id>
+          <alias>
+            <id>INT</id>
+          </alias>
+          <layout>colset OS1 = INT;</layout>
+        </color>
+        <color id="ID1412847669">
+          <id>OS2</id>
+          <alias>
+            <id>INT</id>
+          </alias>
+          <layout>colset OS2 = INT;</layout>
+        </color>
+        <color id="ID1412847733">
+          <id>OS3</id>
+          <alias>
+            <id>INT</id>
+          </alias>
+          <layout>colset OS3 = INT;</layout>
+        </color>
+        <color id="ID1412847809">
+          <id>OS4</id>
+          <alias>
+            <id>INT</id>
+          </alias>
+          <layout>colset OS4 = INT;</layout>
+        </color>
+        <color id="ID1412847899">
+          <id>OS5</id>
+          <alias>
+            <id>INT</id>
+          </alias>
+          <layout>colset OS5 = INT;</layout>
+        </color>
+        <color id="ID1412800524">
+          <id>L</id>
+          <string/>
+          <layout>colset L = string;</layout>
+        </color>
+        <color id="ID1412848001">
+          <id>OS6</id>
+          <alias>
+            <id>INT</id>
+          </alias>
+          <layout>colset OS6 = INT;</layout>
+        </color>
+        <color id="ID1412848115">
+          <id>PN</id>
+          <string/>
+          <layout>colset PN = string;</layout>
+        </color>
+        <color id="ID1412848759">
+          <id>SSC</id>
+          <alias>
+            <id>INT</id>
+          </alias>
+          <layout>colset SSC = INT;</layout>
+        </color>
+        <color id="ID1412415362">
+          <id>TD</id>
+          <alias>
+            <id>INT</id>
+          </alias>
+          <layout>colset TD = INT;</layout>
+        </color>
+        <color id="ID1412415365">
+          <id>AT</id>
+          <alias>
+            <id>INT</id>
+          </alias>
+          <layout>colset AT = INT;</layout>
+        </color>
+        <color id="ID1412415368">
+          <id>DOMICILE</id>
+          <string/>
+          <layout>colset DOMICILE = string;</layout>
+        </color>
+        <color id="ID1412664624">
+          <id>CANDIDATE</id>
+          <product>
+            <id>NO</id>
+            <id>PN</id>
+            <id>AT</id>
+            <id>SSC</id>
+            <id>TD</id>
+            <id>OS1</id>
+            <id>OS2</id>
+            <id>OS3</id>
+            <id>OS4</id>
+            <id>OS5</id>
+            <id>OS6</id>
+            <id>L</id>
+          </product>
+          <layout>colset CANDIDATE = product NO*PN*AT*SSC*TD*OS1*OS2*OS3*OS4*OS5*OS6*L;</layout>
+        </color>
+        <var id="ID1412416313">
+          <type>
+            <id>NO</id>
+          </type>
+          <id>sr</id>
+          <layout>var sr : NO;</layout>
+        </var>
+        <var id="ID1412437406">
+          <type>
+            <id>TD</id>
+          </type>
+          <id>td</id>
+          <layout>var td : TD ;</layout>
+        </var>
+        <var id="ID1412860329">
+          <type>
+            <id>PN</id>
+          </type>
+          <id>pn</id>
+          <layout>var pn : PN;</layout>
+        </var>
+        <var id="ID1412438155">
+          <type>
+            <id>AT</id>
+          </type>
+          <id>at</id>
+          <layout>var at : AT;</layout>
+        </var>
+        <var id="ID1412860896">
+          <type>
+            <id>SSC</id>
+          </type>
+          <id>ssc</id>
+          <layout>var ssc : SSC;</layout>
+        </var>
+        <var id="ID1412861475">
+          <type>
+            <id>OS1</id>
+          </type>
+          <id>os1</id>
+          <layout>var os1 : OS1;</layout>
+        </var>
+        <var id="ID1412862359">
+          <type>
+            <id>OS2</id>
+          </type>
+          <id>os2</id>
+          <layout>var os2 : OS2;</layout>
+        </var>
+        <var id="ID1412862968">
+          <type>
+            <id>OS3</id>
+          </type>
+          <id>os3</id>
+          <layout>var os3 :OS3;</layout>
+        </var>
+        <var id="ID1412863589">
+          <type>
+            <id>OS4</id>
+          </type>
+          <id>os4</id>
+          <layout>var os4 : OS4;</layout>
+        </var>
+        <var id="ID1412864223">
+          <type>
+            <id>OS5</id>
+          </type>
+          <id>os5</id>
+          <layout>var os5 : OS5;</layout>
+        </var>
+        <var id="ID1412864868">
+          <type>
+            <id>OS6</id>
+          </type>
+          <id>os6</id>
+          <layout>var os6 : OS6;</layout>
+        </var>
+        <var id="ID1412658933">
+          <type>
+            <id>L</id>
+          </type>
+          <id>label</id>
+          <layout>var label : L;</layout>
+        </var>
+      </block>
+    </globbox>
+    <page id="ID6">
+      <pageattr name="Physics SPRING 18"/>
+      <place id="ID1412415160">
+        <posattr x="-306.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>P1</text>
+        <ellipse w="78.000000"
+                 h="74.000000"/>
+        <token x="-10.000000"
+               y="0.000000"/>
+        <marking x="-61.000000"
+                 y="82.000000"
+                 hidden="false">
+          <snap snap_id="0"
+                anchor.horizontal="2"
+                anchor.vertical="2"/>
+        </marking>
+        <type id="ID1412415161">
+          <posattr x="-196.000000"
+                   y="-15.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1">CANDIDATE</text>
+        </type>
+        <initmark id="ID1412886835">
+          <posattr x="-61.000000"
+                   y="3899.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1">1`(1,&quot;Agriculture&quot;,51,527,825,166,0,124,0,170,0,&quot;Yes&quot;)++
+1`(2,&quot;Agriculture&quot;,24,860,855,161,0,154,0,141,0,&quot;Yes&quot;)++
+1`(3,&quot;Agriculture&quot;,41,570,573,74,126,97,112,83,81,&quot;No&quot;)++
+1`(4,&quot;Agriculture&quot;,0,726,780,0,0,0,0,0,0,&quot;No&quot;)++
+1`(5,&quot;Agriculture&quot;,40,809,538,107,76,77,75,0,0,&quot;No&quot;)++
+1`(6,&quot;Agriculture&quot;,41,794,746,149,167,48,0,0,0,&quot;Yes&quot;)++
+1`(7,&quot;Agriculture&quot;,44,883,607,137,87,43,106,96,94,&quot;No&quot;)++
+1`(8,&quot;Agriculture&quot;,30,661,666,42,39,80,39,62,44,&quot;No&quot;)++
+1`(9,&quot;Agriculture&quot;,41,828,667,126,44,45,119,93,128,&quot;No&quot;)++
+1`(10,&quot;Agriculture&quot;,0,842,904,169,155,47,166,155,171,&quot;No&quot;)++
+1`(11,&quot;Agriculture&quot;,45,729,700,155,0,131,0,123,0,&quot;Yes&quot;)++
+1`(12,&quot;Agriculture&quot;,47,631,552,75,101,106,0,0,0,&quot;No&quot;)++
+1`(13,&quot;Agriculture&quot;,50,777,629,115,119,103,99,0,0,&quot;No&quot;)++
+1`(14,&quot;Agriculture&quot;,47,608,733,142,98,117,155,137,43,&quot;Yes&quot;)++
+1`(15,&quot;Agriculture&quot;,42,640,612,75,0,0,0,0,0,&quot;No&quot;)++
+1`(16,&quot;Agriculture&quot;,35,859,829,153,157,138,154,139,46,&quot;Yes&quot;)++
+1`(17,&quot;Agriculture&quot;,49,777,612,129,107,45,113,94,82,&quot;No&quot;)++
+1`(18,&quot;Agriculture&quot;,56,895,893,165,153,179,145,162,42,&quot;Yes&quot;)++
+1`(19,&quot;Agriculture&quot;,1,863,816,150,156,132,39,152,144,&quot;Yes&quot;)++
+1`(20,&quot;Agriculture&quot;,42,716,648,94,117,125,140,100,72,&quot;No&quot;)++
+1`(21,&quot;Agriculture&quot;,45,931,861,174,157,156,145,46,40,&quot;Yes&quot;)++
+1`(22,&quot;Agriculture&quot;,0,644,690,135,142,36,121,102,112,&quot;No&quot;)++
+1`(23,&quot;Agriculture&quot;,0,532,580,0,0,0,0,0,0,&quot;No&quot;)++
+1`(24,&quot;Agriculture&quot;,45,794,688,90,125,122,108,95,44,&quot;No&quot;)++
+1`(25,&quot;Agriculture&quot;,59,926,828,169,151,156,143,120,43,&quot;Yes&quot;)++
+1`(26,&quot;Agriculture&quot;,48,712,725,135,154,42,123,118,114,&quot;No&quot;)++
+1`(27,&quot;Agriculture&quot;,39,706,650,137,109,108,0,0,0,&quot;No&quot;)++
+1`(28,&quot;Agriculture&quot;,48,489,505,99,96,69,101,71,69,&quot;No&quot;)++
+1`(29,&quot;Agriculture&quot;,49,603,504,102,73,78,80,0,0,&quot;No&quot;)++
+1`(30,&quot;Agriculture&quot;,44,703,510,109,75,43,75,90,73,&quot;No&quot;)++
+1`(31,&quot;Agriculture&quot;,54,717,659,141,126,94,111,82,105,&quot;No&quot;)++
+1`(32,&quot;Agriculture&quot;,47,845,771,144,140,125,114,161,43,&quot;Yes&quot;)++
+1`(33,&quot;Agriculture&quot;,60,768,693,126,99,105,142,0,0,&quot;Yes&quot;)++
+1`(34,&quot;Agriculture&quot;,65,941,857,155,173,159,124,170,0,&quot;Yes&quot;)++
+1`(35,&quot;Agriculture&quot;,43,865,789,133,135,173,121,138,43,&quot;Yes&quot;)++
+1`(36,&quot;Agriculture&quot;,58,676,544,92,39,38,96,81,86,&quot;No&quot;)++
+1`(37,&quot;Agriculture&quot;,65,920,874,152,179,159,160,0,0,&quot;Yes&quot;)++
+1`(38,&quot;Agriculture&quot;,52,793,787,148,127,40,140,155,137,&quot;Yes&quot;)++
+1`(39,&quot;Agriculture&quot;,1,875,714,137,47,45,114,115,122,&quot;No&quot;)++
+1`(40,&quot;Agriculture&quot;,45,877,782,145,143,156,133,124,39,&quot;Yes&quot;)++
+1`(41,&quot;Agriculture&quot;,65,633,545,85,130,73,110,68,0,&quot;No&quot;)++
+1`(42,&quot;Agriculture&quot;,27,859,772,153,109,83,153,134,140,&quot;Yes&quot;)++
+1`(43,&quot;Agriculture&quot;,50,861,600,143,113,108,77,74,45,&quot;No&quot;)++
+1`(44,&quot;Agriculture&quot;,42,765,692,0,0,0,0,0,0,&quot;No&quot;)++
+1`(45,&quot;Agriculture&quot;,41,705,629,85,137,101,121,96,89,&quot;No&quot;)++
+1`(46,&quot;Agriculture&quot;,36,752,906,155,167,147,169,94,174,&quot;Yes&quot;)++
+1`(47,&quot;Agriculture&quot;,32,800,852,136,163,90,159,154,150,&quot;Yes&quot;)++
+1`(48,&quot;Agriculture&quot;,65,929,849,164,153,152,129,156,0,&quot;Yes&quot;)++
+1`(49,&quot;Agriculture&quot;,75,904,865,150,165,140,180,44,145,&quot;Yes&quot;)++
+1`(50,&quot;Agriculture&quot;,40,548,671,135,87,117,146,100,45,&quot;No&quot;)++
+1`(51,&quot;Agriculture&quot;,54,940,960,166,153,89,191,180,181,&quot;Yes&quot;)++
+1`(52,&quot;Agriculture&quot;,43,751,649,136,128,85,148,78,74,&quot;No&quot;)++
+1`(53,&quot;Agriculture&quot;,52,924,753,130,102,125,148,0,0,&quot;Yes&quot;)++
+1`(54,&quot;Agriculture&quot;,33,754,628,110,100,110,117,104,87,&quot;No&quot;)++
+1`(55,&quot;Agriculture&quot;,39,819,613,0,0,0,0,0,0,&quot;No&quot;)++
+1`(56,&quot;Agriculture&quot;,44,632,581,129,99,42,94,85,91,&quot;No&quot;)++
+1`(57,&quot;Agriculture&quot;,0,679,687,102,122,137,120,45,120,&quot;No&quot;)++
+1`(58,&quot;Agriculture&quot;,45,761,671,122,145,28,125,104,109,&quot;No&quot;)++
+1`(59,&quot;Agriculture&quot;,56,904,985,169,153,46,188,192,191,&quot;Yes&quot;)++
+1`(60,&quot;Agriculture&quot;,43,775,640,119,116,141,82,45,92,&quot;No&quot;)++
+1`(61,&quot;Agriculture&quot;,49,640,634,87,36,147,113,44,119,&quot;No&quot;)++
+1`(62,&quot;Agriculture&quot;,63,836,827,130,173,141,145,161,77,&quot;Yes&quot;)++
+1`(63,&quot;Agriculture&quot;,32,855,785,151,124,143,150,125,46,&quot;No&quot;)++
+1`(64,&quot;Agriculture&quot;,45,761,671,122,145,28,125,104,109,&quot;No&quot;)++
+1`(65,&quot;Agriculture&quot;,56,904,985,169,153,46,188,192,191,&quot;Yes&quot;)++
+1`(66,&quot;Agriculture&quot;,43,843,571,96,96,129,126,53,71,&quot;No&quot;)++
+1`(67,&quot;Agriculture&quot;,51,650,700,151,117,41,106,129,112,&quot;Yes&quot;)++
+1`(68,&quot;Agriculture&quot;,53,671,759,141,110,44,153,117,147,&quot;Yes&quot;)++
+1`(69,&quot;Agriculture&quot;,50,757,727,166,83,119,125,47,44,&quot;Yes&quot;)++
+1`(70,&quot;Agriculture&quot;,0,863,595,0,0,0,0,0,0,&quot;No&quot;)++
+1`(71,&quot;Agriculture&quot;,45,850,837,134,125,39,172,148,180,&quot;Yes&quot;)++
+1`(72,&quot;Agriculture&quot;,59,952,938,175,177,177,173,0,0,&quot;Yes&quot;)++
+1`(73,&quot;Agriculture&quot;,42,654,620,102,102,99,128,0,0,&quot;No&quot;)++
+1`(74,&quot;Agriculture&quot;,44,790,638,119,110,36,95,141,101,&quot;No&quot;)++
+1`(75,&quot;Agriculture&quot;,52,615,1100,118,0,0,0,0,0,&quot;Yes&quot;)++
+1`(76,&quot;Agriculture&quot;,43,654,546,120,64,85,98,105,0,&quot;No&quot;)++
+1`(77,&quot;Agriculture&quot;,50,722,843,0,0,0,0,0,0,&quot;Yes&quot;)++
+1`(78,&quot;Agriculture&quot;,57,737,715,162,108,126,131,38,0,&quot;Yes&quot;)++
+1`(79,&quot;Agriculture&quot;,43,778,786,127,45,97,141,43,150,&quot;Yes&quot;)++
+1`(80,&quot;Agriculture&quot;,0,688,586,89,142,111,98,62,40,&quot;No&quot;)++
+1`(81,&quot;Agriculture&quot;,0,864,735,117,160,125,135,103,47,&quot;No&quot;)++
+1`(82,&quot;Agriculture&quot;,29,529,660,154,104,78,98,100,126,&quot;No&quot;)++
+1`(83,&quot;Agriculture&quot;,52,736,658,102,80,129,116,88,0,&quot;No&quot;)++
+1`(84,&quot;Agriculture&quot;,69,903,883,157,42,45,176,154,170,&quot;Yes&quot;)++
+1`(85,&quot;Agriculture&quot;,44,677,579,107,89,77,125,95,43,&quot;No&quot;)++
+1`(86,&quot;Agriculture&quot;,0,577,554,138,42,66,93,73,99,&quot;No&quot;)++
+1`(87,&quot;Agriculture&quot;,55,898,749,151,157,95,121,0,0,&quot;Yes&quot;)++
+1`(88,&quot;Agriculture&quot;,41,865,832,0,0,0,0,0,0,&quot;Yes&quot;)++
+1`(89,&quot;Agriculture&quot;,50,916,840,143,152,44,154,128,178,&quot;Yes&quot;)++
+1`(90,&quot;Agriculture&quot;,52,672,655,85,122,143,127,107,45,&quot;No&quot;)++
+1`(91,&quot;Agriculture&quot;,55,845,634,120,97,34,136,98,116,&quot;No&quot;)++
+1`(92,&quot;Agriculture&quot;,45,629,616,0,0,0,0,0,0,&quot;No&quot;)++
+1`(93,&quot;Agriculture&quot;,50,784,605,107,40,40,109,114,100,&quot;No&quot;)++
+1`(94,&quot;Agriculture&quot;,47,652,483,113,86,65,71,41,78,&quot;No&quot;)++
+1`(95,&quot;Agriculture&quot;,0,555,619,147,83,99,118,117,34,&quot;No&quot;)++
+1`(96,&quot;Agriculture&quot;,50,843,705,144,106,102,130,0,0,&quot;Yes&quot;)++
+1`(97,&quot;Agriculture&quot;,52,901,950,150,140,155,150,150,0,&quot;Yes&quot;)++
+1`(98,&quot;Agriculture&quot;,400,621,686,119,40,39,138,122,103,&quot;No&quot;)++
+1`(99,&quot;Agriculture&quot;,47,851,926,175,171,151,45,172,46,&quot;Yes&quot;)++
+1`(100,&quot;Agriculture&quot;,34,762,773,62,45,79,69,44,56,&quot;No&quot;)++
+1`(101,&quot;Agriculture&quot;,0,949,805,144,149,120,150,0,0,&quot;No&quot;)++
+1`(102,&quot;Agriculture&quot;,0,882,673,143,43,41,115,89,119,&quot;No&quot;)++
+1`(103,&quot;Agriculture&quot;,0,730,632,96,91,112,109,0,0,&quot;No&quot;)++
+1`(104,&quot;Agriculture&quot;,0,867,851,0,0,0,0,0,0,&quot;No&quot;)++
+1`(105,&quot;Agriculture&quot;,38,905,863,0,0,0,0,0,0,&quot;Yes&quot;)++
+1`(106,&quot;Agriculture&quot;,45,730,763,123,133,134,131,0,0,&quot;Yes&quot;)++
+1`(107,&quot;Agriculture&quot;,45,608,554,0,0,0,0,0,0,&quot;No&quot;)++
+1`(108,&quot;Agriculture&quot;,0,631,553,133,128,35,74,70,75,&quot;No&quot;)++
+1`(109,&quot;Agriculture&quot;,0,665,687,129,123,30,159,105,111,&quot;No&quot;)++
+1`(110,&quot;Agriculture&quot;,46,758,607,133,126,34,96,79,104,&quot;No&quot;)++
+1`(111,&quot;Agriculture&quot;,50,554,567,125,74,118,77,37,94,&quot;No&quot;)++
+1`(112,&quot;Agriculture&quot;,0,811,690,0,0,0,0,0,0,&quot;No&quot;)++
+1`(113,&quot;Agriculture&quot;,50,740,750,135,137,44,122,122,148,&quot;Yes&quot;)++
+1`(114,&quot;Agriculture&quot;,44,732,587,89,86,122,109,38,106,&quot;No&quot;)++
+1`(115,&quot;Agriculture&quot;,65,887,974,187,193,174,166,160,0,&quot;Yes&quot;)++
+1`(116,&quot;Agriculture&quot;,46,641,573,61,81,114,121,116,45,&quot;No&quot;)++
+1`(117,&quot;Agriculture&quot;,44,731,666,118,0,0,0,0,0,&quot;No&quot;)++
+1`(118,&quot;Agriculture&quot;,57,896,856,148,149,44,178,144,149,&quot;Yes&quot;)++
+1`(119,&quot;Agriculture&quot;,69,756,807,137,157,139,169,119,47,&quot;Yes&quot;)++
+1`(120,&quot;Agriculture&quot;,58,915,795,0,0,0,0,0,0,&quot;Yes&quot;)++
+1`(121,&quot;Agriculture&quot;,51,700,603,123,127,0,0,0,0,&quot;No&quot;)++
+1`(122,&quot;Agriculture&quot;,35,602,635,130,118,45,99,100,108,&quot;No&quot;)++
+1`(123,&quot;Agriculture&quot;,51,662,731,96,134,141,136,0,0,&quot;Yes&quot;)++
+1`(124,&quot;Agriculture&quot;,54,805,701,141,104,110,117,145,44,&quot;Yes&quot;)++
+1`(125,&quot;Agriculture&quot;,63,820,867,0,0,0,0,0,0,&quot;Yes&quot;)++
+1`(126,&quot;Agriculture&quot;,45,723,616,125,115,94,94,46,103,&quot;No&quot;)++
+1`(127,&quot;Agriculture&quot;,55,764,751,0,0,0,0,0,0,&quot;Yes&quot;)++
+1`(128,&quot;Agriculture&quot;,42,646,757,139,115,148,138,125,0,&quot;Yes&quot;)++
+1`(129,&quot;Agriculture&quot;,68,1002,1019,93,0,0,0,0,0,&quot;No&quot;)++
+1`(130,&quot;Agriculture&quot;,54,925,813,160,44,49,124,147,143,&quot;Yes&quot;)++
+1`(131,&quot;Agriculture&quot;,38,783,688,150,106,45,140,135,74,&quot;No&quot;)++
+1`(132,&quot;Agriculture&quot;,68,1002,1019,93,0,0,0,0,0,&quot;No&quot;)++
+1`(133,&quot;Agriculture&quot;,52,901,950,150,140,155,150,150,0,&quot;Yes&quot;)++
+1`(134,&quot;Agriculture&quot;,56,861,876,0,0,0,0,0,0,&quot;Yes&quot;)++
+1`(135,&quot;Agriculture&quot;,56,651,820,159,41,158,161,44,146,&quot;Yes&quot;)++
+1`(136,&quot;Agriculture&quot;,50,900,757,0,0,0,0,0,0,&quot;Yes&quot;)++
+1`(137,&quot;Agriculture&quot;,41,715,686,137,145,44,119,116,95,&quot;No&quot;)++
+1`(138,&quot;Agriculture&quot;,48,861,889,0,0,0,0,0,0,&quot;Yes&quot;)++
+1`(139,&quot;Agriculture&quot;,57,912,828,160,160,162,162,130,48,&quot;Yes&quot;)++
+1`(140,&quot;Agriculture&quot;,46,891,779,161,137,110,151,136,40,&quot;Yes&quot;)++
+1`(141,&quot;Agriculture&quot;,52,855,763,139,145,120,147,125,0,&quot;Yes&quot;)++
+1`(142,&quot;Agriculture&quot;,61,707,827,158,139,152,134,152,46,&quot;Yes&quot;)++
+1`(143,&quot;Agriculture&quot;,51,814,681,122,108,40,114,99,158,&quot;Yes&quot;)++
+1`(144,&quot;Agriculture&quot;,52,926,854,149,141,43,151,41,162,&quot;Yes&quot;)++
+1`(145,&quot;Agriculture&quot;,56,728,698,128,140,103,113,34,137,&quot;Yes&quot;)++
+1`(146,&quot;Agriculture&quot;,52,788,768,153,105,159,0,151,0,&quot;Yes&quot;)++
+1`(147,&quot;Agriculture&quot;,54,785,748,109,145,163,127,134,31,&quot;Yes&quot;)++
+1`(148,&quot;Agriculture&quot;,44,662,704,144,143,106,98,44,135,&quot;No&quot;)++
+1`(149,&quot;Agriculture&quot;,46,615,729,122,0,0,0,0,0,&quot;Yes&quot;)++
+1`(150,&quot;Agriculture&quot;,53,840,854,166,144,164,0,156,0,&quot;Yes&quot;)++
+1`(151,&quot;Agriculture&quot;,50,854,830,134,125,155,171,154,91,&quot;Yes&quot;)++
+1`(152,&quot;Agriculture&quot;,54,819,837,138,121,45,174,155,158,&quot;Yes&quot;)++
+1`(153,&quot;Agriculture&quot;,50,904,843,146,167,139,150,157,43,&quot;Yes&quot;)++
+1`(154,&quot;Agriculture&quot;,50,892,730,0,0,0,0,0,0,&quot;Yes&quot;)++
+1`(155,&quot;Agriculture&quot;,46,864,672,120,120,137,108,40,109,&quot;No&quot;)++
+1`(156,&quot;Agriculture&quot;,52,868,729,153,115,106,116,148,49,&quot;Yes&quot;)++
+1`(157,&quot;Agriculture&quot;,51,751,688,122,126,121,126,113,0,&quot;Yes&quot;)++
+1`(158,&quot;Agriculture&quot;,44,640,752,135,138,145,115,44,130,&quot;Yes&quot;)++
+1`(159,&quot;Agriculture&quot;,57,738,715,134,127,129,122,127,40,&quot;No&quot;)++
+1`(160,&quot;Agriculture&quot;,42,746,798,142,129,46,134,150,152,&quot;Yes&quot;)++
+1`(161,&quot;Agriculture&quot;,53,854,819,144,155,44,169,132,137,&quot;Yes&quot;)++
+1`(162,&quot;Agriculture&quot;,57,878,757,142,132,43,123,153,126,&quot;Yes&quot;)++
+1`(163,&quot;Agriculture&quot;,54,800,855,178,164,153,155,120,43,&quot;Yes&quot;)++
+1`(164,&quot;Agriculture&quot;,48,764,898,163,156,171,171,0,0,&quot;Yes&quot;)++
+1`(165,&quot;Agriculture&quot;,67,928,865,0,0,0,0,0,0,&quot;Yes&quot;)++
+1`(166,&quot;Agriculture&quot;,40,728,742,0,0,0,0,0,0,&quot;Yes&quot;)++
+1`(167,&quot;Agriculture&quot;,46,768,707,151,122,111,0,90,0,&quot;No&quot;)++
+1`(168,&quot;Agriculture&quot;,46,787,735,114,148,151,111,0,0,&quot;Yes&quot;)++
+1`(169,&quot;Agriculture&quot;,52,738,794,114,129,160,161,141,48,&quot;Yes&quot;)++
+1`(170,&quot;Agriculture&quot;,55,881,783,0,0,0,0,0,0,&quot;Yes&quot;)++
+1`(171,&quot;Agriculture&quot;,51,731,717,126,113,127,142,0,0,&quot;Yes&quot;)++
+1`(172,&quot;Agriculture&quot;,48,708,668,141,140,113,83,0,0,&quot;Yes&quot;)++
+1`(173,&quot;Agriculture&quot;,44,681,819,148,157,124,167,150,0,&quot;Yes&quot;)++
+1`(174,&quot;Agriculture&quot;,44,807,802,162,164,41,151,130,109,&quot;Yes&quot;)++
+1`(175,&quot;Agriculture&quot;,48,740,730,131,112,44,129,136,138,&quot;Yes&quot;)++
+1`(176,&quot;Agriculture&quot;,65,715,809,125,152,142,160,0,0,&quot;Yes&quot;)++
+1`(177,&quot;Agriculture&quot;,58,823,877,160,166,47,158,151,149,&quot;Yes&quot;)++
+1`(178,&quot;Agriculture&quot;,53,769,666,88,111,110,122,41,151,&quot;Yes&quot;)++
+1`(179,&quot;Agriculture&quot;,40,766,677,137,129,124,108,104,39,&quot;Yes&quot;)++
+1`(180,&quot;Agriculture&quot;,51,756,840,145,153,149,174,0,0,&quot;Yes&quot;)++
+1`(181,&quot;Agriculture&quot;,50,921,756,143,150,143,100,127,44,&quot;Yes&quot;)++
+1`(182,&quot;Agriculture&quot;,57,819,805,111,152,168,125,165,46,&quot;Yes&quot;)++
+1`(183,&quot;Agriculture&quot;,65,751,765,118,163,40,147,108,151,&quot;Yes&quot;)++
+1`(184,&quot;Agriculture&quot;,56,777,800,130,80,120,45,150,76,&quot;Yes&quot;)++
+1`(185,&quot;Agriculture&quot;,52,670,610,124,112,96,108,44,86,&quot;No&quot;)++
+1`(186,&quot;Agriculture&quot;,74,787,931,154,170,171,169,46,181,&quot;Yes&quot;)++
+1`(187,&quot;Agriculture&quot;,59,747,689,138,113,125,0,93,0,&quot;No&quot;)++
+1`(188,&quot;Agriculture&quot;,47,738,702,0,0,0,0,0,0,&quot;Yes&quot;)++
+1`(189,&quot;Agriculture&quot;,50,825,664,112,136,79,151,103,42,&quot;No&quot;)++
+1`(190,&quot;Agriculture&quot;,50,906,659,112,118,110,101,0,0,&quot;No&quot;)++
+1`(191,&quot;Agriculture&quot;,56,904,873,155,133,157,179,45,160,&quot;Yes&quot;)++
+1`(192,&quot;Agriculture&quot;,50,616,754,162,91,40,146,151,116,&quot;Yes&quot;)++
+1`(193,&quot;Agriculture&quot;,50,799,858,147,158,151,144,47,164,&quot;Yes&quot;)++
+1`(194,&quot;Agriculture&quot;,42,806,745,141,118,47,122,145,127,&quot;Yes&quot;)++
+1`(195,&quot;Agriculture&quot;,46,855,632,127,115,119,82,35,116,&quot;No&quot;)++
+1`(196,&quot;Agriculture&quot;,50,781,826,0,0,0,0,0,0,&quot;Yes&quot;)++
+1`(197,&quot;Agriculture&quot;,46,746,516,77,71,74,133,74,87,&quot;No&quot;)++
+1`(198,&quot;Agriculture&quot;,45,844,765,146,126,45,156,116,130,&quot;Yes&quot;)++
+1`(199,&quot;Agriculture&quot;,50,588,659,0,0,0,0,0,0,&quot;No&quot;)++
+1`(200,&quot;Agriculture&quot;,0,775,863,179,158,120,157,164,0,&quot;No&quot;)++
+1`(201,&quot;Agriculture&quot;,52,826,795,0,0,0,0,0,0,&quot;Yes&quot;)++
+1`(202,&quot;Agriculture&quot;,47,873,841,150,178,47,106,134,180,&quot;Yes&quot;)++
+1`(203,&quot;Agriculture&quot;,65,931,877,153,141,171,164,166,41,&quot;Yes&quot;)++
+1`(204,&quot;Agriculture&quot;,27,882,853,148,150,156,96,162,141,&quot;Yes&quot;)++
+1`(205,&quot;Agriculture&quot;,44,751,675,120,139,103,127,0,0,&quot;No&quot;)++
+1`(206,&quot;Agriculture&quot;,38,876,779,138,137,140,156,121,44,&quot;Yes&quot;)++
+1`(207,&quot;Agriculture&quot;,40,713,603,80,100,128,84,127,42,&quot;No&quot;)++
+1`(208,&quot;Agriculture&quot;,48,706,604,100,81,81,135,0,0,&quot;No&quot;)++
+1`(209,&quot;Agriculture&quot;,50,669,643,85,139,36,98,152,96,&quot;No&quot;)++
+1`(210,&quot;Agriculture&quot;,63,631,721,129,121,123,139,117,92,&quot;Yes&quot;)++
+1`(211,&quot;Agriculture&quot;,54,706,625,111,139,91,99,99,47,&quot;No&quot;)++
+1`(212,&quot;Agriculture&quot;,47,767,652,106,125,122,88,0,0,&quot;No&quot;)++
+1`(213,&quot;Agriculture&quot;,0,840,796,155,133,91,125,152,140,&quot;No&quot;)++
+1`(214,&quot;Agriculture&quot;,53,843,595,139,41,45,82,67,96,&quot;No&quot;)++
+1`(215,&quot;Agriculture&quot;,40,823,702,109,42,42,122,108,142,&quot;No&quot;)++
+1`(216,&quot;Agriculture&quot;,0,760,783,139,104,41,139,159,156,&quot;No&quot;)++
+1`(217,&quot;Agriculture&quot;,53,724,772,141,150,122,126,42,153,&quot;Yes&quot;)++
+1`(218,&quot;Agriculture&quot;,48,798,675,94,135,83,44,140,138,&quot;No&quot;)++
+1`(219,&quot;Agriculture&quot;,79,642,704,0,0,0,0,0,0,&quot;Yes&quot;)++
+1`(220,&quot;Agriculture&quot;,61,902,837,0,0,0,0,0,0,&quot;Yes&quot;)++
+1`(221,&quot;Agriculture&quot;,43,851,737,137,142,43,110,131,129,&quot;Yes&quot;)++
+1`(222,&quot;Agriculture&quot;,54,806,674,0,0,0,0,0,0,&quot;No&quot;)++
+1`(223,&quot;Agriculture&quot;,41,688,543,83,96,99,96,86,0,&quot;No&quot;)++
+1`(224,&quot;Agriculture&quot;,100,915,780,155,126,80,131,148,140,&quot;No&quot;)++
+1`(225,&quot;Agriculture&quot;,48,861,780,162,115,157,143,112,91,&quot;Yes&quot;)++
+1`(226,&quot;Agriculture&quot;,50,686,631,129,132,43,93,93,99,&quot;No&quot;)++
+1`(227,&quot;Agriculture&quot;,51,875,699,144,120,90,141,124,0,&quot;Yes&quot;)++
+1`(228,&quot;Agriculture&quot;,47,689,722,111,140,129,130,0,0,&quot;Yes&quot;)++
+1`(229,&quot;Agriculture&quot;,0,617,822,151,119,155,166,144,0,&quot;No&quot;)++
+1`(230,&quot;Agriculture&quot;,54,885,892,150,158,160,174,168,35,&quot;Yes&quot;)++
+1`(231,&quot;Agriculture&quot;,77,935,843,132,160,170,138,153,0,&quot;Yes&quot;)++
+1`(232,&quot;Agriculture&quot;,0,586,539,150,84,73,83,79,70,&quot;No&quot;)++
+1`(233,&quot;Agriculture&quot;,59,667,672,155,0,110,0,93,0,&quot;No&quot;)++
+1`(234,&quot;Agriculture&quot;,42,714,667,136,104,129,102,0,0,&quot;No&quot;)++
+1`(235,&quot;Agriculture&quot;,50,731,504,64,0,0,0,0,0,&quot;No&quot;)++
+1`(236,&quot;Agriculture&quot;,50,834,593,83,139,93,122,84,72,&quot;No&quot;)++
+1`(237,&quot;Agriculture&quot;,49,747,825,145,138,143,155,151,93,&quot;Yes&quot;)++
+1`(238,&quot;Agriculture&quot;,42,627,563,90,0,108,0,96,0,&quot;No&quot;)++
+1`(239,&quot;Agriculture&quot;,44,899,864,156,176,48,143,158,142,&quot;Yes&quot;)++
+1`(240,&quot;Agriculture&quot;,44,727,687,144,40,36,127,104,103,&quot;No&quot;)++
+1`(241,&quot;Agriculture&quot;,51,814,733,146,126,44,136,104,133,&quot;Yes&quot;)++
+1`(242,&quot;Agriculture&quot;,52,676,567,121,40,31,87,92,90,&quot;No&quot;)++
+1`(243,&quot;Agriculture&quot;,26,627,630,129,103,41,91,94,128,&quot;No&quot;)++
+1`(244,&quot;Agriculture&quot;,51,769,623,107,82,89,119,140,44,&quot;No&quot;)++
+1`(245,&quot;Agriculture&quot;,45,745,711,0,0,0,0,0,0,&quot;Yes&quot;)++
+1`(246,&quot;Agriculture&quot;,56,777,800,130,80,120,45,150,76,&quot;Yes&quot;)++
+1`(247,&quot;Agriculture&quot;,47,749,599,124,108,97,95,99,31,&quot;No&quot;)++
+1`(248,&quot;Agriculture&quot;,41,841,914,0,0,0,0,0,0,&quot;Yes&quot;)++
+1`(249,&quot;Agriculture&quot;,47,727,605,148,86,68,82,117,104,&quot;No&quot;)++
+1`(250,&quot;Agriculture&quot;,0,846,767,156,136,154,106,44,135,&quot;No&quot;)++
+1`(251,&quot;Agriculture&quot;,0,844,725,145,141,41,118,113,125,&quot;No&quot;)++
+1`(252,&quot;Agriculture&quot;,43,639,670,124,110,100,133,0,0,&quot;No&quot;)++
+1`(253,&quot;Agriculture&quot;,60,812,626,112,107,114,105,39,111,&quot;No&quot;)++
+1`(254,&quot;Agriculture&quot;,41,672,717,152,118,138,126,0,0,&quot;Yes&quot;)++
+1`(255,&quot;Agriculture&quot;,56,855,781,151,147,151,122,0,0,&quot;Yes&quot;)++
+1`(256,&quot;Agriculture&quot;,53,838,556,141,81,62,90,0,0,&quot;No&quot;)++
+1`(257,&quot;Agriculture&quot;,53,809,784,0,0,0,0,0,0,&quot;Yes&quot;)++
+1`(258,&quot;Agriculture&quot;,46,697,785,126,150,149,143,127,46,&quot;Yes&quot;)++
+1`(259,&quot;Agriculture&quot;,43,859,751,134,122,77,150,126,142,&quot;Yes&quot;)++
+1`(260,&quot;Agriculture&quot;,50,623,751,157,135,40,150,83,140,&quot;Yes&quot;)++
+1`(261,&quot;Agriculture&quot;,40,574,532,116,123,85,25,0,0,&quot;No&quot;)++
+1`(262,&quot;Agriculture&quot;,36,853,764,0,0,0,0,0,0,&quot;Yes&quot;)++
+1`(263,&quot;Agriculture&quot;,40,837,706,147,113,38,131,112,121,&quot;Yes&quot;)++
+1`(264,&quot;Agriculture&quot;,26,759,790,160,135,87,163,101,144,&quot;Yes&quot;)++
+1`(265,&quot;Agriculture&quot;,60,721,645,125,0,91,0,100,0,&quot;No&quot;)++
+1`(266,&quot;Agriculture&quot;,51,916,813,158,141,157,152,118,46,&quot;Yes&quot;)++
+1`(267,&quot;Agriculture&quot;,54,780,799,162,147,131,128,43,38,&quot;Yes&quot;)++
+1`(268,&quot;Agriculture&quot;,60,616,537,0,0,0,0,0,0,&quot;No&quot;)++
+1`(269,&quot;Agriculture&quot;,43,514,505,70,98,88,91,0,0,&quot;No&quot;)++
+1`(270,&quot;Agriculture&quot;,50,789,771,150,131,129,128,150,42,&quot;Yes&quot;)++
+1`(271,&quot;Agriculture&quot;,27,779,651,80,114,95,142,135,85,&quot;No&quot;)++
+1`(272,&quot;Agriculture&quot;,54,910,859,143,150,45,174,153,147,&quot;Yes&quot;)++
+1`(273,&quot;Agriculture&quot;,47,759,664,111,138,119,111,0,0,&quot;No&quot;)++
+1`(274,&quot;Agriculture&quot;,15,746,827,146,150,46,148,0,0,&quot;Yes&quot;)++
+1`(275,&quot;Agriculture&quot;,56,593,589,89,109,97,83,128,44,&quot;No&quot;)++
+1`(276,&quot;Agriculture&quot;,56,879,775,126,128,46,164,129,145,&quot;Yes&quot;)++
+1`(277,&quot;Agriculture&quot;,41,689,618,107,120,75,118,0,0,&quot;No&quot;)++
+1`(278,&quot;Agriculture&quot;,55,901,828,140,161,131,138,165,48,&quot;Yes&quot;)++
+1`(279,&quot;Agriculture&quot;,51,697,664,101,104,118,123,48,41,&quot;No&quot;)++
+1`(280,&quot;Agriculture&quot;,1,909,848,143,155,184,139,143,41,&quot;Yes&quot;)++
+1`(281,&quot;Agriculture&quot;,37,897,889,155,164,89,144,179,158,&quot;Yes&quot;)++
+1`(282,&quot;Agriculture&quot;,52,670,610,124,112,96,108,44,86,&quot;No&quot;)++
+1`(283,&quot;Agriculture&quot;,47,651,601,86,123,97,102,105,45,&quot;No&quot;)++
+1`(284,&quot;Agriculture&quot;,50,821,622,134,115,73,93,0,0,&quot;No&quot;)++
+1`(285,&quot;Agriculture&quot;,63,803,921,172,161,173,167,159,0,&quot;Yes&quot;)++
+1`(286,&quot;Agriculture&quot;,51,555,468,81,75,85,74,0,0,&quot;No&quot;)++
+1`(287,&quot;Agriculture&quot;,47,683,574,122,122,43,82,85,85,&quot;No&quot;)++
+1`(288,&quot;Agriculture&quot;,44,805,501,82,109,72,81,58,99,&quot;No&quot;)++
+1`(289,&quot;Agriculture&quot;,28,671,704,121,138,133,93,133,48,&quot;No&quot;)++
+1`(290,&quot;Agriculture&quot;,54,620,688,78,38,51,55,51,0,&quot;No&quot;)++
+1`(291,&quot;Agriculture&quot;,54,864,908,178,153,171,168,145,47,&quot;Yes&quot;)++
+1`(292,&quot;Agriculture&quot;,51,937,887,145,159,48,164,163,163,&quot;Yes&quot;)++
+1`(293,&quot;Agriculture&quot;,30,770,592,148,87,37,77,83,113,&quot;No&quot;)++
+1`(294,&quot;Agriculture&quot;,52,699,788,142,145,87,124,132,158,&quot;Yes&quot;)++
+1`(295,&quot;Agriculture&quot;,39,846,808,0,0,0,0,0,0,&quot;No&quot;)++
+1`(296,&quot;Agriculture&quot;,41,830,657,104,126,98,96,143,46,&quot;No&quot;)++
+1`(297,&quot;Agriculture&quot;,44,706,674,132,130,103,127,90,47,&quot;No&quot;)++
+1`(298,&quot;Agriculture&quot;,49,759,824,0,0,0,0,0,0,&quot;Yes&quot;)++
+1`(299,&quot;Agriculture&quot;,52,861,682,118,125,35,30,123,118,&quot;Yes&quot;)++
+1`(300,&quot;Agriculture&quot;,51,897,820,144,148,41,148,140,152,&quot;Yes&quot;)++
+1`(301,&quot;Agriculture&quot;,12,805,640,130,82,43,136,85,119,&quot;No&quot;)++
+1`(302,&quot;Agriculture&quot;,38,721,716,145,137,30,127,28,95,&quot;No&quot;)++
+1`(303,&quot;Agriculture&quot;,40,752,707,109,127,128,134,120,44,&quot;No&quot;)++
+1`(304,&quot;Agriculture&quot;,46,742,804,126,142,134,159,151,48,&quot;Yes&quot;)++
+1`(305,&quot;Agriculture&quot;,52,891,706,133,128,119,134,102,0,&quot;Yes&quot;)++
+1`(306,&quot;Agriculture&quot;,59,826,748,147,138,110,124,0,0,&quot;Yes&quot;)++
+1`(307,&quot;Agriculture&quot;,45,654,521,0,0,0,0,0,0,&quot;No&quot;)++
+1`(308,&quot;Agriculture&quot;,55,945,864,162,176,133,159,143,46,&quot;Yes&quot;)++
+1`(309,&quot;Agriculture&quot;,40,641,535,74,68,81,135,0,0,&quot;No&quot;)++
+1`(310,&quot;Agriculture&quot;,49,753,592,0,0,0,0,0,0,&quot;No&quot;)++
+1`(311,&quot;Agriculture&quot;,51,830,895,162,156,48,161,158,171,&quot;Yes&quot;)++
+1`(312,&quot;Agriculture&quot;,41,607,524,124,101,40,81,80,61,&quot;No&quot;)++
+1`(313,&quot;Agriculture&quot;,48,822,688,129,108,156,99,47,117,&quot;No&quot;)++
+1`(314,&quot;Agriculture&quot;,51,698,560,99,126,71,85,89,90,&quot;No&quot;)++
+1`(315,&quot;Agriculture&quot;,0,749,652,0,0,0,0,0,0,&quot;No&quot;)++
+1`(316,&quot;Agriculture&quot;,42,768,611,93,121,76,117,122,41,&quot;No&quot;)++
+1`(317,&quot;Agriculture&quot;,45,847,555,0,0,0,0,0,0,&quot;No&quot;)++
+1`(318,&quot;Agriculture&quot;,60,855,807,0,0,0,0,0,0,&quot;Yes&quot;)++
+1`(319,&quot;Agriculture&quot;,47,771,617,107,109,75,117,126,43,&quot;No&quot;)++
+1`(320,&quot;Agriculture&quot;,50,877,825,151,138,45,152,131,163,&quot;Yes&quot;)++
+1`(321,&quot;Agriculture&quot;,42,730,552,93,100,86,44,82,113,&quot;No&quot;)++
+1`(322,&quot;Agriculture&quot;,57,843,960,0,0,0,0,0,0,&quot;Yes&quot;)++
+1`(323,&quot;Agriculture&quot;,40,725,868,142,157,156,175,44,154,&quot;Yes&quot;)++
+1`(324,&quot;Agriculture&quot;,37,903,644,137,126,81,112,91,97,&quot;No&quot;)++
+1`(325,&quot;Agriculture&quot;,0,525,543,36,51,58,45,42,25,&quot;No&quot;)++
+1`(326,&quot;Agriculture&quot;,50,727,790,0,0,0,0,0,0,&quot;Yes&quot;)++
+1`(327,&quot;Agriculture&quot;,0,767,738,97,151,143,131,0,0,&quot;No&quot;)++
+1`(328,&quot;Agriculture&quot;,51,714,821,145,170,137,147,136,44,&quot;Yes&quot;)++
+1`(329,&quot;Agriculture&quot;,55,868,790,159,148,132,129,123,44,&quot;Yes&quot;)++
+1`(330,&quot;Agriculture&quot;,52,607,782,130,44,35,148,150,141,&quot;Yes&quot;)++
+1`(331,&quot;Agriculture&quot;,43,847,689,123,111,36,152,98,132,&quot;No&quot;)++
+1`(332,&quot;Agriculture&quot;,42,651,693,0,0,0,0,0,0,&quot;Yes&quot;)++
+1`(333,&quot;Agriculture&quot;,44,504,597,121,35,43,106,78,106,&quot;No&quot;)++
+1`(334,&quot;Agriculture&quot;,49,842,660,148,115,130,92,82,0,&quot;No&quot;)++
+1`(335,&quot;Agriculture&quot;,74,787,931,154,170,171,169,46,181,&quot;Yes&quot;)++
+1`(336,&quot;Agriculture&quot;,59,826,748,147,138,110,124,0,0,&quot;Yes&quot;)++
+1`(337,&quot;Agriculture&quot;,51,698,560,99,126,71,85,89,90,&quot;No&quot;)++
+1`(338,&quot;Agriculture&quot;,48,826,838,127,168,148,166,0,0,&quot;Yes&quot;)++
+1`(339,&quot;Agriculture&quot;,45,782,743,144,127,86,173,36,135,&quot;Yes&quot;)++
+1`(340,&quot;Agriculture&quot;,52,649,729,142,143,43,115,139,0,&quot;Yes&quot;)++
+1`(341,&quot;Agriculture&quot;,62,919,820,120,151,143,160,154,0,&quot;Yes&quot;)++
+1`(342,&quot;Agriculture&quot;,43,839,685,141,107,42,125,118,111,&quot;Yes&quot;)++
+1`(343,&quot;Agriculture&quot;,44,813,783,136,150,157,126,122,46,&quot;Yes&quot;)++
+1`(344,&quot;Agriculture&quot;,45,644,681,0,0,0,0,0,0,&quot;No&quot;)++
+1`(345,&quot;Agriculture&quot;,48,840,830,157,165,132,41,41,0,&quot;Yes&quot;)++
+1`(346,&quot;Agriculture&quot;,52,768,774,153,137,38,153,114,132,&quot;Yes&quot;)++
+1`(347,&quot;Agriculture&quot;,64,638,875,155,140,178,131,176,95,&quot;Yes&quot;)++
+1`(348,&quot;Agriculture&quot;,47,898,738,141,114,41,160,110,134,&quot;Yes&quot;)++
+1`(349,&quot;Agriculture&quot;,63,721,720,157,68,167,127,136,34,&quot;Yes&quot;)++
+1`(350,&quot;Agriculture&quot;,52,830,761,151,152,158,107,44,105,&quot;Yes&quot;)++
+1`(351,&quot;Agriculture&quot;,57,834,808,130,164,144,141,141,44,&quot;Yes&quot;)++
+1`(352,&quot;Agriculture&quot;,52,802,742,157,88,151,142,46,119,&quot;Yes&quot;)++
+1`(353,&quot;Agriculture&quot;,47,523,677,135,140,111,114,109,37,&quot;No&quot;)++
+1`(354,&quot;Agriculture&quot;,58,721,715,128,152,90,115,0,0,&quot;No&quot;)++
+1`(355,&quot;Agriculture&quot;,56,794,812,141,155,159,149,43,0,&quot;Yes&quot;)++
+1`(356,&quot;Agriculture&quot;,74,875,740,137,144,42,125,108,140,&quot;Yes&quot;)++
+1`(357,&quot;Agriculture&quot;,56,903,899,165,168,161,136,182,0,&quot;Yes&quot;)++
+1`(358,&quot;Agriculture&quot;,47,873,754,126,132,144,123,44,142,&quot;Yes&quot;)++
+1`(359,&quot;Agriculture&quot;,47,874,758,116,147,132,140,139,44,&quot;Yes&quot;)++
+1`(360,&quot;Agriculture&quot;,63,861,759,0,0,0,0,0,0,&quot;Yes&quot;)++
+1`(361,&quot;Agriculture&quot;,68,896,983,177,178,192,157,189,46,&quot;Yes&quot;)++
+1`(362,&quot;Agriculture&quot;,54,664,732,133,108,41,160,127,124,&quot;Yes&quot;)++
+1`(363,&quot;Agriculture&quot;,63,832,830,0,0,0,0,0,0,&quot;Yes&quot;)++
+1`(364,&quot;Agriculture&quot;,57,940,779,141,144,130,144,132,45,&quot;Yes&quot;)++
+1`(365,&quot;Agriculture&quot;,72,843,756,120,156,148,138,105,44,&quot;Yes&quot;)++
+1`(366,&quot;Agriculture&quot;,46,798,727,132,141,112,153,36,118,&quot;Yes&quot;)++
+1`(367,&quot;Agriculture&quot;,57,841,770,0,0,0,0,0,0,&quot;Yes&quot;)++
+1`(368,&quot;Agriculture&quot;,56,878,784,141,47,48,133,161,135,&quot;Yes&quot;)++
+1`(369,&quot;Agriculture&quot;,48,873,807,144,134,93,150,139,147,&quot;Yes&quot;)++
+1`(370,&quot;Agriculture&quot;,52,942,888,150,168,152,172,0,0,&quot;Yes&quot;)++
+1`(371,&quot;Agriculture&quot;,55,743,723,122,136,76,107,141,141,&quot;Yes&quot;)++
+1`(372,&quot;Agriculture&quot;,50,928,916,168,171,180,147,163,45,&quot;Yes&quot;)++
+1`(373,&quot;Agriculture&quot;,57,802,721,160,124,110,117,36,133,&quot;Yes&quot;)++
+1`(374,&quot;Agriculture&quot;,51,788,720,117,129,140,118,0,0,&quot;Yes&quot;)++
+1`(375,&quot;Agriculture&quot;,50,800,831,150,156,83,138,139,165,&quot;Yes&quot;)++
+1`(376,&quot;Agriculture&quot;,54,805,910,167,177,156,46,180,139,&quot;Yes&quot;)++
+1`(377,&quot;Agriculture&quot;,52,734,727,142,0,152,0,45,0,&quot;Yes&quot;)++
+1`(378,&quot;Agriculture&quot;,43,868,702,143,130,84,132,107,106,&quot;Yes&quot;)++
+1`(379,&quot;Agriculture&quot;,46,662,676,123,110,137,106,115,41,&quot;Yes&quot;)++
+1`(380,&quot;Agriculture&quot;,55,917,847,157,158,130,139,47,173,&quot;Yes&quot;)++
+1`(381,&quot;Agriculture&quot;,51,903,712,138,41,47,130,103,116,&quot;Yes&quot;)++
+1`(382,&quot;Agriculture&quot;,45,771,799,0,0,0,0,0,0,&quot;Yes&quot;)++
+1`(383,&quot;Agriculture&quot;,47,721,711,144,140,38,119,127,113,&quot;Yes&quot;)++
+1`(384,&quot;Agriculture&quot;,54,876,934,176,47,45,0,0,0,&quot;Yes&quot;)++
+1`(385,&quot;Agriculture&quot;,41,696,688,97,135,133,129,111,0,&quot;Yes&quot;)++
+1`(386,&quot;Agriculture&quot;,54,829,828,126,164,140,150,44,160,&quot;Yes&quot;)++
+1`(387,&quot;Agriculture&quot;,59,821,730,125,158,87,119,104,137,&quot;Yes&quot;)++
+1`(388,&quot;Agriculture&quot;,62,909,930,167,176,155,166,175,44,&quot;Yes&quot;)++
+1`(389,&quot;Agriculture&quot;,47,875,728,130,122,127,126,0,0,&quot;Yes&quot;)++
+1`(390,&quot;Agriculture&quot;,54,744,680,113,115,102,137,0,0,&quot;Yes&quot;)++
+1`(391,&quot;Agriculture&quot;,46,776,684,115,135,96,122,148,68,&quot;Yes&quot;)++
+1`(392,&quot;Agriculture&quot;,55,572,808,70,55,75,62,45,64,&quot;No&quot;)++
+1`(393,&quot;Agriculture&quot;,51,748,871,165,164,150,141,45,165,&quot;Yes&quot;)++
+1`(394,&quot;Agriculture&quot;,0,742,702,123,133,38,154,122,102,&quot;No&quot;)++
+1`(395,&quot;Agriculture&quot;,47,713,643,86,116,130,122,46,104,&quot;No&quot;)++
+1`(396,&quot;Agriculture&quot;,54,918,907,168,154,178,0,0,0,&quot;Yes&quot;)++
+1`(397,&quot;Agriculture&quot;,50,810,726,118,132,45,146,102,134,&quot;Yes&quot;)++
+1`(398,&quot;Agriculture&quot;,40,760,756,125,120,133,147,152,41,&quot;Yes&quot;)++
+1`(399,&quot;Agriculture&quot;,57,790,605,0,0,0,0,0,0,&quot;No&quot;)++
+1`(400,&quot;Agriculture&quot;,51,955,948,179,185,166,43,183,152,&quot;Yes&quot;)++
+1`(401,&quot;Agriculture&quot;,47,807,748,0,0,0,0,0,0,&quot;Yes&quot;)++
+1`(402,&quot;Agriculture&quot;,43,570,577,86,125,40,109,82,99,&quot;No&quot;)++
+1`(403,&quot;Agriculture&quot;,36,837,816,0,0,0,0,0,0,&quot;Yes&quot;)++
+1`(404,&quot;Agriculture&quot;,15,914,890,0,0,0,0,0,0,&quot;No&quot;)++
+1`(405,&quot;Agriculture&quot;,51,892,627,132,113,119,78,0,0,&quot;No&quot;)++
+1`(406,&quot;Agriculture&quot;,58,994,967,154,181,175,182,46,183,&quot;Yes&quot;)++
+1`(407,&quot;Agriculture&quot;,44,651,654,0,0,0,0,0,0,&quot;No&quot;)++
+1`(408,&quot;Agriculture&quot;,0,657,747,147,128,42,129,133,122,&quot;No&quot;)++
+1`(409,&quot;Agriculture&quot;,49,568,651,131,120,34,128,105,88,&quot;No&quot;)++
+1`(410,&quot;Agriculture&quot;,65,882,857,185,162,153,153,125,39,&quot;Yes&quot;)++
+1`(411,&quot;Agriculture&quot;,58,858,737,0,0,0,0,0,0,&quot;Yes&quot;)++
+1`(412,&quot;Agriculture&quot;,30,754,748,148,147,117,112,48,130,&quot;Yes&quot;)++
+1`(413,&quot;Agriculture&quot;,62,881,889,165,149,41,168,155,166,&quot;Yes&quot;)++
+1`(414,&quot;Agriculture&quot;,0,907,786,155,130,172,30,121,38,&quot;No&quot;)++
+1`(415,&quot;Agriculture&quot;,0,663,553,110,33,33,88,95,66,&quot;No&quot;)++
+1`(416,&quot;Agriculture&quot;,41,796,797,126,155,149,141,140,0,&quot;Yes&quot;)++
+1`(417,&quot;Agriculture&quot;,25,597,625,0,0,0,0,0,0,&quot;No&quot;)++
+1`(418,&quot;Agriculture&quot;,50,743,662,97,132,105,128,37,45,&quot;No&quot;)++
+1`(419,&quot;Agriculture&quot;,51,748,871,165,164,150,141,45,165,&quot;Yes&quot;)++
+1`(420,&quot;Agriculture&quot;,44,620,635,131,99,139,77,114,0,&quot;No&quot;)++
+1`(421,&quot;Agriculture&quot;,42,877,949,180,172,185,42,165,159,&quot;Yes&quot;)++
+1`(422,&quot;Agriculture&quot;,40,760,756,125,120,133,147,152,41,&quot;Yes&quot;)++
+1`(423,&quot;Agriculture&quot;,50,759,818,149,136,153,169,41,130,&quot;Yes&quot;)++
+1`(424,&quot;Agriculture&quot;,42,539,588,109,104,107,90,100,37,&quot;No&quot;)++
+1`(425,&quot;Agriculture&quot;,44,821,561,122,103,83,99,63,93,&quot;No&quot;)++
+1`(426,&quot;Agriculture&quot;,62,820,706,144,106,118,0,0,0,&quot;Yes&quot;)++
+1`(427,&quot;Agriculture&quot;,0,673,572,70,69,35,33,19,37,&quot;No&quot;)++
+1`(428,&quot;Agriculture&quot;,57,851,708,132,111,40,147,112,125,&quot;Yes&quot;)++
+1`(429,&quot;Agriculture&quot;,58,749,618,120,124,71,83,132,44,&quot;No&quot;)++
+1`(430,&quot;Agriculture&quot;,54,541,483,70,100,61,82,0,0,&quot;No&quot;)++
+1`(431,&quot;Agriculture&quot;,36,802,889,143,165,44,178,155,162,&quot;Yes&quot;)++
+1`(432,&quot;Agriculture&quot;,55,952,958,170,170,181,179,48,47,&quot;Yes&quot;)++
+1`(433,&quot;Agriculture&quot;,35,546,479,61,97,74,95,0,0,&quot;No&quot;)++
+1`(434,&quot;Agriculture&quot;,53,846,888,149,47,37,174,171,167,&quot;Yes&quot;)++
+1`(435,&quot;Agriculture&quot;,43,636,644,101,142,125,113,70,46,&quot;No&quot;)++
+1`(436,&quot;Agriculture&quot;,52,803,807,165,144,131,127,149,46,&quot;Yes&quot;)++
+1`(437,&quot;Agriculture&quot;,0,745,747,115,138,135,143,138,0,&quot;No&quot;)++
+1`(438,&quot;Agriculture&quot;,40,715,562,83,91,84,142,79,39,&quot;No&quot;)++
+1`(439,&quot;Agriculture&quot;,54,918,907,168,154,178,0,0,0,&quot;Yes&quot;)++
+1`(440,&quot;Agriculture&quot;,58,861,775,136,158,122,0,0,0,&quot;Yes&quot;)++
+1`(441,&quot;Agriculture&quot;,55,718,782,135,139,155,132,141,39,&quot;Yes&quot;)++
+1`(442,&quot;Agriculture&quot;,30,536,534,97,112,83,123,56,63,&quot;No&quot;)++
+1`(443,&quot;Agriculture&quot;,57,790,605,0,0,0,0,0,0,&quot;No&quot;)++
+1`(444,&quot;Agriculture&quot;,0,672,705,95,134,109,146,139,0,&quot;No&quot;)++
+1`(445,&quot;Agriculture&quot;,47,848,746,160,114,118,120,0,0,&quot;Yes&quot;)++
+1`(446,&quot;Agriculture&quot;,0,802,729,141,102,118,133,155,80,&quot;No&quot;)++
+1`(447,&quot;Agriculture&quot;,0,641,651,128,41,36,108,123,106,&quot;No&quot;)++
+1`(448,&quot;Agriculture&quot;,0,920,774,130,141,154,145,122,48,&quot;No&quot;)++
+1`(449,&quot;Agriculture&quot;,0,868,920,164,161,165,178,160,46,&quot;No&quot;)++
+1`(450,&quot;Agriculture&quot;,53,718,666,94,140,130,119,30,118,&quot;No&quot;)++
+1`(451,&quot;Agriculture&quot;,41,839,748,152,119,45,123,120,150,&quot;Yes&quot;)++
+1`(452,&quot;Agriculture&quot;,46,649,674,148,142,43,123,90,100,&quot;No&quot;)++
+1`(453,&quot;Agriculture&quot;,72,911,951,153,159,88,189,172,190,&quot;Yes&quot;)++
+1`(454,&quot;Agriculture&quot;,40,627,519,142,80,40,68,82,78,&quot;No&quot;)++
+1`(455,&quot;Agriculture&quot;,70,917,864,0,0,0,0,0,0,&quot;Yes&quot;)++
+1`(456,&quot;Agriculture&quot;,42,734,604,100,43,121,104,39,106,&quot;No&quot;)++
+1`(457,&quot;Agriculture&quot;,54,700,737,137,152,135,107,125,0,&quot;Yes&quot;)++
+1`(458,&quot;Agriculture&quot;,46,579,544,77,76,94,116,103,38,&quot;No&quot;)++
+1`(459,&quot;Agriculture&quot;,47,713,643,86,116,130,122,46,104,&quot;No&quot;)++
+1`(460,&quot;Agriculture&quot;,47,697,592,112,101,94,119,90,76,&quot;No&quot;)++
+1`(461,&quot;Agriculture&quot;,58,713,720,125,111,149,118,85,132,&quot;Yes&quot;)++
+1`(462,&quot;Agriculture&quot;,48,685,527,112,72,85,109,93,44,&quot;No&quot;)++
+1`(463,&quot;Agriculture&quot;,59,686,565,115,73,81,84,0,0,&quot;No&quot;)++
+1`(464,&quot;Agriculture&quot;,52,941,922,153,165,171,172,172,0,&quot;Yes&quot;)++
+1`(465,&quot;Agriculture&quot;,55,572,808,70,55,75,62,45,64,&quot;No&quot;)++
+1`(466,&quot;Agriculture&quot;,44,641,557,103,90,67,98,99,100,&quot;No&quot;)++
+1`(467,&quot;Agriculture&quot;,55,847,869,146,146,160,142,181,94,&quot;Yes&quot;)++
+1`(468,&quot;Agriculture&quot;,60,868,646,62,81,37,41,63,39,&quot;No&quot;)++
+1`(469,&quot;Agriculture&quot;,53,557,546,63,71,35,28,50,26,&quot;No&quot;)++
+1`(470,&quot;Agriculture&quot;,45,679,664,98,91,131,128,0,0,&quot;No&quot;)++
+1`(471,&quot;Agriculture&quot;,53,715,724,122,154,129,131,103,74,&quot;Yes&quot;)++
+1`(472,&quot;Agriculture&quot;,38,758,513,0,0,0,0,0,0,&quot;No&quot;)++
+1`(473,&quot;Agriculture&quot;,54,946,918,159,157,166,173,172,46,&quot;Yes&quot;)++
+1`(474,&quot;Agriculture&quot;,52,725,866,153,149,46,162,148,162,&quot;Yes&quot;)++
+1`(475,&quot;Agriculture&quot;,42,717,671,110,126,125,110,123,40,&quot;No&quot;)++
+1`(476,&quot;Agriculture&quot;,70,887,796,157,148,162,127,90,112,&quot;Yes&quot;)++
+1`(477,&quot;Agriculture&quot;,44,649,679,144,108,80,136,75,136,&quot;No&quot;)++
+1`(478,&quot;Agriculture&quot;,55,667,627,93,113,127,107,0,0,&quot;No&quot;)++
+1`(479,&quot;Agriculture&quot;,0,981,967,180,175,178,162,180,47,&quot;No&quot;)++
+1`(480,&quot;Agriculture&quot;,51,735,657,144,119,114,99,40,101,&quot;No&quot;)++
+1`(481,&quot;Agriculture&quot;,46,673,571,120,89,44,79,107,97,&quot;No&quot;)++
+1`(482,&quot;Agriculture&quot;,36,777,779,0,0,0,0,0,0,&quot;Yes&quot;)++
+1`(483,&quot;Agriculture&quot;,0,742,702,123,133,38,154,122,102,&quot;No&quot;)++
+1`(484,&quot;Agriculture&quot;,50,885,588,111,82,70,95,150,37,&quot;No&quot;)++
+1`(485,&quot;Agriculture&quot;,22,582,545,0,0,0,0,0,0,&quot;No&quot;)++
+1`(486,&quot;Agriculture&quot;,46,828,770,141,132,46,129,152,130,&quot;Yes&quot;)++
+1`(487,&quot;Agriculture&quot;,52,817,766,141,157,115,126,140,48,&quot;Yes&quot;)++
+1`(488,&quot;Agriculture&quot;,36,563,649,113,93,129,138,43,99,&quot;No&quot;)++
+1`(489,&quot;Agriculture&quot;,54,649,548,127,85,75,74,0,0,&quot;No&quot;)++
+1`(490,&quot;Agriculture&quot;,40,553,613,114,114,84,88,132,0,&quot;No&quot;)++
+1`(491,&quot;Agriculture&quot;,0,928,901,0,0,0,0,0,0,&quot;No&quot;)++
+1`(492,&quot;Agriculture&quot;,57,704,641,76,135,44,34,0,0,&quot;No&quot;)++
+1`(493,&quot;Agriculture&quot;,49,922,812,143,139,132,141,168,45,&quot;Yes&quot;)++
+1`(494,&quot;Agriculture&quot;,50,806,778,143,117,165,123,145,0,&quot;Yes&quot;)++
+1`(495,&quot;Agriculture&quot;,57,517,441,0,0,0,0,0,0,&quot;No&quot;)++
+1`(496,&quot;Agriculture&quot;,48,789,747,128,164,132,104,45,40,&quot;Yes&quot;)++
+1`(497,&quot;Agriculture&quot;,54,777,670,136,45,108,129,90,120,&quot;No&quot;)++
+1`(498,&quot;Agriculture&quot;,41,824,688,119,143,109,128,43,107,&quot;Yes&quot;)++
+1`(499,&quot;Agriculture&quot;,45,734,686,122,147,79,87,157,47,&quot;No&quot;)++
+1`(500,&quot;Agriculture&quot;,55,866,898,148,46,43,162,174,169,&quot;Yes&quot;)++
+1`(501,&quot;Agriculture&quot;,49,706,663,86,102,27,153,40,38,&quot;Yes&quot;)++
+1`(502,&quot;Agriculture&quot;,59,912,867,152,146,160,169,156,44,&quot;Yes&quot;)++
+1`(503,&quot;Agriculture&quot;,52,806,660,122,135,98,133,85,44,&quot;No&quot;)++
+1`(504,&quot;Agriculture&quot;,42,547,601,90,107,112,128,96,35,&quot;No&quot;)++
+1`(505,&quot;Agriculture&quot;,41,954,910,71,0,0,0,0,0,&quot;No&quot;)++
+1`(506,&quot;Agriculture&quot;,50,787,850,130,170,40,157,164,152,&quot;Yes&quot;)++
+1`(507,&quot;Agriculture&quot;,46,899,817,125,49,46,160,137,159,&quot;Yes&quot;)++
+1`(508,&quot;Agriculture&quot;,0,622,670,122,0,0,0,0,0,&quot;No&quot;)++
+1`(509,&quot;Agriculture&quot;,57,820,774,143,134,123,156,125,47,&quot;Yes&quot;)++
+1`(510,&quot;Agriculture&quot;,56,696,648,127,128,113,90,106,0,&quot;No&quot;)++
+1`(511,&quot;Agriculture&quot;,22,634,672,111,87,149,116,94,115,&quot;No&quot;)++
+1`(512,&quot;Agriculture&quot;,44,867,972,177,195,194,146,172,46,&quot;Yes&quot;)++
+1`(513,&quot;Agriculture&quot;,50,714,610,107,121,102,104,97,39,&quot;No&quot;)++
+1`(514,&quot;Agriculture&quot;,51,947,828,179,127,130,145,0,0,&quot;Yes&quot;)++
+1`(515,&quot;Agriculture&quot;,51,809,623,0,0,0,0,0,0,&quot;No&quot;)++
+1`(516,&quot;Agriculture&quot;,54,897,915,153,178,41,170,177,153,&quot;Yes&quot;)++
+1`(517,&quot;Agriculture&quot;,52,869,854,164,132,163,142,173,45,&quot;Yes&quot;)++
+1`(518,&quot;Agriculture&quot;,46,652,822,162,0,160,0,161,0,&quot;Yes&quot;)++
+1`(519,&quot;Agriculture&quot;,60,645,758,0,0,0,0,0,0,&quot;Yes&quot;)++
+1`(520,&quot;Agriculture&quot;,45,843,833,146,159,140,143,157,44,&quot;Yes&quot;)++
+1`(521,&quot;Agriculture&quot;,63,893,775,148,134,40,144,137,124,&quot;Yes&quot;)++
+1`(522,&quot;Agriculture&quot;,55,717,669,121,128,43,127,96,117,&quot;No&quot;)++
+1`(523,&quot;Agriculture&quot;,57,702,695,103,138,44,124,117,129,&quot;Yes&quot;)++
+1`(524,&quot;Agriculture&quot;,56,877,827,160,163,141,0,0,0,&quot;Yes&quot;)++
+1`(525,&quot;Agriculture&quot;,50,704,818,140,159,137,129,92,161,&quot;Yes&quot;)++
+1`(526,&quot;Agriculture&quot;,51,816,755,122,129,39,156,134,137,&quot;Yes&quot;)++
+1`(527,&quot;Agriculture&quot;,48,866,718,118,161,109,139,113,46,&quot;Yes&quot;)++
+1`(528,&quot;Agriculture&quot;,53,818,727,149,113,43,134,113,137,&quot;Yes&quot;)++
+1`(529,&quot;Agriculture&quot;,48,701,849,148,138,41,164,162,153,&quot;Yes&quot;)++
+1`(530,&quot;Agriculture&quot;,58,721,831,157,122,150,141,176,0,&quot;Yes&quot;)++
+1`(531,&quot;Agriculture&quot;,70,872,671,0,0,0,0,0,0,&quot;Yes&quot;)++
+1`(532,&quot;Agriculture&quot;,50,657,774,122,131,126,151,154,46,&quot;Yes&quot;)++
+1`(533,&quot;Agriculture&quot;,50,589,734,109,118,44,149,103,164,&quot;Yes&quot;)++
+1`(534,&quot;Agriculture&quot;,51,667,762,132,126,143,143,0,0,&quot;Yes&quot;)++
+1`(535,&quot;Agriculture&quot;,45,756,687,120,98,125,109,0,0,&quot;Yes&quot;)++
+1`(536,&quot;Agriculture&quot;,46,756,834,151,145,158,168,126,44,&quot;Yes&quot;)++
+1`(537,&quot;Agriculture&quot;,53,840,782,141,133,42,160,128,141,&quot;Yes&quot;)++
+1`(538,&quot;Agriculture&quot;,45,841,819,148,124,45,149,142,166,&quot;Yes&quot;)++
+1`(539,&quot;Agriculture&quot;,56,890,767,126,89,156,40,156,154,&quot;Yes&quot;)++
+1`(540,&quot;Agriculture&quot;,70,892,898,140,179,46,164,160,165,&quot;No&quot;)++
+1`(541,&quot;Agriculture&quot;,61,942,860,169,135,155,172,139,47,&quot;Yes&quot;)++
+1`(542,&quot;Agriculture&quot;,50,646,714,0,0,0,0,0,0,&quot;Yes&quot;)++
+1`(543,&quot;Agriculture&quot;,61,932,933,166,172,180,184,0,0,&quot;Yes&quot;)++
+1`(544,&quot;Agriculture&quot;,56,900,821,163,146,134,46,147,139,&quot;Yes&quot;)++
+1`(545,&quot;Agriculture&quot;,50,677,663,109,101,104,134,125,47,&quot;Yes&quot;)++
+1`(546,&quot;Agriculture&quot;,59,915,714,139,154,36,119,108,126,&quot;Yes&quot;)++
+1`(547,&quot;Agriculture&quot;,57,696,677,125,83,46,136,135,112,&quot;Yes&quot;)++
+1`(548,&quot;Agriculture&quot;,42,841,794,125,160,140,159,124,42,&quot;Yes&quot;)++
+1`(549,&quot;Agriculture&quot;,52,891,743,128,141,127,138,126,0,&quot;Yes&quot;)++
+1`(550,&quot;Agriculture&quot;,58,856,903,135,160,43,168,173,179,&quot;Yes&quot;)++
+1`(551,&quot;Agriculture&quot;,51,686,732,131,104,47,127,155,130,&quot;Yes&quot;)++
+1`(552,&quot;Agriculture&quot;,62,961,941,156,179,39,172,164,192,&quot;Yes&quot;)++
+1`(553,&quot;Agriculture&quot;,43,791,677,0,0,0,0,0,0,&quot;No&quot;)</text>
+        </initmark>
+      </place>
+      <place id="ID1412440080">
+        <posattr x="433.000000"
+                 y="-13.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>No</text>
+        <ellipse w="76.000000"
+                 h="76.000000"/>
+        <token x="-10.000000"
+               y="0.000000"/>
+        <marking x="48.500000"
+                 y="71.000000"
+                 hidden="false">
+          <snap snap_id="0"
+                anchor.horizontal="1"
+                anchor.vertical="3"/>
+        </marking>
+        <type id="ID1412440081">
+          <posattr x="498.000000"
+                   y="-49.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1">CANDIDATE</text>
+        </type>
+        <initmark id="ID1412440082">
+          <posattr x="494.000000"
+                   y="23.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1"/>
+        </initmark>
+      </place>
+      <trans id="ID1412866967"
+             explicit="false">
+        <posattr x="55.000000"
+                 y="227.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>Rule 13</text>
+        <box w="122.000000"
+             h="42.000000"/>
+        <binding x="7.200000"
+                 y="-3.000000"/>
+        <cond id="ID1412868735">
+          <posattr x="42.000000"
+                   y="277.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1">[td &gt; 692, pn = &quot;Agriculture&quot;, at &gt; 41, os3 &gt; 129]</text>
+        </cond>
+        <time id="ID1412866969">
+          <posattr x="130.500000"
+                   y="259.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1"/>
+        </time>
+        <code id="ID1412866970">
+          <posattr x="150.500000"
+                   y="174.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1"/>
+        </code>
+        <priority id="ID1412866972">
+          <posattr x="-44.000000"
+                   y="195.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1"/>
+        </priority>
+      </trans>
+      <arc id="ID1412867170"
+           orientation="PtoT"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="ID1412866967"/>
+        <placeend idref="ID1412415160"/>
+        <annot id="ID1412870625">
+          <posattr x="-210.000000"
+                   y="166.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1">(sr,pn,at,ssc,td,os1,os2,os3,os4,os5,os6,label)</text>
+        </annot>
+      </arc>
+      <arc id="ID1412872315"
+           orientation="TtoP"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="ID1412866967"/>
+        <placeend idref="ID1412440080"/>
+        <annot id="ID1412872316">
+          <posattr x="294.000000"
+                   y="181.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1">(sr,pn,at,ssc,td,os1,os2,os3,os4,os5,os6,label)</text>
+        </annot>
+      </arc>
+      <constraints/>
+    </page>
+    <instances>
+      <instance id="ID2149"
+                page="ID6"/>
+    </instances>
+    <options>
+      <option name="realtimestamp">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="fair_be">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="global_fairness">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="outputdirectory">
+        <value>
+          <text>&lt;same as model&gt;</text>
+        </value>
+      </option>
+      <option name="extensions.10006.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10002.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10005.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10003.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10001.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="repavg">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="repciavg">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="repcount">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="repfirstval">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="replastval">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="repmax">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="repmin">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="repssquare">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="repssqdev">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="repstddev">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="repsum">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="repvariance">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="avg">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="ciavg">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="count">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="firstval">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="lastval">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="max">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="min">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="ssquare">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="ssqdev">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="stddev">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="sum">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="variance">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="firstupdate">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="interval">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="lastupdate">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="untimedavg">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="untimedciavg">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="untimedcount">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="untimedfirstval">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="untimedlastval">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="untimedmax">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="untimedmin">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="untimedssquare">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="untimedssqdev">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="untimedstddev">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="untimedsum">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="untimedvariance">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+    </options>
+    <binders>
+      <cpnbinder id="ID1412858219"
+                 x="148"
+                 y="98"
+                 width="1016"
+                 height="601">
+        <sheets>
+          <cpnsheet id="ID2215"
+                    panx="-105.000000"
+                    pany="140.000000"
+                    zoom="1.000000"
+                    instance="ID2149">
+            <zorder>
+              <position value="0"/>
+            </zorder>
+          </cpnsheet>
+        </sheets>
+        <zorder>
+          <position value="0"/>
+        </zorder>
+      </cpnbinder>
+    </binders>
+    <monitorblock name="Monitors"/>
+    <IndexNode expanded="true">
+      <IndexNode expanded="false"/>
+      <IndexNode expanded="false"/>
+      <IndexNode expanded="false">
+        <IndexNode expanded="false"/>
+        <IndexNode expanded="false"/>
+        <IndexNode expanded="false"/>
+        <IndexNode expanded="false"/>
+        <IndexNode expanded="false">
+          <IndexNode expanded="false">
+            <IndexNode expanded="false">
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+            </IndexNode>
+            <IndexNode expanded="false">
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+            </IndexNode>
+          </IndexNode>
+          <IndexNode expanded="false">
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+          </IndexNode>
+        </IndexNode>
+        <IndexNode expanded="false">
+          <IndexNode expanded="false"/>
+          <IndexNode expanded="false"/>
+          <IndexNode expanded="false"/>
+          <IndexNode expanded="false"/>
+          <IndexNode expanded="false"/>
+        </IndexNode>
+      </IndexNode>
+      <IndexNode expanded="false"/>
+      <IndexNode expanded="false">
+        <IndexNode expanded="false">
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+        </IndexNode>
+        <IndexNode expanded="true">
+          <IndexNode expanded="false"/>
+          <IndexNode expanded="false"/>
+          <IndexNode expanded="false"/>
+          <IndexNode expanded="false"/>
+          <IndexNode expanded="false"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+        </IndexNode>
+      </IndexNode>
+      <IndexNode expanded="false"/>
+      <IndexNode expanded="true"/>
+    </IndexNode>
+  </cpnet>
+</workspaceElements>
